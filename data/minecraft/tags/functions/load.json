@@ -1,0 +1,7 @@
+{
+  "values":[
+    "arc_itemskill:init",
+    "arc_mobs:init",
+    "arc_trade:init"
+  ]
+}

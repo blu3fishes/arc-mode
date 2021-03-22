@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:oak_log"
+      },
+      "title": "Take Armor!",
+      "description": "Make Wooden Armor with Logs",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "parent": "arc_itemskill:guide/arc",
+    "criteria": {
+      "make_wooden_grsword": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "experience": 40
+    }
+  }
