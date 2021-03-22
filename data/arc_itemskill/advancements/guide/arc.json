@@ -4,7 +4,7 @@
         "item": "minecraft:netherite_pickaxe"
       },
       "title": "Arc Mode",
-      "description": "",
+      "description": "For the Glory and Truth!",
       "background": "minecraft:textures/block/deepslate_bricks.png",
       "frame": "task",
       "show_toast": false,

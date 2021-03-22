@@ -1,5 +1,6 @@
 recipe take @s arc_itemskill:wooden_boots
 advancement revoke @s only arc_itemskill:wooden_boots
+advancement grant @s only arc_itemskill:guide/arc_journey_begin2
 
 clear @s minecraft:knowledge_book
 
