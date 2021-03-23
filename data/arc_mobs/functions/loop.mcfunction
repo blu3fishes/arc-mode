@@ -1,1 +1,0 @@
-execute if score __ARC__ arc.MobMode matches 1 run function arc_mobs:normal
