@@ -1,5 +1,6 @@
 recipe take @s arc_itemskill:platinum_ingot
 advancement revoke @s only arc_itemskill:platinum_ingot
+advancement grant @s only arc_itemskill:guide/arc_platinum
 
 clear @s minecraft:knowledge_book
 

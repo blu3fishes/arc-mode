@@ -1,16 +1,17 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:ghast_spawn_egg"
+        "item": "minecraft:diamond_sword",
+        "nbt":"{CustomModelData:700}"
       },
-      "title": "Another Force",
-      "description": "Craft the Platinum Ingot.",
+      "title": "Unleashing The Power...",
+      "description": "Craft Platinum Claymore",
       "frame": "task",
       "show_toast": true,
       "announce_to_chat": false,
       "hidden": false
     },
-    "parent": "arc_itemskill:guide/arc_get_ready",
+    "parent": "arc_itemskill:guide/arc_platinum",
     "criteria": {
       "make_wooden_grsword": {
         "trigger": "minecraft:impossible"

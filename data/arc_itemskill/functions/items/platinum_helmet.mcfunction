@@ -1,1 +1,5 @@
-give @s leather_helmet{display:{Name:'{"text":"Platinum Helmet","italic":false}',color:6978196},HideFlags:68,Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:2,Operation:0,UUID:[I;1015844104,-482326100,-1742188302,465059570],Slot:"head"},{AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUID:[I;-1119484662,1998014768,-2044149529,1664711954],Slot:"head"}]} 1
+recipe take @s arc_itemskill:platinum_helmet
+advancement revoke @s only arc_itemskill:platinum_helmet
+
+clear @s minecraft:knowledge_book
+give @s leather_helmet{display:{Name:'{"text":"Platinum Mask","bold":false,"italic":false}',color:8356533},HideFlags:68,Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:4,Operation:0,UUID:[I;-594154562,1071793228,-1757710990,635642847],Slot:"head"},{AttributeName:"generic.armor",Name:"generic.armor",Amount:6,Operation:0,UUID:[I;361562524,-1292677326,-1117269469,-275993928],Slot:"head"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:6,Operation:0,UUID:[I;-1638089819,977224543,-1387045315,609854420],Slot:"head"},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.04,Operation:1,UUID:[I;-233149910,-1330294869,-2055746349,-613590076],Slot:"head"}]} 1
