@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#",
+        "#",
+        "E"
+    ],
+    "key": {
+        "#": {
+            "item":"minecraft:iron_ingot"
+        },
+        "E": {
+            "item": "minecraft:iron_sword"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book"
+    }
+}

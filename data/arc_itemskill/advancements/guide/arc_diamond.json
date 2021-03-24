@@ -1,18 +1,18 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:iron_sword"
+        "item": "minecraft:diamond"
       },
-      "title": "Get Ready For Fight!",
-      "description": "Craft Iron Pickaxe!",
+      "title": "Old Force",
+      "description": "Obtain Diamond",
       "frame": "task",
       "show_toast": true,
-      "announce_to_chat": false,
+      "announce_to_chat": true,
       "hidden": false
     },
-    "parent": "arc_itemskill:guide/arc_journey_begin2",
+    "parent": "arc_itemskill:guide/arc_get_ready",
     "criteria": {
-      "make_wooden_grsword": {
+      "requirement": {
         "trigger": "minecraft:inventory_changed",
         "conditions": {
           "items": [
@@ -22,8 +22,5 @@
           ]
         }
       }
-    },
-    "rewards": {
-      "experience": 40
     }
   }
