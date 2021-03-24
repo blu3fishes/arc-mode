@@ -1,5 +1,5 @@
-recipe take @s arc_itemskill:platinum_shovel
-advancement revoke @s only arc_itemskill:platinum_shovel
+recipe take @s arc_itemskill:platinum/platinum_shovel
+advancement revoke @s only arc_itemskill:platinum/platinum_shovel
 
 clear @s minecraft:knowledge_book
 

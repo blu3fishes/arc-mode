@@ -1,5 +1,5 @@
-recipe take @s arc_itemskill:platinum_scythe
-advancement revoke @s only arc_itemskill:platinum_scythe
+recipe take @s arc_itemskill:platinum/platinum_scythe
+advancement revoke @s only arc_itemskill:platinum/platinum_scythe
 
 clear @s minecraft:knowledge_book
 

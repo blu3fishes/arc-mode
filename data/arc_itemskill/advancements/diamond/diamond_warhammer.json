@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "unlockAxe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "arc_itemskill:diamond/diamond_warhammer"
+            }
+        }
+    },
+    "rewards": {
+        "function": "arc_itemskill:items/diamond/diamond_warhammer"
+    }
+}

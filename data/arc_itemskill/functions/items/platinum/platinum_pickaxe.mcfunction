@@ -1,5 +1,5 @@
-recipe take @s arc_itemskill:platinum_pickaxe
-advancement revoke @s only arc_itemskill:platinum_pickaxe
+recipe take @s arc_itemskill:platinum/platinum_pickaxe
+advancement revoke @s only arc_itemskill:platinum/platinum_pickaxe
 
 clear @s minecraft:knowledge_book
 
