@@ -1,7 +1,7 @@
 # Minecraft Arc Mode For minecraft 1.17
 
 # What is Arc Mode?
-Arc mode is datapack for survival players which feels retarded about minecraft original survival contents.
+Arc mode is datapack for survival players which feels tired about boring minecraft original survival contents.
 
 # How Can I install it?
 First, Download this file as zip.
