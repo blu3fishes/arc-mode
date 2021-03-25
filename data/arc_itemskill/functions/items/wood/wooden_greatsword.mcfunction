@@ -1,5 +1,5 @@
-recipe take @s arc_itemskill:wooden_greatsword
-advancement revoke @s only arc_itemskill:wooden_greatsword
+recipe take @s arc_itemskill:wood/wooden_greatsword
+advancement revoke @s only arc_itemskill:wood/wooden_greatsword
 advancement grant @s only arc_itemskill:guide/arc_journey_begin
 
 clear @s minecraft:knowledge_book

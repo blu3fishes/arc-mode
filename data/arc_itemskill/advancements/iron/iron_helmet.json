@@ -1,0 +1,13 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "arc_itemskill:iron/iron_helmet"
+        }
+      }
+    },
+    "rewards": {
+      "function": "arc_itemskill:iron/iron_helmet"
+    }
+  }
