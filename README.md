@@ -59,6 +59,10 @@ ex) 계수가 1.5인 무기가 있을때, 이와 같은 티어의 검 아이템�
 스태프는 스태프만의 고유마법을 발사하는 발사 촉매이다. 특수무기군에 속한다.
 
 
+## 어드벤처 무기군
+아래 링크를 참고
+* [월드레벨 1 획득가능 무기군](https://github.com/blu3fishez/Arc_Mode_ver1.17/Adventure.md)
+
 
 ## What is Arc Mode?
 Arc mode is datapack for survival players which feels tired about boring minecraft original survival contents.
