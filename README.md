@@ -61,7 +61,7 @@ ex) 계수가 1.5인 무기가 있을때, 이와 같은 티어의 검 아이템�
 
 ## 어드벤처 무기군
 아래 링크를 참고
-* [월드레벨 1 획득가능 무기군](https://github.com/blu3fishez/Arc_Mode_ver1.17/Adventure.md)
+* [월드레벨 1 획득가능 무기군](https://github.com/blu3fishez/Arc_Mode_ver1.17/blob/main/Adventure.md)
 
 
 ## What is Arc Mode?
