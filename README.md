@@ -63,6 +63,12 @@ ex) 계수가 1.5인 무기가 있을때, 이와 같은 티어의 검 아이템�
 아래 링크를 참고
 * [월드레벨 1 획득가능 무기군](https://github.com/blu3fishez/Arc_Mode_ver1.17/blob/main/Adventure.md)
 
+## 거래 시스템 개편
+거래 시스템이 대폭 개편됐다. 대장장이류 거래 사람들은 모두 사라졌고, 확률로 랜덤한 상인이 스폰된다.
+
+## 레벨 시스템 개편
+인챈트,수리 시 레벨이 줄어들지 않는다.
+
 
 ## What is Arc Mode?
 Arc mode is datapack for survival players which feels tired about boring minecraft original survival contents.
