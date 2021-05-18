@@ -4,11 +4,11 @@
         "unlockAxe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "arc_itemskill:wood/wooden_helmet"
+                "recipe": "arc_item_base:wood/wooden_helmet"
             }
         }
     },
     "rewards": {
-        "function": "arc_itemskill:items/wood/wooden_helmet"
+        "function": "arc_item_base:give_items/wood/wooden_helmet"
     }
 }

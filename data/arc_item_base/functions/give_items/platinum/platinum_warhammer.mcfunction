@@ -1,5 +1,5 @@
-recipe take @s arc_itemskill:platinum/platinum_warhammer
-advancement revoke @s only arc_itemskill:platinum/platinum_warhammer
+recipe take @s arc_item_base:platinum/platinum_warhammer
+advancement revoke @s only arc_item_base:platinum/platinum_warhammer
 
 clear @s minecraft:knowledge_book
 

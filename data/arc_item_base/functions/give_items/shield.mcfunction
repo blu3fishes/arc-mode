@@ -1,5 +1,5 @@
-recipe take @s arc_itemskill:shield
-advancement revoke @s only arc_itemskill:shield
+recipe take @s arc_item_base:shield
+advancement revoke @s only arc_item_base:shield
 
 clear @s minecraft:knowledge_book
 

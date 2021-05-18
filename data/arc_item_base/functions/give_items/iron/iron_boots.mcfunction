@@ -1,5 +1,5 @@
-recipe take @s arc_itemskill:iron/iron_boots
-advancement revoke @s only arc_itemskill:iron/iron_boots
+recipe take @s arc_item_base:iron/iron_boots
+advancement revoke @s only arc_item_base:iron/iron_boots
 
 clear @s minecraft:knowledge_book
 

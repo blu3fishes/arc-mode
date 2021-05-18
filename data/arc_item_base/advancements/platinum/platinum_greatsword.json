@@ -4,11 +4,11 @@
         "unlockAxe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "arc_itemskill:platinum/platinum_greatsword"
+                "recipe": "arc_item_base:platinum/platinum_greatsword"
             }
         }
     },
     "rewards": {
-        "function": "arc_itemskill:items/platinum/platinum_greatsword"
+        "function": "arc_item_base:give_items/platinum/platinum_greatsword"
     }
 }

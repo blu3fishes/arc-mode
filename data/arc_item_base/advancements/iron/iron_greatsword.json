@@ -4,11 +4,11 @@
         "unlockAxe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "arc_itemskill:iron/iron_greatsword"
+                "recipe": "arc_item_base:iron/iron_greatsword"
             }
         }
     },
     "rewards": {
-        "function": "arc_itemskill:items/iron/iron_greatsword"
+        "function": "arc_item_base:give_items/iron/iron_greatsword"
     }
 }

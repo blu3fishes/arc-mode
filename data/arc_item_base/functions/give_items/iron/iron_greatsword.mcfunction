@@ -1,5 +1,5 @@
-recipe take @s arc_itemskill:iron/iron_greatsword
-advancement revoke @s only arc_itemskill:iron/iron_greatsword
+recipe take @s arc_item_base:iron/iron_greatsword
+advancement revoke @s only arc_item_base:iron/iron_greatsword
 
 clear @s minecraft:knowledge_book
 

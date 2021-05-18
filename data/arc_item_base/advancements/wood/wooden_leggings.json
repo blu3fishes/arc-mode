@@ -4,11 +4,11 @@
         "unlockAxe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "arc_itemskill:wood/wooden_leggings"
+                "recipe": "arc_item_base:wood/wooden_leggings"
             }
         }
     },
     "rewards": {
-        "function": "arc_itemskill:items/wood/wooden_leggings"
+        "function": "arc_item_base:give_items/wood/wooden_leggings"
     }
 }

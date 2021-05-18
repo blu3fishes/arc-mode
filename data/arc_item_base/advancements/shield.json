@@ -4,11 +4,11 @@
         "unlockAxe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "arc_itemskill:shield"
+                "recipe": "arc_item_base:shield"
             }
         }
     },
     "rewards": {
-        "function": "arc_itemskill:items/shield"
+        "function": "arc_item_base:give_items/shield"
     }
 }

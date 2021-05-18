@@ -1,6 +1,6 @@
-recipe take @s arc_itemskill:wood/wooden_helmet
-advancement revoke @s only arc_itemskill:wood/wooden_helmet
-advancement grant @s only arc_itemskill:guide/arc_journey_begin2
+recipe take @s arc_item_base:wood/wooden_helmet
+advancement revoke @s only arc_item_base:wood/wooden_helmet
+advancement grant @s only arc_item_base:guide/arc_journey_begin2
 
 clear @s minecraft:knowledge_book
 

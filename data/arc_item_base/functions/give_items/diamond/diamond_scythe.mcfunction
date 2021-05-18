@@ -1,5 +1,5 @@
-recipe take @s arc_itemskill:diamond/diamond_scythe
-advancement revoke @s only arc_itemskill:diamond/diamond_scythe
+recipe take @s arc_item_base:diamond/diamond_scythe
+advancement revoke @s only arc_item_base:diamond/diamond_scythe
 
 clear @s minecraft:knowledge_book
 

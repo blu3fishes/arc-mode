@@ -3,11 +3,11 @@
       "requirement": {
         "trigger": "minecraft:recipe_unlocked",
         "conditions": {
-          "recipe": "arc_itemskill:iron/iron_chestplate"
+          "recipe": "arc_item_base:iron/iron_chestplate"
         }
       }
     },
     "rewards": {
-      "function": "arc_itemskill:iron/iron_chestplate"
+      "function": "arc_item_base:iron/iron_chestplate"
     }
   }
