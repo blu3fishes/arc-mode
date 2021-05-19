@@ -38,7 +38,12 @@ recipeFile = open("./recipes%s%s.json" %(SpaceBuf, NameBuf), "wt", encoding="utf
 print("=============== Input RECIPES ===============================")
 print("e.g. input : '###   ###' means")
 print("###\n   \n###")
-recipeInput = input("Input Recipe (Should be 9 character String.): ")
+while True:
+    recipeInput = input("Input Recipe (Should be 9 character String.): ")
+    if len(recipeInput) != 9:
+        input("## YOU SHOULD INPUT 9 CHARACTER STRING \n try again or did you input correctly? \n Press any key to continue...")
+    elif len(recipeInput) == 9:
+        break
 print("")
 recipeIcons = set(recipeInput)
 iconMeans = {}
