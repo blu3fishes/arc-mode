@@ -3,11 +3,11 @@
       "requirement": {
         "trigger": "minecraft:recipe_unlocked",
         "conditions": {
-          "recipe": "arc_itemskill:iron/iron_helmet"
+          "recipe": "arc_item_base:iron/iron_helmet"
         }
       }
     },
     "rewards": {
-      "function": "arc_itemskill:iron/iron_helmet"
+      "function": "arc_item_base:iron/iron_helmet"
     }
   }

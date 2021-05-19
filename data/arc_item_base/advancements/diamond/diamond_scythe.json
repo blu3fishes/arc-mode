@@ -4,11 +4,11 @@
         "unlockAxe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "arc_itemskill:diamond/diamond_scythe"
+                "recipe": "arc_item_base:diamond/diamond_scythe"
             }
         }
     },
     "rewards": {
-        "function": "arc_itemskill:items/diamond/diamond_scythe"
+        "function": "arc_item_base:give_items/diamond/diamond_scythe"
     }
 }

@@ -3,11 +3,11 @@
       "requirement": {
         "trigger": "minecraft:recipe_unlocked",
         "conditions": {
-          "recipe": "arc_itemskill:iron/iron_boots"
+          "recipe": "arc_item_base:iron/iron_boots"
         }
       }
     },
     "rewards": {
-      "function": "arc_itemskill:iron/iron_boots"
+      "function": "arc_item_base:iron/iron_boots"
     }
   }

@@ -1,5 +1,5 @@
-recipe take @s arc_itemskill:iron/iron_helmet
-advancement revoke @s only arc_itemskill:iron/iron_helmet
+recipe take @s arc_item_base:iron/iron_helmet
+advancement revoke @s only arc_item_base:iron/iron_helmet
 
 clear @s minecraft:knowledge_book
 

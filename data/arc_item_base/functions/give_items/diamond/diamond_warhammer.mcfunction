@@ -1,5 +1,5 @@
-recipe take @s arc_itemskill:diamond/diamond_warhammer
-advancement revoke @s only arc_itemskill:diamond/diamond_warhammer
+recipe take @s arc_item_base:diamond/diamond_warhammer
+advancement revoke @s only arc_item_base:diamond/diamond_warhammer
 
 clear @s minecraft:knowledge_book
 

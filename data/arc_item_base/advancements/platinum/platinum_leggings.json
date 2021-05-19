@@ -4,11 +4,11 @@
         "unlockAxe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "arc_itemskill:platinum/platinum_leggings"
+                "recipe": "arc_item_base:platinum/platinum_leggings"
             }
         }
     },
     "rewards": {
-        "function": "arc_itemskill:items/platinum/platinum_leggings"
+        "function": "arc_item_base:give_items/platinum/platinum_leggings"
     }
 }

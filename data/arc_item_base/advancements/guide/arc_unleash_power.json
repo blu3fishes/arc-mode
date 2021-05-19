@@ -11,7 +11,7 @@
       "announce_to_chat": false,
       "hidden": false
     },
-    "parent": "arc_itemskill:guide/arc_platinum",
+    "parent": "arc_item_base:guide/arc_platinum",
     "criteria": {
       "make_wooden_grsword": {
         "trigger": "minecraft:impossible"

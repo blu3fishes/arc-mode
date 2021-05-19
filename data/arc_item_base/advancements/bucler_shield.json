@@ -4,11 +4,11 @@
         "unlockAxe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "arc_itemskill:bucler_shield"
+                "recipe": "arc_item_base:bucler_shield"
             }
         }
     },
     "rewards": {
-        "function": "arc_itemskill:items/bucler_shield"
+        "function": "arc_item_base:give_items/bucler_shield"
     }
 }

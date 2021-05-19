@@ -1,5 +1,5 @@
-recipe take @s arc_itemskill:platinum/platinum_hoe
-advancement revoke @s only arc_itemskill:platinum/platinum_hoe
+recipe take @s arc_item_base:platinum/platinum_hoe
+advancement revoke @s only arc_item_base:platinum/platinum_hoe
 
 clear @s minecraft:knowledge_book
 

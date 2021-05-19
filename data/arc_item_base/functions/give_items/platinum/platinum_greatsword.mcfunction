@@ -1,5 +1,5 @@
-recipe take @s arc_itemskill:platinum/platinum_greatsword
-advancement revoke @s only arc_itemskill:platinum/platinum_greatsword
+recipe take @s arc_item_base:platinum/platinum_greatsword
+advancement revoke @s only arc_item_base:platinum/platinum_greatsword
 
 clear @s minecraft:knowledge_book
 

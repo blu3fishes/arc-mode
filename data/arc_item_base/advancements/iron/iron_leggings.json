@@ -3,11 +3,11 @@
     "requirement": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "arc_itemskill:iron/iron_leggings"
+        "recipe": "arc_item_base:iron/iron_leggings"
       }
     }
   },
   "rewards": {
-    "function": "arc_itemskill:iron/iron_leggings"
+    "function": "arc_item_base:iron/iron_leggings"
   }
 }
