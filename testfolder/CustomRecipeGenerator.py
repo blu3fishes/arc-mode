@@ -5,7 +5,10 @@
 # output into recipe/advancement/reset recipe & give item command mcfunction file.
 
 ## Import
+from tkinter import ttk
 from tkinter import *
+import tkinter.simpledialog
+import tkinter.messagebox
 import os
 ## Definition
 def createFolder(directory):
@@ -32,13 +35,11 @@ def createMain(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, funcSpaceBuf):
     recipeFile = open("./recipes%s%s.json" %(SpaceBuf, NameBuf), "wt", encoding="utf-8")
     # 레시피도 사전(키값에 해당하는 아이템), 집합(키값 정렬), 이용하면 레시피도 입력받아서 생성 가능하니 참고할것.
     # Try Message Box.
-    print("=============== Input RECIPES ===============================")
-    print("e.g. input : '###   ###' means")
-    print("###\n   \n###")
+    tkinter.messagebox.showinfo("레시피를 입력해주세요.", "\n'###   ###'는, \n###\n   \n### 를 의미합니다.")
     while True:
-        recipeInput = input("Input Recipe (Should be 9 character String.): ")
+        recipeInput = tkinter.simpledialog.askstring("레시피 입력", "9자리로 입력해주세요.")
         if len(recipeInput) != 9:
-            input("## YOU SHOULD INPUT 9 CHARACTER STRING \n try again or did you input correctly? \n Press any key to continue...")
+            tkinter.messagebox.showinfo("에러", "9자리로 입력해주세요...")
         elif len(recipeInput) == 9:
             break
     #print("")
@@ -48,8 +49,7 @@ def createMain(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, funcSpaceBuf):
         if i == ' ':
             continue
         # Try Message Box.
-        print("What %c Mean? (input full item code here 'ex: diamonds, iron_ingot etc..): " %(i), end="")
-        temp = input("")
+        temp = tkinter.simpledialog.askstring("레시피 기호 입력", "%c는 무슨 아이템인가요? ex. iron_ingot" %(i))
         #print("")
         iconMeans[i] = temp
     #print("__________ PROCESSING !!! _______")
@@ -173,12 +173,29 @@ def createMain(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, funcSpaceBuf):
 
 mainWindow = Tk()
 mainWindow.title("blu3fishez Custom Recipe Generator")
-mainWindow.geometry("300x200")
-lbl = Label(mainWindow, text="이름")
-lbl.grid(row = 10, column= 10)
+mainWindow.geometry("500x400")
+lbl = Label(mainWindow, text="이름 공간(arc_system)")
+lbl.place(x = 10, y= 10)
+lbl = Label(mainWindow, text="폴더 이름공간(diamond etc..)")
+lbl.place(x = 10, y= 50)
+lbl = Label(mainWindow, text="아이템 이름(platinum_axe etc..)")
+lbl.place(x = 10, y= 90)
+lbl = Label(mainWindow, text="give 커맨드(give @s 로 시작하는 커맨드.")
+lbl.place(x = 10, y= 130)
+lbl = Label(mainWindow, text="함수 전용 이름공간(give_items etc.. 없을경우 give_items")
+lbl.place(x = 10, y= 170)
 NameSpaceBufTxt = Entry(mainWindow)
+NameSpaceBufTxt.place(x = 10, y = 30)
 SpaceBufTxt = Entry(mainWindow)
-NameBuf = Entry(mainWindow)
-CmdBuf = Entry(mainWindow)
+SpaceBufTxt.place(x = 10, y = 70)
+NameBufTxt = Entry(mainWindow)
+NameBufTxt.place(x = 10, y =110)
+CmdBufTxt = Entry(mainWindow)
+CmdBufTxt.place(x=10, y=150)
 funcSpaceBuf = Entry(mainWindow)
+funcSpaceBuf.place(x=10, y=190)
+#def BtnClick():
+#    createMain(NameBufTxt.get(), SpaceBufTxt.get(), NameBufTxt.get(), CmdBufTxt.get(), funcSpaceBuf.get())
+btn = ttk.Button(mainWindow, text="제작하기", command= lambda : createMain(NameBufTxt.get(), SpaceBufTxt.get(), NameBufTxt.get(), CmdBufTxt.get(), funcSpaceBuf.get()), width=20)
+btn.place(x=10, y=220)
 mainWindow.mainloop()
