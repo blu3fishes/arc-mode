@@ -1,0 +1,2 @@
+tp @s ~ ~-400 ~
+summon keleton ~ ~ ~ {Tags:[Check, Lightened],CustomNameVisible:1b,CustomName:'[{"text":"Lightened","color":"yellow""bold":false,"italic":false},{"text":" sans_lightened","bold":false,"italic":false}]',Wa:1b}
