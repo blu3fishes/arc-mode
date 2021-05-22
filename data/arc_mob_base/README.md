@@ -42,7 +42,7 @@ Store the mob's loot tables.
 
 1/48 확률로 Poison ( 해당 몹 주변 5칸 안에 들어오면 상시 3초 독2 버프 부여 ), 체력 4배
 
-1/48 확률로 Lightning 속도를 2배 높여주는 가죽부츠 착용, 체력 4배
+1/48 확률로 Lightning 속도 2배, 체력 4배
 
 총 풀 48 에 4 경우의 수
 
@@ -73,3 +73,5 @@ Store the mob's loot tables.
 좀비 방패병 (좀비 앞에 투명 갑옷거치대 있음. 뒤에서 때려야됨)
 
 바뀌는 몹들은 더 높은 보상과 강화된 스펙을 지님.
+
+# Loot Tables.

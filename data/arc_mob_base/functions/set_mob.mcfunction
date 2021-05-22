@@ -1,3 +1,6 @@
+function arc_mob_base:set_advanced_mob
+execute as @e[type=armor_stand,tag=MobPass]
+
 execute as @e[type=cow,tag=!check,distance=..70,sort=random] at @s run function arc_mobs:mobs/cow
 execute as @e[type=sheep,tag=!check,distance=..70,sort=random] at @s run function arc_mobs:mobs/sheep
 execute as @e[type=pig,tag=!check,distance=..70,sort=random] at @s run function arc_mobs:mobs/pig

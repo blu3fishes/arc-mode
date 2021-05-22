@@ -23,18 +23,18 @@ def makeMobFeature():
     '''
     add tags if the mob has advanced attribute.
     '''
-def addMobFeature(file, NameBuf, FeatureVal):
+def addMobFeature(file, NameSpaceBuf, SpaceBuf, NameBuf, FeatureVal):
     # adds Feature Tag.
     if FeatureVal == 0:
         file.write("]")
     elif FeatureVal == 1:
-        file.write(", Armor],CustomNameVisible:1b,CustomName:\'[{\"text\":\"Armored\",\"color\":\"blue\"\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false}]\'" %(NameBuf))
+        file.write(", NotArmor],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Armored\",\"color\":\"blue\"\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, NameBuf))
     elif FeatureVal == 2:
-        file.write(", AntiMagic],CustomNameVisible:1b,CustomName:\'[{\"text\":\"AntiMagic\",\"color\":\"red\"\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false}]\'" %(NameBuf))
+        file.write(", NotAntiMagic],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"AntiMagic\",\"color\":\"red\"\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, NameBuf))
     elif FeatureVal == 3:
-        file.write(", Poisoned],CustomNameVisible:1b,CustomName:\'[{\"text\":\"Poisoning\",\"color\":\"green\"\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false}]\'" %(NameBuf))
+        file.write(", NotPoisoning],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Poisoning\",\"color\":\"green\"\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, NameBuf))
     elif FeatureVal == 4:
-        file.write(", Lightened],CustomNameVisible:1b,CustomName:\'[{\"text\":\"Lightened\",\"color\":\"yellow\"\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false}]\'" %(NameBuf))
+        file.write(", NotLightened],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Lightened\",\"color\":\"yellow\"\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, NameBuf))
 
 def addFeature(NameBuf, FeatureVal):
     # adds Feature Name
@@ -107,13 +107,14 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
     # find {, and append the Tag which name is 'check'.
     mob_file.write("summon %s ~ ~ ~ {Tags:[Check" %(MobName))
     # add Tag if the mob is advanced mob.
-    addMobFeature(mob_file, NameBuf, FeatureVal)
+    addMobFeature(mob_file, NameSpaceBuf, SpaceBuf, NameBuf, FeatureVal)
     # write Remainders.
     if BraketStart == -1:
         mob_file.write("}")
     else:
         mob_file.write(",%s" %(CmdBuf[BraketStart+1:]))
     mob_file.close()
+    #loot table Adding...
 
 mainWindow = Tk()
 mainWindow.title("blu3fishez Replace Mob Command Generator")
