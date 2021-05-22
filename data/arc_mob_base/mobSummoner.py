@@ -22,11 +22,7 @@ def createFolder(directory):
     except OSError:
         print ('Error: Creating directory. ' +  directory)
 
-def makeMobFeature():
-    '''
-    add tags if the mob has advanced attribute.
-    '''
-def addMobFeature(file, NameSpaceBuf, SpaceBuf, NameBuf, FeatureVal):
+def addMobFeature(file, NameSpaceBuf, SpaceBuf, NameBuf, FixedNameBuf, FeatureVal):
     # adds Feature Tag.
     if FeatureVal == 0:
         file.write("]")
@@ -75,8 +71,8 @@ def createMain(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, HasFeature):
         createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, i, HasFeature)
 
 def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature): 
+    FixedMobName = NameBuf.replace("_", " ")
     NameBuf = addFeature(NameBuf, FeatureVal)
-
     createFolder('./functions')
     createFolder("./functions/mobs/")
     if SpaceBuf != "":
@@ -111,7 +107,7 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
     # find {, and append the Tag which name is 'check'.
     mob_file.write("summon %s ~ ~ ~ {Tags:[\"Check\"" %(MobName))
     # add Tag if the mob is advanced mob.
-    addMobFeature(mob_file, NameSpaceBuf, SpaceBuf, NameBuf, FeatureVal)
+    addMobFeature(mob_file, NameSpaceBuf, SpaceBuf, NameBuf, FixedNameBuf, FeatureVal)
     # write Remainders.
     if BraketStart == -1:
         mob_file.write("}")
