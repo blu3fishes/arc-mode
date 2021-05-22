@@ -1,1 +1,0 @@
-scoreboard players add @a[scores={arc.Mana=..399}] arc.Mana 1
