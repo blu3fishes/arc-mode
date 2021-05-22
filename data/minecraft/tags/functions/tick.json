@@ -1,7 +1,9 @@
 {
     "values":[
-      "arc_itemskill:loop",
-      "arc_mobs:loop",
-      "arc_trade:loop"
+      "arc_item_base:main",
+      "arc_mob_base:main",
+      "arc_trade:main",
+      "arc_skills:main",
+      "arc_system:main"
     ]
 }

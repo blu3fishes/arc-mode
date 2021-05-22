@@ -1,0 +1,2 @@
+tp @s ~ ~-400 ~
+summon keleton ~ ~ ~ {Tags:[Check, AntiMagic],CustomNameVisible:1b,CustomName:'[{"text":"AntiMagic","color":"red""bold":false,"italic":false},{"text":" sans_antimagic","bold":false,"italic":false}]',Wa:1b}

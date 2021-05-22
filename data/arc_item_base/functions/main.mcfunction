@@ -1,0 +1,1 @@
+function arc_item_base:disable_baseitems

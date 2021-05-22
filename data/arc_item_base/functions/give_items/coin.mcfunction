@@ -1,0 +1,1 @@
+give @s iron_nugget{CustomModelData:700,display:{Name:'{"text":"Coin","color":"yellow","italic":false}',Lore:['{"text":"Can be traded with new merchants...","color":"gray","bold":false,"italic":false}']}}

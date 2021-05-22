@@ -1,0 +1,2 @@
+execute if score @s arc.Level > @s arc.MaxLevel store result score @s arc.MaxLevel run scoreboard players get @s arc.Level
+execute if score @s arc.Level < @s arc.MaxLevel store result entity @s XpLevel int 1.0 run scoreboard players get @s arc.MaxLevel

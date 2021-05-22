@@ -1,0 +1,13 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_unlocked",
+        "conditions": {
+          "recipe": "arc_item_base:iron/iron_chestplate"
+        }
+      }
+    },
+    "rewards": {
+      "function": "arc_item_base:iron/iron_chestplate"
+    }
+  }

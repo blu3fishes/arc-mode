@@ -1,0 +1,14 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "criteria": {
+        "unlockAxe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "arc_item_base:platinum/platinum_helmet"
+            }
+        }
+    },
+    "rewards": {
+        "function": "arc_item_base:give_items/platinum/platinum_helmet"
+    }
+}

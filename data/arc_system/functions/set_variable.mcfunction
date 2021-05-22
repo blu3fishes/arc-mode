@@ -1,0 +1,4 @@
+function arc_system:set_level_heart/set_variable
+function arc_system:set_no_pvp/set_variable
+function arc_system:set_mode/set_variable
+function arc_system:get_random/set_variable

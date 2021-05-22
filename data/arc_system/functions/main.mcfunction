@@ -1,0 +1,3 @@
+function arc_system:set_level_heart/store_level
+function arc_system:set_no_pvp/set_no_pvp
+function arc_system:set_mode/set_mode

@@ -1,7 +1,9 @@
 {
   "values":[
-    "arc_itemskill:init",
-    "arc_mobs:init",
-    "arc_trade:init"
+    "arc_skills:set_variable",
+    "arc_mob_base:set_variable",
+    "arc_trade:set_variable",
+    "arc_item_base:set_variable",
+    "arc_system:set_variable"
   ]
 }

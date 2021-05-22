@@ -1,1 +1,0 @@
-give @s popped_chorus_fruit{CustomModelData:700,display:{Name:'{"text":"Coin","color":"yellow","italic":false}',Lore:['{"text":"Can be traded with new merchants...","color":"gray","bold":false,"italic":false}']}}
