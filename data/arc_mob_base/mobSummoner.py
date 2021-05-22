@@ -98,7 +98,7 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
         set_mob.write("execute as @e[tag=!Check,type=%s,limit=1] at @s run function %s:mobs/%s%s\n" %(MobName, NameSpaceBuf, SpaceBuf, NameBuf))
     else:
         if FeatureVal == 0:
-            set_mob.write("function arc_system:get_random/get_random\n")
+            set_mob.write("execute at @a[sort=arbitrary,limit=1] run function arc_system:get_random/get_random\n")
         summonFeature(set_mob, NameSpaceBuf, SpaceBuf, NameBuf, MobName, FeatureVal)
     set_mob.close()
 

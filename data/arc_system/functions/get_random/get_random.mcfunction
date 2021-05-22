@@ -1,1 +1,1 @@
-execute store result score Random48 arc.Random run loot insert 10000 0 10000 loot arc_system:rand_fourty
+execute store result score Random48 arc.Random run loot spawn ~ -2 ~ loot arc_system:rand_fourty
