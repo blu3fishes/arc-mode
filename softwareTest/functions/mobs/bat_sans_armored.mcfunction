@@ -1,2 +1,0 @@
-tp @s ~ ~-400 ~
-summon bat ~ ~ ~ {Tags:[Check, Armor],CustomNameVisible:1b,CustomName:'[{"text":"Armored","color":"blue""bold":false,"italic":false},{"text":" bat_sans_armored","bold":false,"italic":false}]',Team:"f",FallDistance:ff,PortalCooldown:f,Health:ff,SleepingX:f}

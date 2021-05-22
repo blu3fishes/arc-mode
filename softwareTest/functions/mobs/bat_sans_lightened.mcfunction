@@ -1,2 +1,0 @@
-tp @s ~ ~-400 ~
-summon bat ~ ~ ~ {Tags:[Check, Lightened],CustomNameVisible:1b,CustomName:'[{"text":"Lightened","color":"yellow""bold":false,"italic":false},{"text":" bat_sans_lightened","bold":false,"italic":false}]',Team:"f",FallDistance:ff,PortalCooldown:f,Health:ff,SleepingX:f}

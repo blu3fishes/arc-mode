@@ -7,6 +7,9 @@
 # e.g. (execute as @e[type=enderman,tag=!check,sort=random] at @s run function arc_mobs:mobs/enderman) 
 # in ./functions/set_mob.mcfunction
 
+# Pls Fix
+# 1. The CustomName Should Be Look Like More User-Friendly
+
 ## Import
 import os
 from tkinter import *
@@ -28,13 +31,13 @@ def addMobFeature(file, NameSpaceBuf, SpaceBuf, NameBuf, FeatureVal):
     if FeatureVal == 0:
         file.write("]")
     elif FeatureVal == 1:
-        file.write(", NotArmor],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Armored\",\"color\":\"blue\"\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, NameBuf))
+        file.write(", \"NotArmor\"],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Armored\",\"color\":\"blue\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, NameBuf))
     elif FeatureVal == 2:
-        file.write(", NotAntiMagic],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"AntiMagic\",\"color\":\"red\"\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, NameBuf))
+        file.write(", \"NotAntiMagic\"],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"AntiMagic\",\"color\":\"red\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, NameBuf))
     elif FeatureVal == 3:
-        file.write(", NotPoisoning],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Poisoning\",\"color\":\"green\"\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, NameBuf))
+        file.write(", \"NotPoisoning\"],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Poisoning\",\"color\":\"green\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, NameBuf))
     elif FeatureVal == 4:
-        file.write(", NotLightened],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Lightened\",\"color\":\"yellow\"\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, NameBuf))
+        file.write(", \"NotLightened\"],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Lightened\",\"color\":\"yellow\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, NameBuf))
 
 def addFeature(NameBuf, FeatureVal):
     # adds Feature Name
@@ -98,14 +101,15 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
     if HasFeature == 0:
         set_mob.write("execute as @e[type=%s,tag=!check,sort=random,limit=1] run function %s:mobs/%s%s\n" %(MobName, NameSpaceBuf, SpaceBuf, NameBuf))
     else:
-        set_mob.write("function arc_system:get_random/get_random\n")
+        if FeatureVal == 0:
+            set_mob.write("function arc_system:get_random/get_random\n")
         summonFeature(set_mob, NameSpaceBuf, SpaceBuf, NameBuf, FeatureVal)
     set_mob.close()
 
     mob_file = open('./functions/mobs/%s%s.mcfunction' %(SpaceBuf, NameBuf), mode="wt", encoding="utf-8")
     mob_file.write("""tp @s ~ ~-400 ~\n""")
     # find {, and append the Tag which name is 'check'.
-    mob_file.write("summon %s ~ ~ ~ {Tags:[Check" %(MobName))
+    mob_file.write("summon %s ~ ~ ~ {Tags:[\"Check\"" %(MobName))
     # add Tag if the mob is advanced mob.
     addMobFeature(mob_file, NameSpaceBuf, SpaceBuf, NameBuf, FeatureVal)
     # write Remainders.

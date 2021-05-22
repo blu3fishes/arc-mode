@@ -1,0 +1,1 @@
+tellraw @s {"text":"[ Arc Mode ] Initiated Successfully.","color":"gray","bold":false,"italic":false}
