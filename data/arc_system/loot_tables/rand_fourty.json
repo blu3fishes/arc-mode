@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:stone",
+          "name": "minecraft:stone_button",
           "functions":[
             {
               "function":"minecraft:set_count",

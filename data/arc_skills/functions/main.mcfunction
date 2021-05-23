@@ -4,19 +4,19 @@ bossbar set minecraft:arc_mana players @a
 # function arc_itemskill:skillandmana/managrowth // Only If offhand weapon exists.
 execute as @a[scores={arc.Mana=..399},nbt={Inventory:[{id:"minecraft:book",Slot:-106b,tag:{magic_book:1b}}]}] run scoreboard players add @s arc.Mana 1
 # tag undeads.
-tag @e[type=drowned] add undead
-tag @e[type=husk] add undead
-tag @e[type=phantom] add undead
-tag @e[type=skeleton] add undead
-tag @e[type=skeleton_horse] add undead
-tag @e[type=stray] add undead
-tag @e[type=wither] add undead
-tag @e[type=wither_skeleton] add undead
-tag @e[type=zoglin] add undead
-tag @e[type=zombie] add undead
-tag @e[type=zombie_horse] add undead
-tag @e[type=zombie_villager] add undead
-tag @e[type=zombified_piglin] add undead
+tag @e[type=drowned,limit=1] add undead
+tag @e[type=husk,limit=1] add undead
+tag @e[type=phantom,limit=1] add undead
+tag @e[type=skeleton,limit=1] add undead
+tag @e[type=skeleton_horse,limit=1] add undead
+tag @e[type=stray,limit=1] add undead
+tag @e[type=wither,limit=1] add undead
+tag @e[type=wither_skeleton,limit=1] add undead
+tag @e[type=zoglin,limit=1] add undead
+tag @e[type=zombie,limit=1] add undead
+tag @e[type=zombie_horse,limit=1] add undead
+tag @e[type=zombie_villager,limit=1] add undead
+tag @e[type=zombified_piglin,limit=1] add undead
 ## detect hurted mobs
 tag @e[tag=!Hurt,nbt={HurtTime:10s}] add Hurt
 
@@ -24,7 +24,7 @@ tag @e[tag=!Hurt,nbt={HurtTime:10s}] add Hurt
 function arc_itemskill:skills/scythe_slash
 
 # reset scoreboards.
-scoreboard players set @e[scores={arc.DmgGiven=1..}] arc.DmgGiven 0
-scoreboard players set @e[scores={arc.DmgTaken=1..}] arc.DmgTaken 0
+scoreboard players set @e[scores={arc.DmgGiven=1..},limit=1] arc.DmgGiven 0
+scoreboard players set @e[scores={arc.DmgTaken=1..},limit=1] arc.DmgTaken 0
 ## reset hurted mobs.
 tag @e[tag=Hurt,nbt={HurtTime:9s}] remove Hurt
