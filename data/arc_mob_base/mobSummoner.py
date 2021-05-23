@@ -115,6 +115,12 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
     mob_file.write("""\ntp @s ~ ~-400 ~\ntag @s add Check""")
     mob_file.close()
     #loot table Adding...
+    createFolder('./loot_tables')
+    if SpaceBuf != '':
+        createFolder('./loot_tables/%s' %(SpaceBuf))
+    table_file = open('./loot_tables/%s%s.mcfunction' %(SpaceBuf, NameBuf), mode="wt", encoding="utf-8")
+    # I need to Unzip Minecraft Resources.
+    # table_file = 
 
 mainWindow = Tk()
 mainWindow.title("blu3fishez Replace Mob Command Generator")

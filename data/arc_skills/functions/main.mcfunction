@@ -2,6 +2,7 @@
 execute as @a run execute store result bossbar minecraft:arc_mana value run scoreboard players get @s arc.Mana
 bossbar set minecraft:arc_mana players @a
 # function arc_itemskill:skillandmana/managrowth // Only If offhand weapon exists.
+execute as @a[scores={arc.Mana=..399},nbt={Inventory:[{id:"minecraft:book",Slot:-106b,tag:{magic_book:1b}}]}] run scoreboard players add @s arc.Mana 1
 # tag undeads.
 tag @e[type=drowned] add undead
 tag @e[type=husk] add undead
