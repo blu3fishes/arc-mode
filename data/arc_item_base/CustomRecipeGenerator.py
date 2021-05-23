@@ -25,9 +25,9 @@ def createMain(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, funcSpaceBuf, RecipeKeys
         return
     if SpaceBuf == "":
         SpaceBuf = ''
-    else:
+    elif SpaceBuf != "":
         SpaceBuf = "/" + SpaceBuf
-    NameBuf = "/" + NameBuf
+    NameBuf = '/' + NameBuf
     funcSpaceBuf = "/" + funcSpaceBuf
     #print("")
     if funcSpaceBuf == "/":
@@ -176,7 +176,7 @@ lbl = Label(mainWindow, text="이름 공간(arc_system)")
 lbl.place(x = 10, y= 10)
 lbl = Label(mainWindow, text="폴더 이름공간(diamond etc..)")
 lbl.place(x = 10, y= 50)
-lbl = Label(mainWindow, text="아이템 이름(platinum_axe etc..)")
+lbl = Label(mainWindow, text="아이템 이름 반드시 공백 미포함 소문자(platinum_axe etc..)")
 lbl.place(x = 10, y= 90)
 lbl = Label(mainWindow, text="give 커맨드(give @s 로 시작하는 커맨드.")
 lbl.place(x = 10, y= 130)
