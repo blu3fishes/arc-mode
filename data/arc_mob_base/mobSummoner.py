@@ -27,13 +27,13 @@ def addMobFeature(file, NameSpaceBuf, SpaceBuf, NameBuf, FixedNameBuf, FeatureVa
     if FeatureVal == 0:
         file.write("]")
     elif FeatureVal == 1:
-        file.write(", \"NotArmor\"],DeathLootTable:\"%s:level\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Armored\",\"color\":\"blue\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, FixedNameBuf))
+        file.write(", \"NotArmor\"],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Armored\",\"color\":\"blue\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, FixedNameBuf))
     elif FeatureVal == 2:
-        file.write(", \"NotAntiMagic\"],DeathLootTable:\"%s:level\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"AntiMagic\",\"color\":\"red\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, FixedNameBuf))
+        file.write(", \"NotAntiMagic\"],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"AntiMagic\",\"color\":\"red\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, FixedNameBuf))
     elif FeatureVal == 3:
-        file.write(", \"NotPoisoning\"],DeathLootTable:\"%s:level\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Poisoning\",\"color\":\"green\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, FixedNameBuf))
+        file.write(", \"NotPoisoning\"],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Poisoning\",\"color\":\"green\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, FixedNameBuf))
     elif FeatureVal == 4:
-        file.write(", \"NotLightened\"],DeathLootTable:\"%s:level\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Lightened\",\"color\":\"yellow\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, FixedNameBuf))
+        file.write(", \"NotLightened\"],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Lightened\",\"color\":\"yellow\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, FixedNameBuf))
 
 def addFeature(NameBuf, FeatureVal):
     # adds Feature Name
@@ -120,7 +120,68 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
         createFolder('./loot_tables/%s' %(SpaceBuf))
     table_file = open('./loot_tables/%s%s.mcfunction' %(SpaceBuf, NameBuf), mode="wt", encoding="utf-8")
     # I need to Unzip Minecraft Resources.
-    # table_file = 
+    if FeatureVal == 0:
+        table_file.write("""{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "arc_mob_base:level"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "minecraft:entites/%s"
+                }
+            ]
+        }
+    ]
+}""" %(MobName))
+    else:
+        table_file.write("""{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "arc_mob_base:level"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "arc_mob_base:adv"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "minecraft:entites/%s"
+                }
+            ]
+        }
+    ]
+}""" %(MobName))
+    table_file.close()
+
 
 mainWindow = Tk()
 mainWindow.title("blu3fishez Replace Mob Command Generator")
