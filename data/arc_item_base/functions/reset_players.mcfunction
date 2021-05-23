@@ -47,3 +47,12 @@ advancement revoke @s only arc_item_base:wood/wooden_chestplate
 advancement revoke @s only arc_item_base:wood/wooden_greatsword
 advancement revoke @s only arc_item_base:wood/wooden_helmet
 advancement revoke @s only arc_item_base:wood/wooden_leggings
+#offhand
+recipe take @s arc_item_base:shield
+advancement revoke @s only arc_item_base:shield
+recipe take @s arc_item_base:blade
+advancement revoke @s only arc_item_base:blade
+recipe take @s arc_item_base:bucler_shield
+advancement revoke @s only arc_item_base:bucler_shield
+recipe take @s arc_item_base:magic_book
+advancement revoke @s only arc_item_base:magic_book

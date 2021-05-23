@@ -27,13 +27,13 @@ def addMobFeature(file, NameSpaceBuf, SpaceBuf, NameBuf, FixedNameBuf, FeatureVa
     if FeatureVal == 0:
         file.write("]")
     elif FeatureVal == 1:
-        file.write(", \"NotArmor\"],DeathLootTable:\"%s:level\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Armored\",\"color\":\"blue\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, NameBuf))
+        file.write(", \"NotArmor\"],DeathLootTable:\"%s:level\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Armored\",\"color\":\"blue\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, FixedNameBuf))
     elif FeatureVal == 2:
-        file.write(", \"NotAntiMagic\"],DeathLootTable:\"%s:level\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"AntiMagic\",\"color\":\"red\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, NameBuf))
+        file.write(", \"NotAntiMagic\"],DeathLootTable:\"%s:level\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"AntiMagic\",\"color\":\"red\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, FixedNameBuf))
     elif FeatureVal == 3:
-        file.write(", \"NotPoisoning\"],DeathLootTable:\"%s:level\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Poisoning\",\"color\":\"green\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, NameBuf))
+        file.write(", \"NotPoisoning\"],DeathLootTable:\"%s:level\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Poisoning\",\"color\":\"green\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, FixedNameBuf))
     elif FeatureVal == 4:
-        file.write(", \"NotLightened\"],DeathLootTable:\"%s:level\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Lightened\",\"color\":\"yellow\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, NameBuf))
+        file.write(", \"NotLightened\"],DeathLootTable:\"%s:level\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Lightened\",\"color\":\"yellow\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, FixedNameBuf))
 
 def addFeature(NameBuf, FeatureVal):
     # adds Feature Name
@@ -52,7 +52,7 @@ def summonFeature(file, NameSpaceBuf, SpaceBuf, NameBuf, MobName, FeatureVal):
     # modify summon command by FeatureVal
     # execute as @e[type=%s,tag=!check,sort=random,limit=1]")
     if FeatureVal == 0:
-        file.write("execute if score Random48 arc.Random matches ..43 run execute as @e[tag=!Check,type=%s,limit=1] at @s run function %s:mobs/%s%s\n" %(MobName, NameSpaceBuf, SpaceBuf, NameBuf))
+        file.write("\nexecute if score Random48 arc.Random matches ..43 run execute as @e[tag=!Check,type=%s,limit=1] at @s run function %s:mobs/%s%s\n" %(MobName, NameSpaceBuf, SpaceBuf, NameBuf))
     elif FeatureVal == 1:
         file.write("execute if score Random48 arc.Random matches 44 run execute as @e[tag=!Check,type=%s,limit=1] at @s run function %s:mobs/%s%s\n" %(MobName, NameSpaceBuf, SpaceBuf, NameBuf))
     elif FeatureVal == 2:
@@ -95,10 +95,10 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
 
     set_mob = open('./functions/set_mob.mcfunction', mode="at", encoding="utf-8")
     if HasFeature == 0:
-        set_mob.write("execute as @e[tag=!Check,type=%s,limit=1] at @s run function %s:mobs/%s%s\n" %(MobName, NameSpaceBuf, SpaceBuf, NameBuf))
+        set_mob.write("\nexecute as @e[tag=!Check,type=%s,limit=1] at @s run function %s:mobs/%s%s\n" %(MobName, NameSpaceBuf, SpaceBuf, NameBuf))
     else:
         if FeatureVal == 0:
-            set_mob.write("execute at @a[sort=arbitrary,limit=1] run function arc_system:get_random/get_random\n")
+            set_mob.write("\nexecute at @a[sort=arbitrary,limit=1] run function arc_system:get_random/get_random")
         summonFeature(set_mob, NameSpaceBuf, SpaceBuf, NameBuf, MobName, FeatureVal)
     set_mob.close()
 
@@ -106,13 +106,13 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
     # find {, and append the Tag which name is 'check'.
     mob_file.write("summon %s ~ ~ ~ {Tags:[\"Check\"" %(MobName))
     # add Tag if the mob is advanced mob.
-    addMobFeature(mob_file, NameSpaceBuf, SpaceBuf, NameBuf, FixedNameBuf, FeatureVal)
+    addMobFeature(mob_file, NameSpaceBuf, SpaceBuf, NameBuf, FixedMobName, FeatureVal)
     # write Remainders.
     if BraketStart == -1:
         mob_file.write("}")
     else:
         mob_file.write(",%s" %(CmdBuf[BraketStart+1:]))
-    mob_file.write("""tp @s ~ ~-400 ~\ntag @s add Check""")
+    mob_file.write("""\ntp @s ~ ~-400 ~\ntag @s add Check""")
     mob_file.close()
     #loot table Adding...
 
@@ -123,7 +123,7 @@ lbl = Label(mainWindow, text="이름 공간(arc_system)")
 lbl.place(x = 10, y= 10)
 lbl = Label(mainWindow, text="폴더 이름공간(tiger etc..)")
 lbl.place(x = 10, y= 50)
-lbl = Label(mainWindow, text="몹 이름(skeleton_warrior etc..)")
+lbl = Label(mainWindow, text="몹 이름 반드시 소문자로 표현, 공백은 불가능 (skeleton_warrior etc..)")
 lbl.place(x = 10, y= 90)
 lbl = Label(mainWindow, text="summon 커맨드(summon 몹이름 ~ ~ ~ {..}")
 lbl.place(x = 10, y= 130)

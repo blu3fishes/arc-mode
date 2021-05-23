@@ -144,7 +144,7 @@ def createMain(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, funcSpaceBuf, RecipeKeys
     "rewards": {
         "function": "%s:%s%s"
     }
-}""" %(NameSpaceBuf, NameBuf[1:], NameSpaceBuf, funcSpaceBuf, NameBuf))
+}""" %(NameSpaceBuf, NameBuf[1:], NameSpaceBuf, funcSpaceBuf[1:], NameBuf))
     advancementFile.close()
     #print("advencement done...")
 
@@ -164,10 +164,17 @@ clear @s minecraft:knowledge_book
         giveFile.write("""recipe take @s %s:%s
 advancement revoke @s only %s:%s
 clear @s minecraft:knowledge_book
-%s""" %(NameSpaceBuf, NameBuf, NameSpaceBuf, NameBuf, CmdBuf))
+%s""" %(NameSpaceBuf, NameBuf[1:], NameSpaceBuf, NameBuf[1:], CmdBuf))
     giveFile.close()
     #print("give function done.")
     #input("Write End. Check folders & files. / Press Any Key To Close Program...")
+    reset_file = open("./function/reset_players.mcfunction", "at", encoding="utf-8")
+    if SpaceBuf != '':
+        reset_file.write("\nrecipe take @s %s:%s%s\nadvancement revoke @s only %s:%s%s" %(NameSpaceBuf, SpaceBuf[1:], NameBuf, NameSpaceBuf, SpaceBuf[1:], NameBuf))
+    else:
+        reset_file.write("\nrecipe take @s %s:%s\nadvancement revoke @s only %s:%s" %(NameSpaceBuf, NameBuf[1:], NameSpaceBuf, NameBuf[1:]))
+    reset_file.close()
+
 
 mainWindow = Tk()
 mainWindow.title("blu3fishez Custom Recipe Generator")

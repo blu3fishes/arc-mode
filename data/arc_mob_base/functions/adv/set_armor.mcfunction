@@ -10,10 +10,7 @@ replaceitem entity @s armor.feet diamond_boots 1
 # item replace entity @s armor.feet with diamond_boots 1
 
 # Remove Drop Chance!!!
-data modify entity @s ArmorDropChances[0] 0.000F
-data modify entity @s ArmorDropChances[1] 0.000F
-data modify entity @s ArmorDropChances[2] 0.000F
-data modify entity @s ArmorDropChances[3] 0.000F
+data modify entity @s ArmorDropChances set value [0.000F,0.000F,0.000F,0.000F]
 
 tag @s remove NotArmor
 scoreboard players set @s arc.AdvMob 0

@@ -5,8 +5,8 @@ It saves all of the items and their recipe & Advancement.
 # Offhand Weapons
 ## Type
 - Bucler Shield : Increaes Final Armor Toughness with 30%
-- Blade : Increases Final Damage with 20%
-- Magic Book : Regenerate Mana. (Max Mana 200 & 20 Mana per 1 second) / tag:magic_book:1b
+- Blade (wooden_sword, 302): Increases Final Damage with 20%
+- Magic Book (book, 301) : Regenerate Mana. (Max Mana 200 & 20 Mana per 1 second) / tag:magic_book:1b
 - Shield : Can Block Attacks & Decreases Movement Speed & Attack Speed with -30%
 *If Update, Replace Crafing Recipe Blade:Copper Sword Crafting Recipe, Shield:Use Copper Ingots, Instead of Planks*
 
