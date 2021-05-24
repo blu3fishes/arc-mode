@@ -9,6 +9,7 @@
 
 # Pls Fix
 # 1. The CustomName Should Be Look Like More User-Friendly
+# 2. Optimize The Function With mobname/process function.
 
 ## Import
 import os

@@ -1,0 +1,11 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/diamond_axe"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":700},"model": "item/platinum_axe"},
+		{"predicate": {"custom_model_data":702},"model": "item/custom/platinum_warhammer"},
+		{"predicate": {"custom_model_data":703},"model": "item/custom/diamond_warhammer"}
+	]
+}
