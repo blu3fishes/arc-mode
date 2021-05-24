@@ -1,0 +1,1 @@
+scoreboard players operation .type bow = @s bow
