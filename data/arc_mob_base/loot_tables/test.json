@@ -1,0 +1,29 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "arc_mob_base:level",
+                    "conditions": [
+                        {
+                            "condition": "killed_by_player"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "minecraft:entites/zombie"
+                }
+            ]
+        }
+    ]
+}
