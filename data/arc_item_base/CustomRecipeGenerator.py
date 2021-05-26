@@ -179,7 +179,7 @@ clear @s minecraft:knowledge_book
 mainWindow = Tk()
 mainWindow.title("blu3fishez Custom Recipe Generator")
 mainWindow.geometry("500x400")
-lbl = Label(mainWindow, text="주의사항 : 도끼는 axe:1b, 양손검은 twohand:1b,\n 해머는 hammer:1b, 낫은 scythe:1b로 \n커스텀 태그를 명명부탁 / 활은 스킬 보고 bow:n으로")
+lbl = Label(mainWindow, text="주의사항 : 활은 스킬 보고 bow:n으로 커스텀 태그 입력 바람.")
 lbl.place(x = 70, y = 10)
 lbl = Label(mainWindow, text="이름 공간(arc_system)")
 lbl.place(x = 10, y= 10)

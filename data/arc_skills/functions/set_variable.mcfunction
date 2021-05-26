@@ -18,3 +18,4 @@ scoreboard objectives add arc.UUID1 dummy
 scoreboard objectives add arc.UUID2 dummy
 scoreboard objectives add arc.UUID3 dummy
 scoreboard objectives add arc.BowType dummy
+scoreboard objectives add arc.Hammer dummy

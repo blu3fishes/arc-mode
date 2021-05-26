@@ -27,10 +27,13 @@ tag @e[tag=!Hurt,nbt={HurtTime:10s}] add Hurt
 function arc_skills:custom_ranged/set_projectile
 function arc_skills:skills/scythe/directory
 function arc_skills:skills/hammer/directory
+execute as @a[scores={arc.Hammer=1}] run function arc_skills:skills/hammer/unload/directory
 function arc_skills:skills/twohand/directory
 function arc_skills:skills/axe/directory
+#function arc_skills:skills/onehand/parrying
 
 # reset scoreboards.
+scoreboard players remove @a[scores={arc.Hammer=1..}] arc.Hammer 1
 scoreboard players set @e[scores={arc.DmgGiven=1..},limit=1] arc.DmgGiven 0
 scoreboard players set @e[scores={arc.DmgTaken=1..},limit=1] arc.DmgTaken 0
 ## reset hurted mobs.
