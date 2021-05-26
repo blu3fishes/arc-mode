@@ -1,8 +1,11 @@
 # Managing mana & its growth
 execute as @a run execute store result bossbar minecraft:arc_mana value run scoreboard players get @s arc.Mana
 bossbar set minecraft:arc_mana players @a
+
 # function arc_itemskill:skillandmana/managrowth // Only If offhand weapon exists.
-execute as @a[scores={arc.Mana=..399},nbt={Inventory:[{id:"minecraft:book",Slot:-106b,tag:{magic_book:1b}}]}] run scoreboard players add @s arc.Mana 1
+scoreboard players add @a[scores={arc.Mana=..1993},nbt={Inventory:[{id:"minecraft:book",Slot:-106b,tag:{magic_book:1b}}]}] arc.Mana 7
+scoreboard players add @a[scores={arc.Mana=..1999}] arc.Mana 1
+
 # tag undeads.
 tag @e[type=drowned,limit=1] add undead
 tag @e[type=husk,limit=1] add undead
@@ -21,7 +24,10 @@ tag @e[type=zombified_piglin,limit=1] add undead
 tag @e[tag=!Hurt,nbt={HurtTime:10s}] add Hurt
 
 # main procedure which is skills, etc..
-function arc_itemskill:skills/scythe_slash
+function arc_skills:skills/scythe/directory
+function arc_skills:skills/hammer/directory
+function arc_skills:skills/twohand/directory
+function arc_skills:skills/axe/directory
 
 # reset scoreboards.
 scoreboard players set @e[scores={arc.DmgGiven=1..},limit=1] arc.DmgGiven 0

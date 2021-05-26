@@ -2,7 +2,7 @@
 scoreboard objectives add arc.Mana dummy
 bossbar add arc_mana "Mana"
 bossbar set minecraft:arc_mana color blue
-bossbar set minecraft:arc_mana max 400
+bossbar set minecraft:arc_mana max 2000
 bossbar set minecraft:arc_mana style notched_20
 bossbar set minecraft:arc_mana visible true
 bossbar set minecraft:arc_mana players @a
