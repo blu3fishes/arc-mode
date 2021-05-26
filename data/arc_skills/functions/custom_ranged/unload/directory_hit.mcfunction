@@ -1,0 +1,2 @@
+execute if score .type arc.BowType matches 1 run function arc_skills:custom_ranged/unload/two_damage_hit
+execute if score .type arc.BowType matches 2 run function arc_skills:custom_ranged/unload/four_damage_hit

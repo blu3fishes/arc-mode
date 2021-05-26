@@ -24,6 +24,7 @@ tag @e[type=zombified_piglin,limit=1] add undead
 tag @e[tag=!Hurt,nbt={HurtTime:10s}] add Hurt
 
 # main procedure which is skills, etc..
+function arc_skills:custom_ranged/set_projectile
 function arc_skills:skills/scythe/directory
 function arc_skills:skills/hammer/directory
 function arc_skills:skills/twohand/directory
