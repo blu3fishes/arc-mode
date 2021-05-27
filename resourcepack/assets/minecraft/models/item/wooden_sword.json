@@ -4,6 +4,6 @@
 		"layer0": "item/wooden_sword"
 	},
 	"overrides": [
-		{"predicate": {"custom_model_data":700},"model": "item/custom/wooden_greatsword"}
+		{"predicate": {"custom_model_data":700001},"model": "item/custom/wooden_greatsword"}
 	]
 }

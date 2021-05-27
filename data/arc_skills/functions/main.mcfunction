@@ -1,5 +1,5 @@
 # Managing mana & its growth
-execute as @a run execute store result bossbar minecraft:arc_mana value run scoreboard players get @s arc.Mana
+title @a actionbar [{"text":"Mana : ","color":"blue","bold":false,"italic":false},{"score":{"name":"*","objective":"arc.Mana"},"color":"blue","bold":false,"italic":false},{"text":" / ","color":"blue","bold":false,"italic":false},{"text":"2000","color":"blue","bold":false,"italic":false}]
 bossbar set minecraft:arc_mana players @a
 
 # function arc_itemskill:skillandmana/managrowth // Only If offhand weapon exists.

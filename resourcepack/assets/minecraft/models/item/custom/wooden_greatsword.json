@@ -1,7 +1,7 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "item/wooden_greatsword"
+        "layer0": "item/custom/wooden_greatsword"
     },
     "display": {
         "thirdperson_righthand": {

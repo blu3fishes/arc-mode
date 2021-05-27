@@ -4,6 +4,6 @@
 		"layer0": "item/iron_sword"
 	},
 	"overrides": [
-		{"predicate": {"custom_model_data":700},"model": "item/custom/iron_greatsword"}
+		{"predicate": {"custom_model_data":700007},"model": "item/custom/iron/iron_greatsword"}
 	]
 }
