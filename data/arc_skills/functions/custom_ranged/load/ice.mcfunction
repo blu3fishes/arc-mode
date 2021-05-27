@@ -3,9 +3,11 @@ data modify entity @s CustomPotionEffects append value {Id:2b,Amplifier:2b,Durat
 data modify entity @s Color set value 720895
 tag @s add ice_center
 tag @s add ice
-summon arrow ^-0.3 ^ ^ {Tags:["ice","iceleft","arc_processed"],Color:720895}
-summon arrow ^0.3 ^ ^ {Tags:["ice","iceright","arc_processed"],Color:720895}
 
-execute at @s run execute as @e[type=arrow,tag=iceleft,limit=1,distance=..1] run function arc_skills:custom_ranged/load/ice_left
-execute at @s run execute as @e[type=arrow,tag=iceright,limit=1,distance=..1] run function arc_skills:custom_ranged/load/ice_right
+execute store result score .search arc.UUID0 run data get entity @s Owner[0]
+execute store result score .search arc.UUID1 run data get entity @s Owner[1]
+execute store result score .search arc.UUID2 run data get entity @s Owner[2]
+execute store result score .search arc.UUID3 run data get entity @s Owner[3]
+execute as @e if score @s arc.UUID0 = .search arc.UUID0 if score @s arc.UUID1 = .search arc.UUID1 if score @s arc.UUID2 = .search arc.UUID2 if score @s arc.UUID3 = .search arc.UUID3 run function arc_skills:custom_ranged/ice/summon_arrow
+
 tag @s remove ice_center

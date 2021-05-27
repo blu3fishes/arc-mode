@@ -8,3 +8,8 @@ execute as @a run attribute @s[level=60..99] generic.max_health base set 18
 execute as @a run attribute @s[level=100..139] generic.max_health base set 20
 execute as @a run attribute @s[level=140..179] generic.max_health base set 22
 execute as @a run attribute @s[level=180..] generic.max_health base set 24
+
+#set if Health > maxHealth.
+
+# arc.Health : actual health.
+# arc.MaxHeart : modified Max Health

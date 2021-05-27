@@ -1,4 +1,5 @@
 {
+    "type":"minecraft:generic",
     "pools": [
         {
             "rolls": 1,
@@ -6,12 +7,7 @@
                 {
                     "type": "loot_table",
                     "weight": 1,
-                    "name": "arc_mob_base:level",
-                    "conditions": [
-                        {
-                            "condition": "killed_by_player"
-                        }
-                    ]
+                    "name": "arc_mob_base:level"
                 }
             ]
         },
@@ -21,7 +17,7 @@
                 {
                     "type": "loot_table",
                     "weight": 1,
-                    "name": "minecraft:entites/zombie"
+                    "name": "minecraft:entities/zombie"
                 }
             ]
         }

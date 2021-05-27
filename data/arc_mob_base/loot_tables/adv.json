@@ -65,7 +65,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "(CustomModelData:700051)"
+                            "tag": "{CustomModelData:700051}"
                         }
                     ]
                 }

@@ -19,13 +19,14 @@
 # data remove storage test Inventory
 # data storage Hammer Inventory 
 
-data modify stroage switch Offhand insert 0 from entity @s Inventory[{Slot:-106b}]
-execute if entity @s[nbt={SelectedItemSlot:0b}] run function arc_skills:skills/switch_prediate/switch_0
-execute if entity @s[nbt={SelectedItemSlot:1b}] run function arc_skills:skills/switch_prediate/switch_1
-execute if entity @s[nbt={SelectedItemSlot:2b}] run function arc_skills:skills/switch_prediate/switch_2
-execute if entity @s[nbt={SelectedItemSlot:3b}] run function arc_skills:skills/switch_prediate/switch_3
-execute if entity @s[nbt={SelectedItemSlot:4b}] run function arc_skills:skills/switch_prediate/switch_4
-execute if entity @s[nbt={SelectedItemSlot:5b}] run function arc_skills:skills/switch_prediate/switch_5
-execute if entity @s[nbt={SelectedItemSlot:6b}] run function arc_skills:skills/switch_prediate/switch_6
-execute if entity @s[nbt={SelectedItemSlot:7b}] run function arc_skills:skills/switch_prediate/switch_7
-execute if entity @s[nbt={SelectedItemSlot:8b}] run function arc_skills:skills/switch_prediate/switch_8
+data modify storage switch toMainhand insert 0 from entity @s Inventory[{Slot:-106b}]
+data modify storage switch toMainhand[{Slot:-106b}].Slot set value 0b
+execute if entity @s[nbt={SelectedItemSlot:0}] run function arc_skills:skills/switch_predicate/switch_0
+execute if entity @s[nbt={SelectedItemSlot:1}] run function arc_skills:skills/switch_predicate/switch_1
+execute if entity @s[nbt={SelectedItemSlot:2}] run function arc_skills:skills/switch_predicate/switch_2
+execute if entity @s[nbt={SelectedItemSlot:3}] run function arc_skills:skills/switch_predicate/switch_3
+execute if entity @s[nbt={SelectedItemSlot:4}] run function arc_skills:skills/switch_predicate/switch_4
+execute if entity @s[nbt={SelectedItemSlot:5}] run function arc_skills:skills/switch_predicate/switch_5
+execute if entity @s[nbt={SelectedItemSlot:6}] run function arc_skills:skills/switch_predicate/switch_6
+execute if entity @s[nbt={SelectedItemSlot:7}] run function arc_skills:skills/switch_predicate/switch_7
+execute if entity @s[nbt={SelectedItemSlot:8}] run function arc_skills:skills/switch_predicate/switch_8

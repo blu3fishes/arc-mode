@@ -53,10 +53,10 @@ def processFunction(file, NameSpaceBuf, SpaceBuf, NameBuf):
     # modify summon command by FeatureVal
     # execute as @e[type=%s,tag=!check,sort=random,limit=1]")
     file.write("\nexecute if score Random48 arc.Random matches ..43 run execute at @s run function %s:mobs/%s%s\n" %(NameSpaceBuf, SpaceBuf, NameBuf))
-    file.write("execute if score Random48 arc.Random matches 44 run execute at @s run function %s:mobs/%s%s\n" %(NameSpaceBuf, SpaceBuf, NameBuf))
-    file.write("execute if score Random48 arc.Random matches 45 run execute at @s run function %s:mobs/%s%s\n" %(NameSpaceBuf, SpaceBuf, NameBuf))
-    file.write("execute if score Random48 arc.Random matches 46 run execute at @s run function %s:mobs/%s%s\n" %(NameSpaceBuf, SpaceBuf, NameBuf))
-    file.write("execute if score Random48 arc.Random matches 47 run execute at @s run function %s:mobs/%s%s\n" %(NameSpaceBuf, SpaceBuf, NameBuf))
+    file.write("execute if score Random48 arc.Random matches 44 run execute at @s run function %s:mobs/%s%s_antimagic\n" %(NameSpaceBuf, SpaceBuf, NameBuf))
+    file.write("execute if score Random48 arc.Random matches 45 run execute at @s run function %s:mobs/%s%s_armored\n" %(NameSpaceBuf, SpaceBuf, NameBuf))
+    file.write("execute if score Random48 arc.Random matches 46 run execute at @s run function %s:mobs/%s%s_lightened\n" %(NameSpaceBuf, SpaceBuf, NameBuf))
+    file.write("execute if score Random48 arc.Random matches 47 run execute at @s run function %s:mobs/%s%s_poison\n" %(NameSpaceBuf, SpaceBuf, NameBuf))
 
 def createMain(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, HasFeature):
     if HasFeature == 0:
@@ -97,7 +97,7 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
     else:
         if FeatureVal == 0:
             set_mob.write("\nexecute at @a[sort=arbitrary,limit=1] run function arc_system:get_random/get_random")
-        set_mob.write("\nexecute as @e[tag=!Check,type=%s,limit=1] run function arc_mob_base:mobs/%sprocess" %(MobName, SpaceBuf))
+            set_mob.write("\nexecute as @e[tag=!Check,type=%s,limit=1] run function arc_mob_base:mobs/%sprocess" %(MobName, SpaceBuf))
     set_mob.close()
 
     if HasFeature == 1 and FeatureVal == 0:
@@ -124,12 +124,13 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
     createFolder('./loot_tables')
     if SpaceBuf != '':
         createFolder('./loot_tables/%s' %(SpaceBuf))
-    table_file = open('./loot_tables/%s%s.mcfunction' %(SpaceBuf, NameBuf), mode="wt", encoding="utf-8")
+    table_file = open('./loot_tables/%s%s.json' %(SpaceBuf, NameBuf), mode="wt", encoding="utf-8")
     # I need to Unzip Minecraft Resources.
     if FeatureVal == 0:
         table_file.write("""{
     "pools": [
         {
+            "type":"minecraft:generic",
             "rolls": 1,
             "entries": [
                 {
@@ -155,6 +156,7 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
         table_file.write("""{
     "pools": [
         {
+            "type":"minecraft:generic",
             "rolls": 1,
             "entries": [
                 {
