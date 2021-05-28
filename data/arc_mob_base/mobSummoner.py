@@ -8,7 +8,8 @@
 # in ./functions/set_mob.mcfunction
 
 # Pls Fix
-# 1. The CustomName Should Be Look Like More User-Friendly
+#  -[x] 1. The CustomName Should Be Look Like More User-Friendly
+#  -[ ] 2. Optimize The Function With mobname/process function.
 
 ## Import
 import os
@@ -22,7 +23,7 @@ def createFolder(directory):
     except OSError:
         print ('Error: Creating directory. ' +  directory)
 
-def addMobFeature(file, NameSpaceBuf, SpaceBuf, NameBuf, FixedNameBuf, FeatureVal):
+def addMobNbt(file, NameSpaceBuf, SpaceBuf, NameBuf, FixedNameBuf, FeatureVal):
     # adds Feature Tag.
     if FeatureVal == 0:
         file.write("]")
@@ -35,7 +36,7 @@ def addMobFeature(file, NameSpaceBuf, SpaceBuf, NameBuf, FixedNameBuf, FeatureVa
     elif FeatureVal == 4:
         file.write(", \"NotLightened\"],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Lightened\",\"color\":\"yellow\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, FixedNameBuf))
 
-def addFeature(NameBuf, FeatureVal):
+def addMobName(NameBuf, FeatureVal):
     # adds Feature Name
     if FeatureVal == 0:
         return NameBuf
@@ -48,19 +49,14 @@ def addFeature(NameBuf, FeatureVal):
     elif FeatureVal == 4:
         return NameBuf + '_lightened'
 
-def summonFeature(file, NameSpaceBuf, SpaceBuf, NameBuf, MobName, FeatureVal):
+def processFunction(file, NameSpaceBuf, SpaceBuf, NameBuf):
     # modify summon command by FeatureVal
     # execute as @e[type=%s,tag=!check,sort=random,limit=1]")
-    if FeatureVal == 0:
-        file.write("\nexecute if score Random48 arc.Random matches ..43 run execute as @e[tag=!Check,type=%s,limit=1] at @s run function %s:mobs/%s%s\n" %(MobName, NameSpaceBuf, SpaceBuf, NameBuf))
-    elif FeatureVal == 1:
-        file.write("execute if score Random48 arc.Random matches 44 run execute as @e[tag=!Check,type=%s,limit=1] at @s run function %s:mobs/%s%s\n" %(MobName, NameSpaceBuf, SpaceBuf, NameBuf))
-    elif FeatureVal == 2:
-        file.write("execute if score Random48 arc.Random matches 45 run execute as @e[tag=!Check,type=%s,limit=1] at @s run function %s:mobs/%s%s\n" %(MobName, NameSpaceBuf, SpaceBuf, NameBuf))
-    elif FeatureVal == 3:
-        file.write("execute if score Random48 arc.Random matches 46 run execute as @e[tag=!Check,type=%s,limit=1] at @s run function %s:mobs/%s%s\n" %(MobName, NameSpaceBuf, SpaceBuf, NameBuf))
-    elif FeatureVal == 4:
-        file.write("execute if score Random48 arc.Random matches 47 run execute as @e[tag=!Check,type=%s,limit=1] at @s run function %s:mobs/%s%s\n" %(MobName, NameSpaceBuf, SpaceBuf, NameBuf))
+    file.write("\nexecute if score Random48 arc.Random matches ..43 run execute at @s run function %s:mobs/%s%s\n" %(NameSpaceBuf, SpaceBuf, NameBuf))
+    file.write("execute if score Random48 arc.Random matches 44 run execute at @s run function %s:mobs/%s%s_antimagic\n" %(NameSpaceBuf, SpaceBuf, NameBuf))
+    file.write("execute if score Random48 arc.Random matches 45 run execute at @s run function %s:mobs/%s%s_armored\n" %(NameSpaceBuf, SpaceBuf, NameBuf))
+    file.write("execute if score Random48 arc.Random matches 46 run execute at @s run function %s:mobs/%s%s_lightened\n" %(NameSpaceBuf, SpaceBuf, NameBuf))
+    file.write("execute if score Random48 arc.Random matches 47 run execute at @s run function %s:mobs/%s%s_poison\n" %(NameSpaceBuf, SpaceBuf, NameBuf))
 
 def createMain(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, HasFeature):
     if HasFeature == 0:
@@ -72,7 +68,7 @@ def createMain(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, HasFeature):
 
 def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature): 
     FixedMobName = NameBuf.replace("_", " ")
-    NameBuf = addFeature(NameBuf, FeatureVal)
+    NameBuf = addMobName(NameBuf, FeatureVal)
     createFolder('./functions')
     createFolder("./functions/mobs/")
     if SpaceBuf != "":
@@ -93,20 +89,28 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
     if SpaceBuf != '':
         SpaceBuf = SpaceBuf + '/'
 
-    set_mob = open('./functions/set_mob.mcfunction', mode="at", encoding="utf-8")
+
+    #File Writing In Set_mob
+    set_mob = open('./functions/set_mob_one.mcfunction', mode="at", encoding="utf-8")
     if HasFeature == 0:
-        set_mob.write("\nexecute as @e[tag=!Check,type=%s,limit=1] at @s run function %s:mobs/%s%s\n" %(MobName, NameSpaceBuf, SpaceBuf, NameBuf))
+        set_mob.write("\nexecute as @e[tag=!Check,type=%s,limit=1] at @s run function %s:mobs/%s%s" %(MobName, NameSpaceBuf, SpaceBuf, NameBuf))
     else:
         if FeatureVal == 0:
             set_mob.write("\nexecute at @a[sort=arbitrary,limit=1] run function arc_system:get_random/get_random")
-        summonFeature(set_mob, NameSpaceBuf, SpaceBuf, NameBuf, MobName, FeatureVal)
+            set_mob.write("\nexecute as @e[tag=!Check,type=%s,limit=1] run function arc_mob_base:mobs/%sprocess" %(MobName, SpaceBuf))
     set_mob.close()
 
+    if HasFeature == 1 and FeatureVal == 0:
+        process = open("./functions/mobs/%sprocess.mcfunction" %(SpaceBuf), mode="wt", encoding="utf-8")
+        processFunction(process, NameSpaceBuf, SpaceBuf, NameBuf)
+        process.close()
+    
+    #File Writing In Mob Summon File
     mob_file = open('./functions/mobs/%s%s.mcfunction' %(SpaceBuf, NameBuf), mode="wt", encoding="utf-8")
     # find {, and append the Tag which name is 'check'.
     mob_file.write("summon %s ~ ~ ~ {Tags:[\"Check\"" %(MobName))
     # add Tag if the mob is advanced mob.
-    addMobFeature(mob_file, NameSpaceBuf, SpaceBuf, NameBuf, FixedMobName, FeatureVal)
+    addMobNbt(mob_file, NameSpaceBuf, SpaceBuf, NameBuf, FixedMobName, FeatureVal)
     # write Remainders.
     if BraketStart == -1:
         mob_file.write("}")
@@ -114,16 +118,19 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
         mob_file.write(",%s" %(CmdBuf[BraketStart+1:]))
     mob_file.write("""\ntp @s ~ ~-400 ~\ntag @s add Check""")
     mob_file.close()
+
+    #File Writing Sequence At Loot Table.
     #loot table Adding...
     createFolder('./loot_tables')
     if SpaceBuf != '':
         createFolder('./loot_tables/%s' %(SpaceBuf))
-    table_file = open('./loot_tables/%s%s.mcfunction' %(SpaceBuf, NameBuf), mode="wt", encoding="utf-8")
+    table_file = open('./loot_tables/%s%s.json' %(SpaceBuf, NameBuf), mode="wt", encoding="utf-8")
     # I need to Unzip Minecraft Resources.
     if FeatureVal == 0:
         table_file.write("""{
     "pools": [
         {
+            "type":"minecraft:generic",
             "rolls": 1,
             "entries": [
                 {
@@ -149,6 +156,7 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
         table_file.write("""{
     "pools": [
         {
+            "type":"minecraft:generic",
             "rolls": 1,
             "entries": [
                 {
@@ -181,6 +189,7 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
     ]
 }""" %(MobName))
     table_file.close()
+    ## SEQUENCE END
 
 
 mainWindow = Tk()
@@ -192,7 +201,7 @@ lbl = Label(mainWindow, text="폴더 이름공간(tiger etc..)")
 lbl.place(x = 10, y= 50)
 lbl = Label(mainWindow, text="몹 이름 반드시 소문자로 표현, 공백은 불가능 (skeleton_warrior etc..)")
 lbl.place(x = 10, y= 90)
-lbl = Label(mainWindow, text="summon 커맨드(summon 몹이름 ~ ~ ~ {..}")
+lbl = Label(mainWindow, text="summon 커맨드(스켈레톤류는 반드시 활 장착시키고 소환)(summon 몹이름 ~ ~ ~ {..}")
 lbl.place(x = 10, y= 130)
 lbl = Label(mainWindow, text="주의 : Tags NBT가 있으면 잘못된 커맨드가 저장된다.")
 lbl.place(x = 10, y= 150)

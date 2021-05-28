@@ -1,0 +1,9 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/nether_brick"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":700},"model": "item/custom/bucler_shield"}
+	]
+}

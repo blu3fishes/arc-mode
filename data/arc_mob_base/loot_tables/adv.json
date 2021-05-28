@@ -6,64 +6,66 @@
                 "min": 0,
                 "max": 1
             },
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                }
+            ],
             "entries": [
                 {
                     "type": "item",
-                    "weight": 1,
-                    "name": "minecraft:lapis_lazuli",
-                    "conditions": [
-                        {
-                            "condition": "entity_scores",
-                            "entity": "killer_player",
-                            "scores": {
-                                "arc.MobMode": 1
-                            }
-                        }
-                    ],
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": {
-                                "min": 0,
-                                "max": 1
-                            }
-                        }
-                    ]
+                    "weight": 3,
+                    "name": "minecraft:lapis_lazuli"
                 },
                 {
-                    "pools": [
+                    "type": "empty",
+                    "weight": 8
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "bonus_rolls": {
+                "min": 0,
+                "max": 1
+            },
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 11
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
                         {
-                            "rolls": 1,
-                            "entries": [
-                                {
-                                    "type": "item",
-                                    "weight": 1,
-                                    "name": "minecraft:enchanted_book",
-                                    "functions": [
-                                        {
-                                            "function": "enchant_with_levels",
-                                            "levels": 1
-                                        },
-                                        {
-                                            "function": "enchant_randomly",
-                                            "enchantments": [
-                                                "protection",
-                                                "sharpness",
-                                                "bane_of_arthropods",
-                                                "smite",
-                                                "projectile_protection"
-                                            ]
-                                        },
-                                        {
-                                            "function": "set_count",
-                                            "count": {
-                                                "min": 0,
-                                                "max": 1
-                                            }
-                                        }
-                                    ]
-                                }
+                            "function": "enchant_randomly",
+                            "enchantments": [
+                                "protection",
+                                "power",
+                                "flame",
+                                "fire_aspect",
+                                "blast_protection",
+                                "smite",
+                                "sharpness"
                             ]
+                        },
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:700051}"
                         }
                     ]
                 }

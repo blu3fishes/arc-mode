@@ -1,0 +1,28 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "item/platinum_sword"
+    },
+	"display": {
+        "thirdperson_righthand": {
+            "rotation": [ -80, 260, -30 ],
+            "scale": [ 1.2, 1.2, 1.2 ],
+			"translation": [ -1, 8, 1.5 ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ -80, -90, 60 ],
+            "scale": [ 1.2, 1.2, 1.2 ],
+			"translation": [ 0, -11.5, 2.5 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ -10, -70, 25 ],
+            "scale": [ 0.9, 0.9, 0.9 ],
+			"translation": [ 1.13, 5.2, 1.13]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ 0, 90, 90 ],
+            "scale": [ 0.9, 0.9, 0.9 ],
+			"translation": [ 4, -9, -1]
+        }
+    }
+}

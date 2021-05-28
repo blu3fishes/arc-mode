@@ -1,0 +1,9 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/warped_fungus_on_a_stick"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":700019},"model": "item/custom/jungle/jungle_karambit"}
+	]
+}
