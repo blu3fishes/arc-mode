@@ -4,6 +4,6 @@
 
 ###################################### move thes to distinct function files.
 # Platinum Scythe Skill
-execute as @a[scores={arc.DmgGiven=1..,arc.Mana=300..},nbt={SelectedItem:{tag:{CustomModelData:700013}}}] run function arc_skills:skills/scythe/platinum
+execute as @a[scores={arc.DmgGiven=1..,arc.Mana=100..},nbt={SelectedItem:{tag:{CustomModelData:700013}}}] run function arc_skills:skills/scythe/platinum
 # Diamond Scythe Skill
-execute as @a[scores={arc.DmgGiven=1..,arc.Mana=300..},nbt={SelectedItem:{tag:{CustomModelData:700030}}}] run function arc_skills:skills/scythe/diamond
+execute as @a[scores={arc.DmgGiven=1..,arc.Mana=100..},nbt={SelectedItem:{tag:{CustomModelData:700030}}}] run function arc_skills:skills/scythe/diamond

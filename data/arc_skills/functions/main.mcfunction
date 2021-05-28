@@ -4,22 +4,9 @@ bossbar set minecraft:arc_mana players @a
 
 # function arc_itemskill:skillandmana/managrowth // Only If offhand weapon exists.
 scoreboard players add @a[scores={arc.Mana=..1993},nbt={Inventory:[{id:"minecraft:book",Slot:-106b,tag:{magic_book:1b}}]}] arc.Mana 7
-scoreboard players add @a[scores={arc.Mana=..1999}] arc.Mana 1
+scoreboard players add @a[scores={arc.Mana=..199}] arc.Mana 1
 
 # tag undeads.
-tag @e[type=drowned,limit=1] add undead
-tag @e[type=husk,limit=1] add undead
-tag @e[type=phantom,limit=1] add undead
-tag @e[type=skeleton,limit=1] add undead
-tag @e[type=skeleton_horse,limit=1] add undead
-tag @e[type=stray,limit=1] add undead
-tag @e[type=wither,limit=1] add undead
-tag @e[type=wither_skeleton,limit=1] add undead
-tag @e[type=zoglin,limit=1] add undead
-tag @e[type=zombie,limit=1] add undead
-tag @e[type=zombie_horse,limit=1] add undead
-tag @e[type=zombie_villager,limit=1] add undead
-tag @e[type=zombified_piglin,limit=1] add undead
 ## detect hurted mobs
 tag @e[tag=!Hurt,nbt={HurtTime:10s}] add Hurt
 
@@ -28,7 +15,7 @@ function arc_skills:custom_ranged/set_projectile
 function arc_skills:skills/scythe/directory
 function arc_skills:skills/hammer/directory
 execute as @a[scores={arc.Hammer=1}] run function arc_skills:skills/hammer/unload/directory
-function arc_skills:skills/twohand/onload
+function arc_skills:skills/twohand/directory
 function arc_skills:skills/axe/directory
 #function arc_skills:skills/onehand/parrying
 
