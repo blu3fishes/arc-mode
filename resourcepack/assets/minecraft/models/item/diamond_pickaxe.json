@@ -4,6 +4,6 @@
 		"layer0": "item/diamond_pickaxe"
 	},
 	"overrides": [
-		{"predicate": {"custom_model_data":700},"model": "item/platinum_pickaxe"}
+		{"predicate": {"custom_model_data":700012},"model": "item/custom/platinum/platinum_pickaxe"}
 	]
 }

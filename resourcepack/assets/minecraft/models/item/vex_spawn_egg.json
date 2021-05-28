@@ -1,0 +1,9 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/custom/ice/silver_cloth"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":700027},"model": "item/custom/ice/silver_cloth"}
+	]
+}

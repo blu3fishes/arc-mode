@@ -4,6 +4,9 @@
 		"layer0": "item/diamond_shovel"
 	},
 	"overrides": [
-		{"predicate": {"custom_model_data":700},"model": "item/platinum_shovel"}
+		{"predicate": {"custom_model_data":700014},"model": "item/custom/platinum/platinum_shovel"},
+		{"predicate": {"custom_model_data":700015},"model": "item/custom/platinum/platinum_sword"},
+		{"predicate": {"custom_model_data":700025},"model": "item/custom/ice/moonlight_sword"},
+		{"predicate": {"custom_model_data":700031},"model": "item/custom/diamond/dimaond_sword"}
 	]
 }

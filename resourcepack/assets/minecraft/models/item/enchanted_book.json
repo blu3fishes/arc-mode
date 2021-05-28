@@ -4,6 +4,6 @@
 		"layer0": "item/enchanted_book"
 	},
 	"overrides": [
-		{"predicate": {"custom_model_data":700051},"model": "item/drop_book"}
+		{"predicate": {"custom_model_data":700051},"model": "item/custom/drop_book"}
 	]
 }

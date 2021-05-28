@@ -4,8 +4,9 @@
 		"layer0": "item/diamond_hoe"
 	},
 	"overrides": [
-		{"predicate": {"custom_model_data":700},"model": "item/platinum_hoe"},
-		{"predicate": {"custom_model_data":701},"model": "item/custom/platinum_scythe"},
-		{"predicate": {"custom_model_data":702},"model": "item/custom/diamond_scythe"}
+		{"predicate": {"custom_model_data":700010},"model": "item/custom/platinum/platinum_hoe"},
+		{"predicate": {"custom_model_data":700013},"model": "item/custom/platinum/platinum_scythe"},
+		{"predicate": {"custom_model_data":700020},"model": "item/custom/ice/frozen_scythe"},
+		{"predicate": {"custom_model_data":700030},"model": "item/custom/diamond/diamond_scythe"}
 	]
 }

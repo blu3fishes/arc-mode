@@ -26,8 +26,8 @@
         }
     },
 	"overrides": [
-		{"predicate": {"custom_model_data":700},"model": "item/custom/platinum_greatsword"},
-		{"predicate": {"custom_model_data":701},"model": "item/platinum_sword"},
-		{"predicate": {"custom_model_data":702},"model": "item/custom/diamond_katana"}
+		{"predicate": {"custom_model_data":700009},"model": "item/custom/platinum/platinum_greatsword"},
+		{"predicate": {"custom_model_data":700029},"model": "item/custom/diamond/diamond_katana"},
+        {"predicate": {"custom_model_data":700037},"model": "item/custom/darkknight/darkknight_sword"}
 	]
 }

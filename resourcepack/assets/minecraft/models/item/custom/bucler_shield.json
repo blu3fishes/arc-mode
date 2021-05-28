@@ -1,7 +1,7 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "item/bucler_shield"
+        "layer0": "item/custom/bucler_shield"
     },
 	"display": {
         "thirdperson_righthand": {

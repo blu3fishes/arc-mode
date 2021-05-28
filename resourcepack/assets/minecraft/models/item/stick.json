@@ -4,7 +4,7 @@
 		"layer0": "item/stick"
 	},
 	"overrides": [
-		{"predicate": {"custom_model_data":700},"model": "item/recipes/wooden_greatsword"},
-		{"predicate": {"custom_model_data":701},"model": "item/recipes/platinum_ingot"}
+		{"predicate": {"custom_model_data":700034},"model": "item/custom/magic_book"},
+		{"predicate": {"custom_model_data":700049},"model": "item/custom/bucler_shield"}
 	]
 }

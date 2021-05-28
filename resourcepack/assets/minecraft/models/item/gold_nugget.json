@@ -1,0 +1,9 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/gold_nugget"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":700039},"model": "item/custom/darkknight/darksteel"}
+	]
+}
