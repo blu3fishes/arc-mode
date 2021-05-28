@@ -1,5 +1,5 @@
-execute at @s run summon arrow ^-0.3 ^1 ^0.7 {Tags:["ice","iceleft","arc_processed"],Color:720895}
-execute at @s run summon arrow ^0.3 ^1 ^0.7 {Tags:["ice","iceright","arc_processed"],Color:720895}
+execute anchored eyes run summon arrow ^-0.3 ^1 ^1 {Tags:["ice","iceleft","arc_processed"],Color:720895}
+execute anchored eyes run summon arrow ^0.3 ^1 ^1 {Tags:["ice","iceright","arc_processed"],Color:720895}
 # execute as @s[x_rotation=-180,y_rotation=-161] at @s run summon arrow ~.3 ~ ~-1 {Motion:[0.6d,0.3d,-2.0d],Tags:["ice","iceright","arc_processed"],Color:720895}
 # execute as @s[x_rotation=-160,y_rotation=-141] at @s run summon arrow ~.6 ~ ~-.8 {Motion:[1.2d,0.3d,-1.6d],Tags:["ice","iceright","arc_processed"],Color:720895}
 # execute as @s[x_rotation=-140,y_rotation=-121] at @s run summon arrow ~.8 ~ ~-.6 {Motion:[1.6d,0.3d,-1.2d],Tags:["ice","iceright","arc_processed"],Color:720895}

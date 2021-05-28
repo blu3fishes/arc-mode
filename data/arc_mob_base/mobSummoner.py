@@ -182,7 +182,7 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
                 {
                     "type": "loot_table",
                     "weight": 1,
-                    "name": "minecraft:entites/%s"
+                    "name": "minecraft:entities/%s"
                 }
             ]
         }

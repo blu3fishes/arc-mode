@@ -3,7 +3,8 @@ title @a actionbar [{"text":"Mana : ","color":"blue","bold":false,"italic":false
 bossbar set minecraft:arc_mana players @a
 
 # function arc_itemskill:skillandmana/managrowth // Only If offhand weapon exists.
-scoreboard players add @a[scores={arc.Mana=..1993},nbt={Inventory:[{id:"minecraft:book",Slot:-106b,tag:{magic_book:1b}}]}] arc.Mana 7
+scoreboard players add @a[scores={arc.Mana=..1999},nbt={Inventory:[{id:"minecraft:stick",Slot:-106b,tag:{magic_book:1b}}]}] arc.Mana 1
+scoreboard players add @a[scores={arc.Mana=200..1999},nbt={Inventory:[{id:"minecraft:stick",Slot:-106b,tag:{magic_book:1b}}]}] arc.Mana 1
 scoreboard players add @a[scores={arc.Mana=..199}] arc.Mana 1
 
 # tag undeads.

@@ -1,0 +1,4 @@
+recipe take @s arc_item_base:diamond/diamond_greatsword
+advancement revoke @s only arc_item_base:diamond/diamond_greatsword
+clear @s minecraft:knowledge_book
+give @s diamond_sword{display:{Name:'{"text":"Diamond Katana","color":"aqua","bold":false,"italic":false}',Lore:['{"text":"Ashina Itshin..","color":"gray","bold":false,"italic":false}']},CustomModelData:700029,twohand:1b,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-3.47,Operation:0,UUID:[I;1679387467,1714571966,-1464738609,-919427581],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:29.3,Operation:0,UUID:[I;1995854422,1899643441,-1780308181,1331935403],Slot:"mainhand"},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.2,Operation:1,UUID:[I;-1692611283,-164869816,-1837829861,1279950075],Slot:"mainhand"}]} 1

@@ -1,6 +1,7 @@
 {
+    "__comment": "Made with blu3fishes' Custom Item Generator With Recipes",
     "criteria": {
-        "unlockAxe": {
+        "unlockRecipe": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
                 "recipe": "arc_item_base:diamond/diamond_warhammer"

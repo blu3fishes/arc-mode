@@ -1,0 +1,4 @@
+recipe take @s arc_item_base:darkknight/darkknight_warhammer
+advancement revoke @s only arc_item_base:darkknight/darkknight_warhammer
+clear @s minecraft:knowledge_book
+give @s diamond_axe{display:{Name:'{"text":"Corrupted Paladin\'s Waraxe","color":"aqua","bold":false,"italic":false}',Lore:['{"text":"For the Glory...","color":"gray","bold":false,"italic":false}']},CustomModelData:700038,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.9,Operation:0,UUID:[I;2056269159,776685851,-2039093539,1994541086],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:25.5,Operation:0,UUID:[I;-653885046,987906719,-1800802476,263224937],Slot:"mainhand"}]} 1

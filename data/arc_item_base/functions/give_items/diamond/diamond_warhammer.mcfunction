@@ -1,6 +1,4 @@
 recipe take @s arc_item_base:diamond/diamond_warhammer
 advancement revoke @s only arc_item_base:diamond/diamond_warhammer
-
 clear @s minecraft:knowledge_book
-
-give @s diamond_axe{display:{Name:'{"text":"Diamond Warhammer","italic":false}'},CustomModelData:703,AttributeModifiers:[{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:13.5,Operation:0,UUID:[I;1288768966,-861125905,-2114032784,-667233105],Slot:"mainhand"},{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.44,Operation:0,UUID:[I;339682813,64111789,-2105580117,488771981],Slot:"mainhand"}]} 1
+give @s diamond_axe{display:{Name:'{"text":"Diamond Warhammer","bold":false,"italic":false}'},CustomModelData:700032,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-3.05,Operation:0,UUID:[I;-143859202,-1182576776,-1547290739,769340913],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:19.5,Operation:0,UUID:[I;-1726243764,2107001411,-1766423404,840950358],Slot:"mainhand"}]} 1
