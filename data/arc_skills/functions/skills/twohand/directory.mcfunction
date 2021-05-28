@@ -1,0 +1,2 @@
+execute as @a[nbt={SelectedItem:{tag:{twohand:1b}}}] run function arc_skills:skills/twohand/onload
+execute as @a[nbt=!{SelectedItem:{tag:{twohand:1b}}},tag=twohander] run function arc_skills:skills/twohand/onload
