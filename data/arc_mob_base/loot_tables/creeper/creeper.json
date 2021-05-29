@@ -17,7 +17,7 @@
                 {
                     "type": "loot_table",
                     "weight": 1,
-                    "name": "minecraft:entites/creeper"
+                    "name": "minecraft:entities/creeper"
                 }
             ]
         }

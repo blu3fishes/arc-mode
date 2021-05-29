@@ -60,3 +60,5 @@ recipe take @s arc_item_base:ice/ice_scythe
 advancement revoke @s only arc_item_base:ice/ice_scythe
 recipe take @s arc_item_base:cryob/cryob_scythe
 advancement revoke @s only arc_item_base:cryob/cryob_scythe
+recipe take @s arc_item_base:platinum/platinum_pickaxe
+advancement revoke @s only arc_item_base:platinum/platinum_pickaxe

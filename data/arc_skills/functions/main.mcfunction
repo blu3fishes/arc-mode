@@ -16,8 +16,10 @@ function arc_skills:custom_ranged/set_projectile
 function arc_skills:skills/scythe/directory
 function arc_skills:skills/hammer/directory
 execute as @a[scores={arc.Hammer=1}] run function arc_skills:skills/hammer/unload/directory
+execute as @e[type=area_effect_cloud,tag=cryob] run function arc_skills:skills/hammer/cryob_effect
 function arc_skills:skills/twohand/directory
 function arc_skills:skills/axe/directory
+function arc_skills:items/main
 #function arc_skills:skills/onehand/parrying
 
 # reset scoreboards.

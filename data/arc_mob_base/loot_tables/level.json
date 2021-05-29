@@ -24,10 +24,6 @@
                     ]
                 },
                 {
-                    "type": "empty",
-                    "weight": 2
-                },
-                {
                     "type": "item",
                     "weight": 1,
                     "name": "minecraft:experience_bottle",
@@ -45,7 +41,7 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 1
+                            "count": 2
                         }
                     ]
                 }
@@ -65,7 +61,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "weight": 2,
+                    "weight": 1,
                     "name": "minecraft:iron_nugget",
                     "functions": [
                         {
@@ -80,11 +76,11 @@
                 },
                 {
                     "type": "empty",
-                    "weight": 6
+                    "weight": 10
                 },
                 {
                     "type": "item",
-                    "weight": 2,
+                    "weight": 1,
                     "name": "minecraft:iron_nugget",
                     "functions": [
                         {

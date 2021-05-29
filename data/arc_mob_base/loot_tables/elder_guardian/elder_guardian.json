@@ -2,7 +2,7 @@
     "type":"minecraft:generic",
     "pools": [
         {
-            "rolls": 1,
+            "rolls": 30,
             "entries": [
                 {
                     "type": "loot_table",
@@ -27,7 +27,7 @@
                 {
                     "type": "loot_table",
                     "weight": 1,
-                    "name": "minecraft:entites/elder_guardian"
+                    "name": "minecraft:entities/elder_guardian"
                 }
             ]
         },
@@ -37,7 +37,7 @@
                 {
                     "type": "loot_table",
                     "weight": 1,
-                    "name": "arc_mob_base:guardian/drop_eye"
+                    "name": "arc_mob_base:elder_guardian/drop_eye"
                 }
             ]
         }
