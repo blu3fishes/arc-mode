@@ -62,3 +62,37 @@ recipe take @s arc_item_base:cryob/cryob_scythe
 advancement revoke @s only arc_item_base:cryob/cryob_scythe
 recipe take @s arc_item_base:platinum/platinum_pickaxe
 advancement revoke @s only arc_item_base:platinum/platinum_pickaxe
+recipe take @s arc_item_base:iron/iron_helmet
+advancement revoke @s only arc_item_base:iron/iron_helmet
+recipe take @s arc_item_base:iron/iron_chestplate
+advancement revoke @s only arc_item_base:iron/iron_chestplate
+recipe take @s arc_item_base:iron/iron_leggings
+advancement revoke @s only arc_item_base:iron/iron_leggings
+recipe take @s arc_item_base:iron/iron_boots
+advancement revoke @s only arc_item_base:iron/iron_boots
+recipe take @s arc_item_base:platinum/platinum_helmet
+advancement revoke @s only arc_item_base:platinum/platinum_helmet
+recipe take @s arc_item_base:platinum/platinum_chestplate
+advancement revoke @s only arc_item_base:platinum/platinum_chestplate
+recipe take @s arc_item_base:platinum/platinum_leggings
+advancement revoke @s only arc_item_base:platinum/platinum_leggings
+recipe take @s arc_item_base:platinum/platinum_boots
+advancement revoke @s only arc_item_base:platinum/platinum_boots
+recipe take @s arc_item_base:darkknight/darkknight_helmet
+advancement revoke @s only arc_item_base:darkknight/darkknight_helmet
+recipe take @s arc_item_base:darkknight/darkknight_chestplate
+advancement revoke @s only arc_item_base:darkknight/darkknight_chestplate
+recipe take @s arc_item_base:darkknight/darkknight_leggings
+advancement revoke @s only arc_item_base:darkknight/darkknight_leggings
+recipe take @s arc_item_base:darkknight/darkknight_boots
+advancement revoke @s only arc_item_base:darkknight/darkknight_boots
+recipe take @s arc_item_base:diamond/diamond_hood
+advancement revoke @s only arc_item_base:diamond/diamond_hood
+recipe take @s arc_item_base:diamond/diamond_robe
+advancement revoke @s only arc_item_base:diamond/diamond_robe
+recipe take @s arc_item_base:diamond/diamond_pants
+advancement revoke @s only arc_item_base:diamond/diamond_pants
+recipe take @s arc_item_base:diamond/diamond_shoes
+advancement revoke @s only arc_item_base:diamond/diamond_shoes
+recipe take @s arc_item_base:cryob/cryob_pickaxe
+advancement revoke @s only arc_item_base:cryob/cryob_pickaxe

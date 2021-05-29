@@ -92,6 +92,31 @@
           "name": "minecraft:golden_apple"
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_shovel",
+          "functions":[
+            {
+              "function": "set_nbt",
+              "tag":"{display:{Name:'{\"text\":\"Blade Of Dark Moon\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}',Lore:['{\"text\":\"cold when graps...\",\"color\":\"gray\",\"bold\":false,\"italic\":false}']},CustomModelData:700025,AttributeModifiers:[{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-2.2,Operation:0,UUID:[I;1793036935,-463319373,-1459886035,511608014],Slot:\"mainhand\"},{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:17,Operation:0,UUID:[I;522152063,-1223342226,-1621556481,389169566],Slot:\"mainhand\"}]}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_hoe",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Scythe of Frozen Flower\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}',Lore:['{\"text\":\"it\\'s cold when touch it.\",\"color\":\"gray\",\"bold\":false,\"italic\":false}','{\"text\":\"Dark Damage : +15\",\"color\":\"gray\",\"bold\":false,\"italic\":false}']},CustomModelData:700020,AttributeModifiers:[{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-2.72,Operation:0,UUID:[I;-880127384,1141654578,-1504871370,-1718789334],Slot:\"mainhand\"},{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:17.3,Operation:0,UUID:[I;1158474571,-192656370,-1278006010,-1881539564],Slot:\"mainhand\"}]}"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

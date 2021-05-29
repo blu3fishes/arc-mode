@@ -28,3 +28,4 @@ scoreboard players set @e[scores={arc.DmgGiven=1..},limit=1] arc.DmgGiven 0
 scoreboard players set @e[scores={arc.DmgTaken=1..},limit=1] arc.DmgTaken 0
 ## reset hurted mobs.
 tag @e[tag=Hurt,nbt={HurtTime:9s}] remove Hurt
+## command which want to load after

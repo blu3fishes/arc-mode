@@ -30,6 +30,7 @@
 		{"predicate": {"custom_model_data":700016},"model": "item/custom/platinum/platinum_warhammer"},
         {"predicate": {"custom_model_data":700018},"model": "item/custom/jungle/jungle_axe"},
         {"predicate": {"custom_model_data":700028},"model": "item/custom/diamond/diamond_axe"},
+		{"predicate": {"custom_model_data":700032},"model": "item/custom/diamond/diamond_warhammer"},
 		{"predicate": {"custom_model_data":700038},"model": "item/custom/darkknight/darkknight_warhammer"}
     ]
 }

@@ -16,3 +16,6 @@ scoreboard objectives add arc.BowType dummy
 scoreboard objectives add arc.Skeletons dummy
 scoreboard objectives add arc.Hammer dummy
 scoreboard objectives add arc.GreatSword dummy
+scoreboard objectives add arc.Jungle dummy
+scoreboard objectives add arc.Ice dummy
+scoreboard objectives add arc.CryobScy dummy

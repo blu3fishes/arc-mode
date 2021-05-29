@@ -142,6 +142,26 @@
           "name": "minecraft:book"
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "functions":[
+            {
+              "function":"set_nbt",
+              "tag":"{display:{Name:'{\"text\":\"Force Of Nature\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}',Lore:['{\"text\":\"the law of the jungle.\",\"color\":\"gray\",\"bold\":false,\"italic\":false}']},CustomModelData:700018,AttributeModifiers:[{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-2.85,Operation:0,UUID:[I;664711278,-735034531,-1285947341,789512299],Slot:\"mainhand\"},{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:23.8,Operation:0,UUID:[I;1329815836,-587706585,-1424864974,-1883138443],Slot:\"mainhand\"}]}"
+            }
+          ],
+          "name": "minecraft:diamond_axe"
+        },
+        {
+          "type":"empty",
+          "weight":1
+        }
+      ]
     }
   ]
 }

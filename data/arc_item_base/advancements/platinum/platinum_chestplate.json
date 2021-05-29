@@ -1,0 +1,14 @@
+{
+    "__comment": "Made with blu3fishes' Custom Item Generator With Recipes",
+    "criteria": {
+        "unlockRecipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "arc_item_base:platinum/platinum_chestplate"
+            }
+        }
+    },
+    "rewards": {
+        "function": "arc_item_base:give_items/platinum/platinum_chestplate"
+    }
+}
