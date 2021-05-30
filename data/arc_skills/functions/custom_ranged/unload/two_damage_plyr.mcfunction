@@ -1,1 +1,2 @@
-effect give @s instant_damage 1 0 true
+effect give @s wither 3 1 true
+# 3 damage!
