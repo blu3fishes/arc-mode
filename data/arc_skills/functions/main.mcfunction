@@ -21,6 +21,7 @@ function arc_skills:skills/twohand/directory
 function arc_skills:skills/axe/directory
 function arc_skills:items/main
 #function arc_skills:skills/onehand/parrying
+execute as @e[tag=Lightened] at @a[scores={arc.DmgTaken=1..},distance=..3] run summon lightning_bolt
 
 # reset scoreboards.
 scoreboard players remove @a[scores={arc.Hammer=1..}] arc.Hammer 1
