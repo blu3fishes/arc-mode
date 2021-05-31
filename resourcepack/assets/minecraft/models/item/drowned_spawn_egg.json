@@ -1,0 +1,9 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/custom/jungle/illusion_soul"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":700017},"model": "item/custom/jungle/illusion_soul"}
+	]
+}

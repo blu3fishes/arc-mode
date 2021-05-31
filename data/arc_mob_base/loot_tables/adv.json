@@ -37,7 +37,7 @@
             "entries": [
                 {
                     "type": "empty",
-                    "weight": 11
+                    "weight": 28
                 },
                 {
                     "type": "item",
@@ -45,27 +45,74 @@
                     "name": "minecraft:enchanted_book",
                     "functions": [
                         {
-                            "function": "enchant_randomly",
-                            "enchantments": [
-                                "protection",
-                                "power",
-                                "flame",
-                                "fire_aspect",
-                                "blast_protection",
-                                "smite",
-                                "sharpness"
-                            ]
-                        },
-                        {
-                            "function": "enchant_with_levels",
-                            "levels": {
-                                "min": 1,
-                                "max": 2
-                            }
-                        },
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:700051,StoredEnchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:700051}"
+                            "tag": "{CustomModelData:700051,StoredEnchantments:[{id:\"minecraft:power\",lvl:1s}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:700051,StoredEnchantments:[{id:\"minecraft:blast_protection\",lvl:1s}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:700051,StoredEnchantments:[{id:\"minecraft:smite\",lvl:1s}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:700051,StoredEnchantments:[{id:\"minecraft:fire_protection\",lvl:1s}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:700051,StoredEnchantments:[{id:\"minecraft:sharpness\",lvl:1s}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:700051,StoredEnchantments:[{id:\"minecraft:bane_of_arthropods\",lvl:1s}]}"
                         }
                     ]
                 }

@@ -1,0 +1,1 @@
+execute as @a[nbt={Inventory:[{Slot:103b,tag:{skull:1b}}]}] run effect give @s night_vision 12 0 false

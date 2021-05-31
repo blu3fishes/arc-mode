@@ -1,5 +1,4 @@
 recipe take @s arc_item_base:platinum/platinum_helmet
 advancement revoke @s only arc_item_base:platinum/platinum_helmet
-
 clear @s minecraft:knowledge_book
-give @s leather_helmet{display:{Name:'{"text":"Platinum Mask","bold":false,"italic":false}',color:8356533},HideFlags:68,Unbreakable:1b,AttributeModifiers:[{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:10,Operation:0,UUID:[I;-59415462,1071793228,-1757710990,635642847],Slot:"head"},{AttributeName:"generic.armor",Name:"generic.armor",Amount:2,Operation:0,UUID:[I;361562524,-129267326,-111769469,-275993928],Slot:"head"},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:0.04,Operation:1,UUID:[I;-233149910,-1330294869,-205574349,-613590076],Slot:"head"}]} 1
+give @s diamond_helmet{display:{Name:'{"text":"Platinum Helmet","bold":false,"italic":false}'},AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:3.33,Operation:0,UUID:[I;939505390,-1426437671,-1884898801,2061311654],Slot:"head"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:0.83,Operation:0,UUID:[I;1643045083,-1251720390,-1823484362,-1795169846],Slot:"head"}]} 1

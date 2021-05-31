@@ -1,0 +1,4 @@
+recipe take @s arc_item_base:darkknight/darkknight_onehand
+advancement revoke @s only arc_item_base:darkknight/darkknight_onehand
+clear @s minecraft:knowledge_book
+give @s diamond_shovel{display:{Name:'{"text":"Black Knight Sword","color":"aqua","bold":false,"italic":false}',Lore:['{"text":"For the King...","bold":false,"italic":false,"color":"gray"}']},CustomModelData:700061,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.4,Operation:0,UUID:[I;-1694213401,-1340653490,-2096963078,-1594064002],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:15,Operation:0,UUID:[I;-1370395191,-411940516,-1150206276,385639925],Slot:"mainhand"}]} 1

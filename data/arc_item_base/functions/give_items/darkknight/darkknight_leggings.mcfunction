@@ -1,0 +1,4 @@
+recipe take @s arc_item_base:darkknight/darkknight_leggings
+advancement revoke @s only arc_item_base:darkknight/darkknight_leggings
+clear @s minecraft:knowledge_book
+give @s diamond_leggings{display:{Name:'{"text":"Black Knight Leggings","bold":false,"italic":false}'},AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:5.25,Operation:0,UUID:[I;1392585599,1141982156,-1214319736,1492076380],Slot:"legs"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:1.17,Operation:0,UUID:[I;1319001653,389629880,-1413771072,561375712],Slot:"legs"},{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:2,Operation:0,UUID:[I;-864454289,233260002,-1942367402,529554347],Slot:"legs"}]} 1

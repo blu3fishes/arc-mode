@@ -1,0 +1,3 @@
+summon stray ~ ~ ~ {Tags:["Check", "NotPoisoning"],DeathLootTable:"arc_mob_base:stray/stray_poison",CustomNameVisible:1b,CustomName:'[{"text":"Poisoning","color":"green","bold":false,"italic":false},{"text":" stray","bold":false,"italic":false,"color":"white"}]',Health:60f,HandItems:[{id:"minecraft:bow",Count:1b},{}],Attributes:[{Name:generic.max_health,Base:60},{Name:generic.attack_damage,Base:12}]}
+tp @s ~ ~-400 ~
+tag @s add Check

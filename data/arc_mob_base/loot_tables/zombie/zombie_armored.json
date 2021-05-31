@@ -27,7 +27,7 @@
                 {
                     "type": "loot_table",
                     "weight": 1,
-                    "name": "minecraft:entites/zombie"
+                    "name": "minecraft:entities/zombie"
                 }
             ]
         }

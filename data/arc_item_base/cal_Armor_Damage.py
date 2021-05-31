@@ -24,3 +24,5 @@ print("\n HEAD : %3.2f/%3.2f" %(defensePoint*5/24,armorTough*5/24))
 print(" CHEST : %3.2f/%3.2f" %(defensePoint/3,armorTough/3))
 print(" LEG : %3.2f/%3.2f" %(defensePoint*7/24,armorTough*7/24))
 print(" FEET : %3.2f/%3.2f" %(defensePoint/6,armorTough/6))
+
+input("Paused...")

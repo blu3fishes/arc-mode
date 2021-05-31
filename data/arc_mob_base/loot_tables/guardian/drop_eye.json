@@ -1,0 +1,52 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": {
+                "min": 0,
+                "max": 1
+            },
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:cat_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Eye Of Guardians\",\"color\":\"light_purple\",\"bold\":false,\"italic\":false}',Lore:['{\"text\":\"core of guardians...\",\"color\":\"gray\",\"bold\":false,\"italic\":false}']},CustomModelData:700053,custom:1b,EntityTag:{id:\"minecraft:armor_stand\",Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,Tags:[\"delete\"]}}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 6
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "minecraft:cat_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"Eye Of Guardians\",\"color\":\"light_purple\",\"bold\":false,\"italic\":false}',Lore:['{\"text\":\"core of guardians...\",\"color\":\"gray\",\"bold\":false,\"italic\":false}']},CustomModelData:700053,custom:1b,EntityTag:{id:\"minecraft:armor_stand\",Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,Tags:[\"delete\"]}}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

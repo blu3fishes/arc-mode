@@ -1,0 +1,4 @@
+recipe take @s arc_item_base:darkknight/darkknight_boots
+advancement revoke @s only arc_item_base:darkknight/darkknight_boots
+clear @s minecraft:knowledge_book
+give @s diamond_boots{display:{Name:'{"text":"Black Knight Boots","bold":false,"italic":false}'},AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:3,Operation:0,UUID:[I;2140419917,499469459,-2003837391,1611128329],Slot:"feet"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:0.67,Operation:0,UUID:[I;598956954,1233012465,-1480649631,1573821641],Slot:"feet"},{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:2,Operation:0,UUID:[I;-353317850,583028410,-1095104900,-529249596],Slot:"feet"}]} 1

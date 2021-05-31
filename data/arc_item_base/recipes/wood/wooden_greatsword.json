@@ -2,15 +2,15 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "#",
-        "#",
-        "E"
+		"#",
+		"$"
     ],
     "key": {
         "#": {
             "tag": "minecraft:planks"
         },
-        "E": {
-            "item": "minecraft:wooden_sword"
+        "$": {
+            "item": "minecraft:wooden_shovel"
         }
     },
     "result": {

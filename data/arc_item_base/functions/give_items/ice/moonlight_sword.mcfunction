@@ -1,0 +1,4 @@
+recipe take @s arc_item_base:ice/moonlight_sword
+advancement revoke @s only arc_item_base:ice/moonlight_sword
+clear @s minecraft:knowledge_book
+give @s diamond_shovel{display:{Name:'{"text":"Blade Of Dark Moon","color":"aqua","bold":false,"italic":false}',Lore:['{"text":"cold when graps...","color":"gray","bold":false,"italic":false}']},CustomModelData:700025,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.2,Operation:0,UUID:[I;1793036935,-463319373,-1459886035,511608014],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:17,Operation:0,UUID:[I;522152063,-1223342226,-1621556481,389169566],Slot:"mainhand"}]} 1

@@ -1,0 +1,4 @@
+recipe take @s arc_item_base:cryob/cryob_warhammer
+advancement revoke @s only arc_item_base:cryob/cryob_warhammer
+clear @s minecraft:knowledge_book
+give @s netherite_axe{display:{Name:'{"text":"Warhammer Of Crying Obsidian","color":"aqua","bold":false,"italic":false}',Lore:['{"text":"can feel souls of guardians.","color":"gray","bold":false,"italic":false}']},CustomModelData:700047,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.88,Operation:0,UUID:[I;1251893112,-47823111,-1871247420,-462076074],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:30,Operation:0,UUID:[I;-743747000,834161448,-1995083654,-1133958755],Slot:"mainhand"}]} 1

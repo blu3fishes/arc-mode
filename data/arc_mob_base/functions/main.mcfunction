@@ -1,2 +1,2 @@
 # arc.MobMode is in arc_system:set_mode namespace.
-function arc_mob_base:custom_ranged/set_projectile
+execute as @e[type=experience_bottle,tag=!Check] run function arc_mob_base:bottle_1

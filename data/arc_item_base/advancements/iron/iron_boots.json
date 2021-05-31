@@ -1,13 +1,14 @@
 {
+    "__comment": "Made with blu3fishes' Custom Item Generator With Recipes",
     "criteria": {
-      "requirement": {
-        "trigger": "minecraft:recipe_unlocked",
-        "conditions": {
-          "recipe": "arc_item_base:iron/iron_boots"
+        "unlockRecipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "arc_item_base:iron/iron_boots"
+            }
         }
-      }
     },
     "rewards": {
-      "function": "arc_item_base:iron/iron_boots"
+        "function": "arc_item_base:give_items/iron/iron_boots"
     }
-  }
+}

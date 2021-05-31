@@ -26,7 +26,7 @@ def createFolder(directory):
 def addMobNbt(file, NameSpaceBuf, SpaceBuf, NameBuf, FixedNameBuf, FeatureVal):
     # adds Feature Tag.
     if FeatureVal == 0:
-        file.write("]")
+        file.write("],DeathLootTable:\"%s:%s%s\"" %(NameSpaceBuf, SpaceBuf, NameBuf))
     elif FeatureVal == 1:
         file.write(", \"NotArmor\"],DeathLootTable:\"%s:%s%s\",CustomNameVisible:1b,CustomName:\'[{\"text\":\"Armored\",\"color\":\"blue\",\"bold\":false,\"italic\":false},{\"text\":\" %s\",\"bold\":false,\"italic\":false,\"color\":\"white\"}]\'" %(NameSpaceBuf, SpaceBuf, NameBuf, FixedNameBuf))
     elif FeatureVal == 2:
@@ -146,7 +146,7 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
                 {
                     "type": "loot_table",
                     "weight": 1,
-                    "name": "minecraft:entites/%s"
+                    "name": "minecraft:entities/%s"
                 }
             ]
         }
@@ -182,7 +182,7 @@ def createMob(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, FeatureVal, HasFeature):
                 {
                     "type": "loot_table",
                     "weight": 1,
-                    "name": "minecraft:entites/%s"
+                    "name": "minecraft:entities/%s"
                 }
             ]
         }

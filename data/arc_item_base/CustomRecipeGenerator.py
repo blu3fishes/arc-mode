@@ -129,7 +129,7 @@ def createMain(NameSpaceBuf, SpaceBuf, NameBuf, CmdBuf, funcSpaceBuf, RecipeKeys
     "rewards": {
         "function": "%s:%s%s%s"
     }
-}""" %(NameSpaceBuf, SpaceBuf[1:], NameBuf, NameSpaceBuf, SpaceBuf[1:], funcSpaceBuf, NameBuf))
+}""" %(NameSpaceBuf, SpaceBuf[1:], NameBuf, NameSpaceBuf, funcSpaceBuf[1:], SpaceBuf, NameBuf))
     else:
         advancementFile.write("""{
     "__comment": "Made with blu3fishes' Custom Item Generator With Recipes",
@@ -168,7 +168,7 @@ clear @s minecraft:knowledge_book
     giveFile.close()
     #print("give function done.")
     #input("Write End. Check folders & files. / Press Any Key To Close Program...")
-    reset_file = open("./function/reset_players.mcfunction", "at", encoding="utf-8")
+    reset_file = open("./functions/reset_players.mcfunction", "at", encoding="utf-8")
     if SpaceBuf != '':
         reset_file.write("\nrecipe take @s %s:%s%s\nadvancement revoke @s only %s:%s%s" %(NameSpaceBuf, SpaceBuf[1:], NameBuf, NameSpaceBuf, SpaceBuf[1:], NameBuf))
     else:

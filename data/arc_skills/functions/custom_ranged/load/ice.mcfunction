@@ -1,5 +1,6 @@
 data modify entity @s CustomPotionEffects append value {Id:27b,Amplifier:3b,Duration:100}
 data modify entity @s CustomPotionEffects append value {Id:2b,Amplifier:2b,Duration:60}
+execute store result entity @s damage byte 1.5 run data get entity @s damage
 data modify entity @s Color set value 720895
 tag @s add ice_center
 tag @s add ice
