@@ -115,6 +115,17 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Bow of Saint\",\"color\":\"aqua\",\"bold\":false,\"italic\":false}',Lore:['{\"text\":\"Shoots Lightning Bolt\",\"color\":\"gray\",\"bold\":false,\"italic\":false}']},CustomModelData:700063,bow:4b,AttributeModifiers:[{AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:1,Operation:0,UUID:[I;-113833057,-520599383,-2033143823,-655889815],Slot:\"mainhand\"},{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:-2,Operation:0,UUID:[I;-804309684,-463977457,-2115108830,462316539],Slot:\"offhand\"}]}"
+            }
+          ],
+          "name": "minecraft:bow"
+        },
+        {
+          "type": "minecraft:item",
           "weight": 3,
           "functions": [
             {

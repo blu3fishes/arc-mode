@@ -20,13 +20,15 @@ execute as @e[type=area_effect_cloud,tag=cryob] run function arc_skills:skills/h
 function arc_skills:skills/twohand/directory
 function arc_skills:skills/axe/directory
 function arc_skills:items/main
-#function arc_skills:skills/onehand/parrying
-execute as @e[tag=Lightened] at @a[scores={arc.DmgTaken=1..},distance=..3] run summon lightning_bolt
+function arc_skills:skills/onehand/directory
+execute at @e[tag=Lightened] as @a[scores={arc.DmgTaken=1..,arc.Light=0},distance=..7] run scoreboard players set @s arc.Light 40
+scoreboard players remove @a[scores={arc.Light=1..}] arc.Light 1
+execute at @a[scores={arc.Light=39}] run summon lightning_bolt ~ ~ ~
 
 # reset scoreboards.
 scoreboard players remove @a[scores={arc.Hammer=1..}] arc.Hammer 1
-scoreboard players set @e[scores={arc.DmgGiven=1..},limit=1] arc.DmgGiven 0
-scoreboard players set @e[scores={arc.DmgTaken=1..},limit=1] arc.DmgTaken 0
+scoreboard players set @a[scores={arc.DmgGiven=1..}] arc.DmgGiven 0
+scoreboard players set @a[scores={arc.DmgTaken=1..}] arc.DmgTaken 0
 ## reset hurted mobs.
 tag @e[tag=Hurt,nbt={HurtTime:9s}] remove Hurt
 ## command which want to load after

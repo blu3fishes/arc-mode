@@ -1,2 +1,3 @@
 function arc_item_base:disable_baseitems
 function arc_item_base:enchanting/main
+function arc_item_base:coin/directory

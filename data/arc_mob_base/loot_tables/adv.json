@@ -37,7 +37,7 @@
             "entries": [
                 {
                     "type": "empty",
-                    "weight": 30
+                    "weight": 28
                 },
                 {
                     "type": "item",
@@ -58,17 +58,6 @@
                         {
                             "function": "set_nbt",
                             "tag": "{CustomModelData:700051,StoredEnchantments:[{id:\"minecraft:power\",lvl:1s}]}"
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "weight": 1,
-                    "name": "minecraft:enchanted_book",
-                    "functions": [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{CustomModelData:700051,StoredEnchantments:[{id:\"minecraft:punch\",lvl:1s}]}"
                         }
                     ]
                 },

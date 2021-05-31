@@ -61,12 +61,12 @@
             "entries": [
                 {
                     "type": "item",
-                    "weight": 1,
-                    "name": "minecraft:iron_nugget",
+                    "weight": 2,
+                    "name": "minecraft:gold_nugget",
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:700,display:{Name:'{\"text\":\"Coin\",\"color\":\"yellow\",\"italic\":false}',Lore:['{\"text\":\"Can be traded with new merchants...\",\"color\":\"gray\",\"bold\":false,\"italic\":false}']}}"
+                            "tag": "{CustomModelData:700056,display:{Name:'{\"text\":\"Copper Coin\",\"color\":\"yellow\",\"italic\":false}',Lore:['{\"text\":\"Can be traded with new merchants...\",\"color\":\"gray\",\"bold\":false,\"italic\":false}']}}"
                         },
                         {
                             "function": "set_count",
@@ -76,35 +76,23 @@
                 },
                 {
                     "type": "empty",
-                    "weight": 10
+                    "weight": 3
                 },
                 {
                     "type": "item",
                     "weight": 1,
-                    "name": "minecraft:iron_nugget",
+                    "name": "minecraft:gold_nugget",
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:700,display:{Name:'{\"text\":\"Coin\",\"color\":\"yellow\",\"italic\":false}',Lore:['{\"text\":\"Can be traded with new merchants...\",\"color\":\"gray\",\"bold\":false,\"italic\":false}']}}"
+                            "tag": "{CustomModelData:700056,display:{Name:'{\"text\":\"Copper Coin\",\"color\":\"yellow\",\"italic\":false}',Lore:['{\"text\":\"Can be traded with new merchants...\",\"color\":\"gray\",\"bold\":false,\"italic\":false}']}}"
                         },
                         {
                             "function": "set_count",
-                            "count": 2
-                        }
-                    ]
-                },
-                {
-                    "type": "item",
-                    "weight": 1,
-                    "name": "minecraft:iron_nugget",
-                    "functions": [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{CustomModelData:700,display:{Name:'{\"text\":\"Coin\",\"color\":\"yellow\",\"italic\":false}',Lore:['{\"text\":\"Can be traded with new merchants...\",\"color\":\"gray\",\"bold\":false,\"italic\":false}']}}"
-                        },
-                        {
-                            "function": "set_count",
-                            "count": 3
+                            "count": {
+                                "min" : 2,
+                                "max" : 3
+                            }
                         }
                     ]
                 }

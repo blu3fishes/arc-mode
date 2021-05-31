@@ -96,3 +96,5 @@ recipe take @s arc_item_base:diamond/diamond_shoes
 advancement revoke @s only arc_item_base:diamond/diamond_shoes
 recipe take @s arc_item_base:cryob/cryob_pickaxe
 advancement revoke @s only arc_item_base:cryob/cryob_pickaxe
+recipe take @s arc_item_base:darkknight/darkknight_onehand
+advancement revoke @s only arc_item_base:darkknight/darkknight_onehand

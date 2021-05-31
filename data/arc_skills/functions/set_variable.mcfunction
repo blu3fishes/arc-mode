@@ -7,6 +7,8 @@ forceload add 0 16 0 16
 # Variables for Skills.
 scoreboard objectives add arc.DmgTaken minecraft.custom:damage_taken
 scoreboard objectives add arc.DmgGiven minecraft.custom:damage_dealt
+scoreboard objectives add arc.Light dummy
+scoreboard players set @a arc.Light 0
 scoreboard objectives add arc.ScytheAttack dummy
 scoreboard objectives add arc.UUID0 dummy
 scoreboard objectives add arc.UUID1 dummy

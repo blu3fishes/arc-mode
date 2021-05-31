@@ -21,5 +21,5 @@ execute at @a[sort=arbitrary,limit=1] run function arc_system:get_random/get_ran
 execute as @e[tag=!Check,type=guardian,limit=1] run function arc_mob_base:mobs/guardian/process
 
 execute as @e[tag=!Check,type=elder_guardian,limit=1] at @s run function arc_mob_base:mobs/elder_guardian
-execute as @e[type=elder_guardian] run effect give @a[distance=..7] weakness 3 1 true
-execute as @e[type=elder_guardian] run effect give @a[distance=..7] poison 3 0 true
+execute at @e[type=elder_guardian] run effect give @a[distance=..7] weakness 3 1 true
+execute at @e[type=elder_guardian] run effect give @a[distance=..7] poison 3 0 true

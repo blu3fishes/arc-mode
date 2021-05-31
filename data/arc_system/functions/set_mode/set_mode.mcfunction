@@ -1,4 +1,6 @@
 # Manage Mob's Spawn Level.
+# toggle this?
+gamerule keepInventory true
 execute if entity @a[level=200..] run scoreboard players set @a arc.MobMode 3
 execute if entity @a[level=100..199] run scoreboard players set @a arc.MobMode 2
 execute if entity @a[level=..99] run scoreboard players set @a arc.MobMode 1
