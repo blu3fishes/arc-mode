@@ -1,3 +1,5 @@
-summon elder_guardian ~ ~ ~ {Tags:["Check"],Health:1200f,DeathLootTable:"arc_mob_base:elder_guardian/elder_guardian",Attributes:[{Name:generic.max_health,Base:1200},{Name:generic.attack_damage,Base:18}]}
-tp @s ~ ~-400 ~
 tag @s add Check
+attribute @s generic.max_health base set 1200
+attribute @s generic.attack_damage base set 18
+data modify entity @s Health set value 1200f
+data modify entity @s DeathLootTable set value "arc_mob_base:elder_guardian/elder_guardian"

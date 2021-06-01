@@ -8,6 +8,7 @@ execute as @a[scores={arc.DmgGiven=1..,arc.Mana=100..},nbt={SelectedItem:{tag:{C
 # Diamond Scythe Skill
 execute as @a[scores={arc.DmgGiven=1..,arc.Mana=100..},nbt={SelectedItem:{tag:{CustomModelData:700030}}}] run function arc_skills:skills/scythe/diamond
 execute as @a[scores={arc.DmgGiven=1..,arc.Mana=50..},nbt={SelectedItem:{tag:{CustomModelData:700020}}}] run function arc_skills:skills/scythe/ice/ice_freeze
+execute as @a[scores={arc.DmgGiven=1..,arc.Mana=100..},nbt={SelectedItem:{tag:{CustomModelData:700062}}}] run function arc_skills:skills/scythe/dark
 execute as @a[scores={arc.DmgGiven=1..,arc.Mana=100..},nbt={SelectedItem:{tag:{CustomModelData:700044}}}] run function arc_skills:skills/scythe/cryob/directory
 execute as @e[scores={arc.Ice=1}] run function arc_skills:skills/scythe/ice/ice_stun
 execute as @e[scores={arc.Ice=2}] run function arc_skills:skills/scythe/ice/ice_break

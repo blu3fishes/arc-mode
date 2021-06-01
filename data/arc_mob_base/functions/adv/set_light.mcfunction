@@ -3,4 +3,5 @@ execute store result score .health arc.NowHealth run attribute @s minecraft:gene
 execute store result entity @s Health float 1 run scoreboard players get .health arc.NowHealth
 tag @s add Lightened
 tag @s remove NotLightened
+tag @s add LootAdv
 scoreboard players set @s arc.AdvMob 3

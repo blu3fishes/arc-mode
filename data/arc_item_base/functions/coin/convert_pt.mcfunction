@@ -1,0 +1,1 @@
+execute at @s if entity @e[type=item,distance=..0.5,limit=1,nbt={Item:{id:"minecraft:ghast_spawn_egg",Count:1b,tag:{CustomModelData:700011}}}] run function arc_item_base:coin/ptod

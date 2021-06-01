@@ -98,3 +98,7 @@ recipe take @s arc_item_base:cryob/cryob_pickaxe
 advancement revoke @s only arc_item_base:cryob/cryob_pickaxe
 recipe take @s arc_item_base:darkknight/darkknight_onehand
 advancement revoke @s only arc_item_base:darkknight/darkknight_onehand
+recipe take @s arc_item_base:darkknight/darkknight_axe
+advancement revoke @s only arc_item_base:darkknight/darkknight_axe
+recipe take @s arc_item_base:darkknight/darkknight_scythe
+advancement revoke @s only arc_item_base:darkknight/darkknight_scythe

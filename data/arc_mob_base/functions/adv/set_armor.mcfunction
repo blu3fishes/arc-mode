@@ -16,4 +16,5 @@ replaceitem entity @s armor.feet diamond_boots 1
 data modify entity @s ArmorDropChances set value [0.000F,0.000F,0.000F,0.000F]
 
 tag @s remove NotArmor
+tag @s add LootAdv
 scoreboard players set @s arc.AdvMob 0

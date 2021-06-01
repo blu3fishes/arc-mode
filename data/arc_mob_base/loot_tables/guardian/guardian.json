@@ -17,6 +17,26 @@
                 {
                     "type": "loot_table",
                     "weight": 1,
+                    "name": "arc_mob_base:level"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "arc_mob_base:level"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
                     "name": "minecraft:entities/guardian"
                 }
             ]

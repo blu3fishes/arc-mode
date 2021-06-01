@@ -8,4 +8,5 @@ replaceitem entity @s armor.feet diamond_boots{display:{Name:'{"text":"Antimagic
 data modify entity @s ArmorDropChances set value [0.000F,0.000F,0.000F,0.000F]
 
 tag @s remove NotAntiMagic
+tag @s add LootAdv
 scoreboard players set @s arc.AdvMob 1
