@@ -38,7 +38,12 @@
         {"predicate": {"custom_model_data": 700033},"model": "item/custom/desert_pyramid/steve_bow"},
 		{"predicate": {"pulling": 1,"custom_model_data": 700033},"model": "item/custom/desert_pyramid/steve_bow_pulling_0"},
 		{"predicate": {"pulling": 1,"pull": 0.65,"custom_model_data": 700033},"model": "item/custom/desert_pyramid/steve_bow_pulling_1"},
-		{"predicate": {"pulling": 1,"pull": 0.9,"custom_model_data": 700033},"model": "item/custom/desert_pyramid/steve_bow_pulling_2"}
+		{"predicate": {"pulling": 1,"pull": 0.9,"custom_model_data": 700033},"model": "item/custom/desert_pyramid/steve_bow_pulling_2"},
+		
+		{"predicate": {"custom_model_data": 700063},"model": "item/custom/mineshaft/light_bow"},
+		{"predicate": {"pulling": 1,"custom_model_data": 700063},"model": "item/custom/mineshaft/light_bow_pulling_0"},
+		{"predicate": {"pulling": 1,"pull": 0.65,"custom_model_data": 700063},"model": "item/custom/mineshaft/light_bow_pulling_1"},
+		{"predicate": {"pulling": 1,"pull": 0.9,"custom_model_data": 700063},"model": "item/custom/mineshaft/light_bow_pulling_2"}
 
     ]
 }

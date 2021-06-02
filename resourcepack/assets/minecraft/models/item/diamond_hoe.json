@@ -7,6 +7,7 @@
 		{"predicate": {"custom_model_data":700010},"model": "item/custom/platinum/platinum_hoe"},
 		{"predicate": {"custom_model_data":700013},"model": "item/custom/platinum/platinum_scythe"},
 		{"predicate": {"custom_model_data":700020},"model": "item/custom/ice/frozen_scythe"},
-		{"predicate": {"custom_model_data":700030},"model": "item/custom/diamond/diamond_scythe"}
+		{"predicate": {"custom_model_data":700030},"model": "item/custom/diamond/diamond_scythe"},
+		{"predicate": {"custom_model_data":700062},"model": "item/custom/darkknight/darkknight_scythe"}
 	]
 }
