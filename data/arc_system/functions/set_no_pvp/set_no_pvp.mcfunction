@@ -1,1 +1,0 @@
-team join User @a[team=!User]

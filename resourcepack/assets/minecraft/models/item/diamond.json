@@ -1,9 +1,0 @@
-{
-	"parent": "item/generated",
-	"textures": {
-		"layer0": "item/diamond"
-	},
-	"overrides": [
-		{"predicate": {"custom_model_data":700058},"model": "item/custom/coin/diamond"}
-	]
-}

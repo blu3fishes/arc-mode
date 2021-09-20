@@ -1,4 +1,0 @@
-recipe take @s arc_item_base:jungle/jungle_axe
-advancement revoke @s only arc_item_base:jungle/jungle_axe
-clear @s minecraft:knowledge_book
-give @s diamond_axe{display:{Name:'{"text":"Force Of Nature","color":"aqua","bold":false,"italic":false}',Lore:['{"text":"the law of the jungle.","color":"gray","bold":false,"italic":false}']},CustomModelData:700018,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.85,Operation:0,UUID:[I;664711278,-735034531,-1285947341,789512299],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:23.8,Operation:0,UUID:[I;1329815836,-587706585,-1424864974,-1883138443],Slot:"mainhand"}]} 1

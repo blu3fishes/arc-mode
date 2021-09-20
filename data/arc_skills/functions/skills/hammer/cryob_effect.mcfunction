@@ -1,2 +1,0 @@
-execute at @s run execute as @e[distance=..4] if predicate arc_skills:undead run effect give @s instant_health 3 0 true
-execute at @s run execute as @e[type=!player,distance=..4] unless predicate arc_skills:undead run effect give @s instant_damage 3 0 true

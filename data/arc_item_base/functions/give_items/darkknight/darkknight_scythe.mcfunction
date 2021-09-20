@@ -1,4 +1,0 @@
-recipe take @s arc_item_base:darkknight/darkknight_scythe
-advancement revoke @s only arc_item_base:darkknight/darkknight_scythe
-clear @s minecraft:knowledge_book
-give @s diamond_hoe{display:{Name:'{"text":"Black Assassin\'s Scythe","color":"aqua","bold":false,"italic":false}',Lore:['{"text":"For the Wealth","color":"gray","bold":false,"italic":false}']},CustomModelData:700062,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.7,Operation:0,UUID:[I;1475523391,-860863009,-1447951967,-1584171695],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:15.3,Operation:0,UUID:[I;-1205713133,1461273649,-1424385646,2048847929],Slot:"mainhand"}]} 1

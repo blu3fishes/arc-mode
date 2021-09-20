@@ -1,9 +1,0 @@
-{
-	"parent": "item/generated",
-	"textures": {
-		"layer0": "item/custom/cryob/core"
-	},
-	"overrides": [
-		{"predicate": {"custom_model_data":700052},"model": "item/custom/cryob/core"}
-	]
-}

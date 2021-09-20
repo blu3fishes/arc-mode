@@ -1,9 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "item/bread"
-    },
-    "overrides": [
-		{"predicate": {"custom_model_data": 700055},"model": "item/custom/potion"}
-    ]
-}

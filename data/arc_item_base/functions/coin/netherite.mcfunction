@@ -1,3 +1,0 @@
-execute at @s run summon item ~ ~ ~ {Item:{id:"minecraft:netherite_ingot",Count:1b,tag:{display:{Name:'{"text":"Netherite Coin","color":"dark_gray","bold":false,"italic":false}',Lore:['{"text":"Can be traded with new merchants...","color":"gray","bold":false,"italic":false}','{"text":"Can repair Over the Crying Obsidian Items.","color":"aqua","bold":false,"italic":false}']},CustomModelData:700059}}}
-execute at @s run playsound block.anvil.use master @a ~ ~ ~ 1 1 0
-kill @s

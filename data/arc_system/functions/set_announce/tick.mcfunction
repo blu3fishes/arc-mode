@@ -1,1 +1,0 @@
-execute as @a[scores={arc.Users=1..}] run function arc_system:set_announce/welcome_new
