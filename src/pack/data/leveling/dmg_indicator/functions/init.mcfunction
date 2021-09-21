@@ -1,0 +1,1 @@
+scoreboard objectives add dic_dmg_taken minecraft.custom:
