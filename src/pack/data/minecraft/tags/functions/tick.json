@@ -1,0 +1,8 @@
+{
+  "values":[
+    "leveling:ui/stats/main",
+    "leveling:ui/ui/main",
+    "leveling:ui/ui/main",
+    "leveling:ui/exp/main"
+  ]
+}
