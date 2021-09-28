@@ -1,0 +1,1 @@
+give @s ghast_spawn_egg{display:{Name:'{"text":"Platinum Ingot","bold":false,"italic":false}'},CustomModelData:700011,custom:1b,EntityTag:{id:"minecraft:armor_stand",Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,Tags:["delete"]}} 1

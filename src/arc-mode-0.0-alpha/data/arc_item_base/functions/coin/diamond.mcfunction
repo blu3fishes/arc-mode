@@ -1,0 +1,3 @@
+execute at @s run summon item ~ ~ ~ {Item:{id:"minecraft:diamond",Count:1b,tag:{display:{Name:'{"text":"Diamond Coin","color":"aqua","bold":false,"italic":false}',Lore:['{"text":"Can be traded with new merchants...","color":"gray","bold":false,"italic":false}','{"text":"Can repair Diamond & Platinum Items.","color":"aqua","bold":false,"italic":false}','{"text":"Can craft diamond items.","color":"aqua","bold":false,"italic":false}']},CustomModelData:700058}}}
+execute at @s run playsound block.anvil.use master @a ~ ~ ~ 1 1 0
+kill @s

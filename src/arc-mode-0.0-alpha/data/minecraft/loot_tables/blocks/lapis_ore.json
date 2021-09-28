@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "functions":[
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{display:{Name:'{\"text\":\"Platinum Ore\",\"bold\":false,\"italic\":false}'}}"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "minecraft:lapis_ore"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops"
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                },
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{display:{Name:'{\"text\":\"Platinum Ingot\",\"bold\":false,\"italic\":false}'},CustomModelData:700011,custom:1b,EntityTag:{id:\"minecraft:armor_stand\",Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,Tags:[\"delete\"]}}"
+                }
+              ],
+              "name": "minecraft:ghast_spawn_egg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

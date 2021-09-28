@@ -1,0 +1,9 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/iron_pickaxe"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":700006},"model": "item/custom/broken/broken_magma_pickaxe"}
+	]
+}

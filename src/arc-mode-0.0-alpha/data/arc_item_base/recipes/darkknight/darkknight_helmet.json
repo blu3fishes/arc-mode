@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+		"# #"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:evoker_spawn_egg"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book"
+    }
+}

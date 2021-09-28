@@ -1,0 +1,4 @@
+recipe take @s arc_item_base:platinum/platinum_axe
+advancement revoke @s only arc_item_base:platinum/platinum_axe
+clear @s minecraft:knowledge_book
+give @s diamond_axe{display:{Name:'{"text":"Platinum Axe","bold":false,"italic":false}'},CustomModelData:700008,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.9,Operation:0,UUID:[I;1151198206,-1863433534,-1968123798,1740221460],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:16.8,Operation:0,UUID:[I;-668835680,-988393724,-1938018158,-1557400893],Slot:"mainhand"}]} 1

@@ -1,0 +1,12 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/stick"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":11201}, "model": "item/custom/battle_axe"},
+		{"predicate": {"custom_model_data":11202}, "model": "item/custom/blade"},
+		{"predicate": {"custom_model_data":11203}, "model": "item/custom/bucler"},
+		{"predicate": {"custom_model_data":11204}, "model": "item/custom/speed_feather"}
+	]
+}

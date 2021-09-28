@@ -9,4 +9,7 @@ execute as @a run scoreboard players operation @s ui_nhealth = @s ui_lhealth
 
 execute as @a store result score @s ui_armor run attribute @s minecraft:generic.armor get 100
 
+execute as @a[scores={stat=1..}] run function leveling:ui/ui/stat
 scoreboard players enable @a stat
+
+function leveling:ui/ui/stat_book/main

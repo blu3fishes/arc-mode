@@ -1,0 +1,1 @@
+execute store result score #random crit_rand run loot spawn ~ -2 ~ loot rpg:crit/rand_hund

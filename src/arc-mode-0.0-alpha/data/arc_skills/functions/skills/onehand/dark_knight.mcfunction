@@ -1,0 +1,1 @@
+scoreboard players set @s arc.Jungle 1

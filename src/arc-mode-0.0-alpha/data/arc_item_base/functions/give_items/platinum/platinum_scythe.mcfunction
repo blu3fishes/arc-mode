@@ -1,0 +1,4 @@
+recipe take @s arc_item_base:platinum/platinum_scythe
+advancement revoke @s only arc_item_base:platinum/platinum_scythe
+clear @s minecraft:knowledge_book
+give @s diamond_hoe{display:{Name:'{"text":"Platinum Scythe","bold":false,"italic":false}',Lore:['{"text":"Dark Damage : +12","color":"gray","bold":false,"italic":false}']},CustomModelData:700013,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.7,Operation:0,UUID:[I;-1546277370,-377796233,-1132994057,-101441686],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:10.8,Operation:0,UUID:[I;1933665923,1845119507,-1409125496,1467571806],Slot:"mainhand"}]} 1

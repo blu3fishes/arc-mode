@@ -2,6 +2,8 @@
   "values":[
     "leveling:ui/stats/load",
     "leveling:ui/ui/load",
-    "leveling:ui/exp/load"
+    "leveling:ui/exp/load",
+    "rpg:crit/load",
+    "rpg:mob_spawning/set_variable"
   ]
 }

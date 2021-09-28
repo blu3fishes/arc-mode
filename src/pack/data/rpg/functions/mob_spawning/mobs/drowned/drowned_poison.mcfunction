@@ -1,0 +1,3 @@
+summon drowned ~ ~ ~ {Tags:["Check", "NotPoisoning"],DeathLootTable:"rpg:mob_spawning/drowned/drowned_poison",CustomNameVisible:1b,CustomName:'[{"text":"Poisoning","color":"green","bold":false,"italic":false},{"text":" drowned","bold":false,"italic":false,"color":"white"}]',Health:100f,Attributes:[{Name:generic.max_health,Base:100},{Name:generic.attack_damage,Base:16}]}
+tp @s ~ ~-400 ~
+tag @s add Check

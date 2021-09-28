@@ -1,0 +1,101 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:item",
+          "nbt": "{Item:{id:\"minecraft:iron_sword\"}}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:item",
+          "nbt": "{Item:{id:\"minecraft:iron_hoe\"}}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:item",
+          "nbt": "{Item:{id:\"minecraft:iron_shovel\"}}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:item",
+          "nbt": "{Item:{id:\"minecraft:iron_axe\"}}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:item",
+          "nbt": "{Item:{id:\"minecraft:diamond_sword\"}}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:item",
+          "nbt": "{Item:{id:\"minecraft:diamond_hoe\"}}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:item",
+          "nbt": "{Item:{id:\"minecraft:diamond_shovel\"}}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:item",
+          "nbt": "{Item:{id:\"minecraft:diamond_axe\"}}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:item",
+          "nbt": "{Item:{id:\"minecraft:netherite_sword\"}}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:item",
+          "nbt": "{Item:{id:\"minecraft:netherite_hoe\"}}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:item",
+          "nbt": "{Item:{id:\"minecraft:netherite_shovel\"}}"
+        }
+      },
+      {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+          "type": "minecraft:item",
+          "nbt": "{Item:{id:\"minecraft:netherite_axe\"}}"
+        }
+      }
+    ]
+}

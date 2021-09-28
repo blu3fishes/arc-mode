@@ -1,0 +1,4 @@
+recipe take @s arc_item_base:platinum/platinum_warhammer
+advancement revoke @s only arc_item_base:platinum/platinum_warhammer
+clear @s minecraft:knowledge_book
+give @s diamond_axe{display:{Name:'{"text":"Platinum Warhammer","bold":false,"italic":false}'},CustomModelData:700016,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-3.1,Operation:0,UUID:[I;316639970,-478723580,-1620476483,-1427102161],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:18,Operation:0,UUID:[I;-625932243,26755374,-1772494095,1656478862],Slot:"mainhand"}]} 1

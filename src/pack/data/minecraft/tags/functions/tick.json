@@ -3,6 +3,8 @@
     "leveling:ui/stats/main",
     "leveling:ui/ui/main",
     "leveling:ui/ui/main",
-    "leveling:ui/exp/main"
+    "leveling:ui/exp/main",
+    "rpg:crit/main",
+    "rpg:mob_spawning/main"
   ]
 }

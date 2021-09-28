@@ -1,0 +1,112 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": {
+                "min": 0,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "minecraft:lapis_lazuli"
+                },
+                {
+                    "type": "empty",
+                    "weight": 8
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "bonus_rolls": {
+                "min": 0,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 28
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:700051,StoredEnchantments:[{id:\"minecraft:protection\",lvl:1s}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:700051,StoredEnchantments:[{id:\"minecraft:power\",lvl:1s}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:700051,StoredEnchantments:[{id:\"minecraft:blast_protection\",lvl:1s}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:700051,StoredEnchantments:[{id:\"minecraft:smite\",lvl:1s}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:700051,StoredEnchantments:[{id:\"minecraft:fire_protection\",lvl:1s}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:700051,StoredEnchantments:[{id:\"minecraft:sharpness\",lvl:1s}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:enchanted_book",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:700051,StoredEnchantments:[{id:\"minecraft:bane_of_arthropods\",lvl:1s}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

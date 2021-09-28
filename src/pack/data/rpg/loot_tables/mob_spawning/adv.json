@@ -1,0 +1,154 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 12
+            },
+            "bonus_rolls": {
+                "min": 0,
+                "max": 5
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "minecraft:experience_bottle"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "bonus_rolls": {
+                "min": 0,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:diamond_sword",
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"청록의 잔향\",\"bold\":false,\"italic\":false}'},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:7.42,Operation:0,UUID:[I;1064495261,-1515763301,-1150903885,-1598115411],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-2.4,Operation:0,UUID:[I;1801693392,-498711338,-1404850545,675137150],Slot:\"mainhand\"},{AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:0.2,Operation:0,UUID:[I;-1507850201,-1889515786,-2068504657,-2058173354],Slot:\"mainhand\"}]}"
+                        },
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:diamond_axe",
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"청금석 도끼\",\"bold\":false,\"italic\":false}'},AttributeModifiers:[{AttributeName:\"generic.attack_damage\",Name:\"generic.attack_damage\",Amount:9.58,Operation:0,UUID:[I;-935840272,-341619006,-1517503085,877987900],Slot:\"mainhand\"},{AttributeName:\"generic.attack_speed\",Name:\"generic.attack_speed\",Amount:-2.95,Operation:0,UUID:[I;-708989774,-578466844,-1472227880,-235323409],Slot:\"mainhand\"},{AttributeName:\"generic.knockback_resistance\",Name:\"generic.knockback_resistance\",Amount:-0.2,Operation:0,UUID:[I;-487183138,1946111755,-1491418265,-958998096],Slot:\"mainhand\"}]}"
+                        },
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "min": 1,
+                                "max": 4
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "empty",
+                    "weight": 4
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "minecraft:golden_helmet",
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"파멸의 추억\",\"bold\":false,\"italic\":false}'},AttributeModifiers:[{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2.07,Operation:0,UUID:[I;347468853,206652742,-1221220574,204746321],Slot:\"head\"},{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:3.25,Operation:0,UUID:[I;-778616169,2000636540,-1098380386,1748575223],Slot:\"head\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "minecraft:chainmail_chestplate",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"무구한 영광\",\"bold\":false,\"italic\":false}'},AttributeModifiers:[{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2,Operation:0,UUID:[I;1738297497,1133725921,-1439368582,-15302494],Slot:\"chest\"},{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:8,Operation:0,UUID:[I;766724780,483475712,-1217090154,-1204251277],Slot:\"chest\"},{AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:6,Operation:0,UUID:[I;1517872562,744834024,-1954925174,505346448],Slot:\"chest\"}]}"
+                        },
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "min": 10,
+                                "max": 40
+                            },
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "minecraft:iron_leggings",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"따뜻한 추억\",\"bold\":false,\"italic\":false}'},AttributeModifiers:[{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:2,Operation:0,UUID:[I;69935115,215892697,-1845290634,1423063131],Slot:\"legs\"},{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:6.2,Operation:0,UUID:[I;453004561,-453032115,-1123379742,1946513205],Slot:\"legs\"},{AttributeName:\"generic.max_health\",Name:\"generic.max_health\",Amount:6,Operation:0,UUID:[I;1612490380,-2032316943,-1553584147,1558505273],Slot:\"legs\"}]}"
+                        },
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "min": 10,
+                                "max": 40
+                            },
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "minecraft:diamond_boots",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{display:{Name:'{\"text\":\"차가운 기억\",\"bold\":false,\"italic\":false}'},Enchantments:[{id:\"minecraft:depth_strider\",lvl:2s},{id:\"minecraft:frost_walker\",lvl:2s}],AttributeModifiers:[{AttributeName:\"generic.armor_toughness\",Name:\"generic.armor_toughness\",Amount:1.2,Operation:0,UUID:[I;-346073338,-868399187,-1749995182,731092305],Slot:\"feet\"},{AttributeName:\"generic.armor\",Name:\"generic.armor\",Amount:2.56,Operation:0,UUID:[I;-706515760,1091257196,-1513773373,-1965960214],Slot:\"feet\"},{AttributeName:\"generic.movement_speed\",Name:\"generic.movement_speed\",Amount:0.12,Operation:1,UUID:[I;2060071487,-1722462766,-1866690113,-1310064896],Slot:\"feet\"}]}"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "bonus_rolls": {
+                "min": 0,
+                "max": 12
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "minecraft:emerald",
+                    "quality": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

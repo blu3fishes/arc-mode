@@ -1,0 +1,1 @@
+execute as @a[nbt={SelectedItem:{tag:{CustomModelData:700061}}}] run function arc_skills:skills/onehand/dark_knight

@@ -1,0 +1,1 @@
+## craft / Get Lore / Prepend Lore 1 , 2 , 3

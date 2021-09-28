@@ -1,0 +1,3 @@
+summon spider ~ ~ ~ {Tags:["Check", "NotAntiMagic"],DeathLootTable:"rpg:mob_spawning/spider/spider_antimagic",CustomNameVisible:1b,CustomName:'[{"text":"AntiMagic","color":"red","bold":false,"italic":false},{"text":" spider","bold":false,"italic":false,"color":"white"}]',Health:34f,Attributes:[{Name:generic.max_health,Base:34},{Name:generic.attack_damage,Base:5.48}]}
+tp @s ~ ~-400 ~
+tag @s add Check

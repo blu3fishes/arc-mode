@@ -1,0 +1,1 @@
+execute as @e[type=item,nbt={Item:{id:"minecraft:enchanted_book",tag:{CustomModelData:700051}}}] run function arc_item_base:enchanting/item

@@ -1,0 +1,4 @@
+recipe take @s arc_item_base:darkknight/darkknight_helmet
+advancement revoke @s only arc_item_base:darkknight/darkknight_helmet
+clear @s minecraft:knowledge_book
+give @s diamond_helmet{display:{Name:'{"text":"Black Knight Helmet","bold":false,"italic":false}'},AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:3.75,Operation:0,UUID:[I;426201584,-1965668933,-1725453752,1141211396],Slot:"head"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:0.83,Operation:0,UUID:[I;1251628923,-54704601,-1916294634,-1314299964],Slot:"head"},{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:2,Operation:0,UUID:[I;-1263632347,-1508553817,-2052401929,-676610205],Slot:"head"}]} 1

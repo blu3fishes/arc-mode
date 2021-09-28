@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+		"  $",
+		"  $"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:ghast_spawn_egg"
+        },
+        "$": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:netherite_pickaxe"
+      },
+      "title": "Arc Mode",
+      "description": "For the Glory and Truth!",
+      "background": "minecraft:textures/block/deepslate_bricks.png",
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": false,
+      "hidden": false
+    },
+    "criteria": {
+      "location": {
+        "trigger": "minecraft:location"
+      }
+    }
+  }

@@ -10,3 +10,5 @@ scoreboard objectives add ui_lhealth dummy
 scoreboard objectives add ui_nhealth dummy
 scoreboard objectives add ui_armor dummy
 scoreboard objectives add ui_nabs dummy
+
+scoreboard objectives add ui_openedbook minecraft.used:minecraft.written_book

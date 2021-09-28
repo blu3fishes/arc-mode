@@ -1,0 +1,9 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "item/custom/cryob/guardian_eye"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":700054},"model": "item/custom/cryob/elder_guardian_eye"}
+	]
+}
