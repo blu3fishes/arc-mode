@@ -1,4 +1,0 @@
-recipe take @s arc_item_base:darkknight/darkknight_chestplate
-advancement revoke @s only arc_item_base:darkknight/darkknight_chestplate
-clear @s minecraft:knowledge_book
-give @s diamond_chestplate{display:{Name:'{"text":"Black Knight Chestplate","bold":false,"italic":false}'},AttributeModifiers:[{AttributeName:"generic.armor",Name:"generic.armor",Amount:6,Operation:0,UUID:[I;1115937072,-1723774180,-1789315398,-1465358886],Slot:"chest"},{AttributeName:"generic.armor_toughness",Name:"generic.armor_toughness",Amount:1.33,Operation:0,UUID:[I;-603069626,-1612823058,-1519951056,127606769],Slot:"chest"},{AttributeName:"generic.max_health",Name:"generic.max_health",Amount:2,Operation:0,UUID:[I;-187586318,1820937781,-1489431860,-322456647],Slot:"chest"}]} 1

@@ -1,4 +1,0 @@
-recipe take @s arc_item_base:cryob/cryob_scythe
-advancement revoke @s only arc_item_base:cryob/cryob_scythe
-clear @s minecraft:knowledge_book
-give @s netherite_hoe{display:{Name:'{"text":"Scythe Of Crying Obsidian","color":"aqua","bold":false,"italic":false}',Lore:['{"text":"can feel souls of guardians.","color":"gray","bold":false,"italic":false}','{"text":"Dark Damage : +19","color":"gray","bold":false,"italic":false}']},CustomModelData:700044,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.69,Operation:0,UUID:[I;832319302,-1767226962,-1873515180,1750379722],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:19,Operation:0,UUID:[I;671969740,-1371912263,-2042220219,771866103],Slot:"mainhand"}]} 1

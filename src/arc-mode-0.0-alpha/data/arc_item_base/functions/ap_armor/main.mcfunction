@@ -1,1 +1,0 @@
-execute as @a[nbt={Inventory:[{id:"minecraft:diamond_chestplate",tag:{robe:1b},Slot:102b}]}] run function arc_item_base:ap_armor/diamond_chestplate

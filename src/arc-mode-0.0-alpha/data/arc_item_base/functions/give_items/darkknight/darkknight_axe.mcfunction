@@ -1,4 +1,0 @@
-recipe take @s arc_item_base:darkknight/darkknight_axe
-advancement revoke @s only arc_item_base:darkknight/darkknight_axe
-clear @s minecraft:knowledge_book
-give @s diamond_axe{display:{Name:'{"text":"Black Warrior\'s Axe","color":"aqua","bold":false,"italic":false}',Lore:['{"text":"For the Blood","color":"gray","bold":false,"italic":false}']},CustomModelData:700060,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.9,Operation:0,UUID:[I;1817637860,1753171438,-1997593366,-1141416680],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:20.8,Operation:0,UUID:[I;1842885664,-63616244,-1184687658,-1811188720],Slot:"mainhand"}]} 1

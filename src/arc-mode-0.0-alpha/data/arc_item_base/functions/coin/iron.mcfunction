@@ -1,3 +1,0 @@
-execute at @s run summon item ~ ~ ~ {Item:{id:"minecraft:iron_ingot",Count:1b,tag:{display:{Name:'{"text":"Iron Coin","color":"gray","bold":false,"italic":false}',Lore:['{"text":"Can be traded with new merchants...","color":"gray","bold":false,"italic":false}','{"text":"Can repair Iron Items.","color":"aqua","bold":false,"italic":false}']},CustomModelData:700057}}}
-execute at @s run playsound block.anvil.use master @a ~ ~ ~ 1 1 0
-kill @s

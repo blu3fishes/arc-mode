@@ -1,4 +1,0 @@
-recipe take @s arc_item_base:wood/wooden_greatsword
-advancement revoke @s only arc_item_base:wood/wooden_greatsword
-clear @s minecraft:knowledge_book
-give @s wooden_sword{display:{Name:'{"text":"Wooden Greatsword","bold":false,"italic":false}'},CustomModelData:700001,twohand:1b,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-3.65,Operation:0,UUID:[I;-2001973639,-1578939791,-1665841762,-506699889],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:9,Operation:0,UUID:[I;-868767776,1055869039,-1554010670,-2075758699],Slot:"mainhand"},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.24,Operation:1,UUID:[I;1158732456,1582648062,-2045723866,1873258748],Slot:"mainhand"}]} 1

@@ -1,4 +1,0 @@
-recipe take @s arc_item_base:diamond/diamond_scythe
-advancement revoke @s only arc_item_base:diamond/diamond_scythe
-clear @s minecraft:knowledge_book
-give @s diamond_hoe{display:{Name:'{"text":"Diamond Scythe","bold":false,"italic":false}',Lore:['{"text":"Dark Damage : +12","color":"gray","bold":false,"italic":false}']},CustomModelData:700030,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.75,Operation:0,UUID:[I;-2032321700,-1494857032,-2009846170,1066969748],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:12.7,Operation:0,UUID:[I;1125699477,-1273542565,-1745296977,392118733],Slot:"mainhand"}]} 1

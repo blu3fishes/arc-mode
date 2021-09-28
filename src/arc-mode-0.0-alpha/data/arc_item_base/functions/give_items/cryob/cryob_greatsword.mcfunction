@@ -1,4 +1,0 @@
-recipe take @s arc_item_base:cryob/cryob_greatsword
-advancement revoke @s only arc_item_base:cryob/cryob_greatsword
-clear @s minecraft:knowledge_book
-give @s netherite_sword{display:{Name:'{"text":"Greatsword Of Crying Obsidian","color":"aqua","bold":false,"italic":false}',Lore:['{"text":"can feel souls of guardians.","color":"gray","bold":false,"italic":false}']},CustomModelData:700041,twohand:1b,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-3.4,Operation:0,UUID:[I;-838296979,847466466,-1479093774,1149479689],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:45,Operation:0,UUID:[I;-1519263588,2099857719,-1521033733,-1432784460],Slot:"mainhand"},{AttributeName:"generic.movement_speed",Name:"generic.movement_speed",Amount:-0.2,Operation:1,UUID:[I;-1502275835,1503150304,-1873318427,-538207126],Slot:"mainhand"}]} 1

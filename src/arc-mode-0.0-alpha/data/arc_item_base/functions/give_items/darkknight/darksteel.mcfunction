@@ -1,1 +1,0 @@
-give @s evoker_spawn_egg{display:{Name:'{"text":"Dark Steel","color":"light_purple","bold":false,"italic":false}',},CustomModelData:700038,EntityTag:{id:"minecraft:armor_stand",Silent:1b,Invulnerable:1b,Invisible:1b,NoBasePlate:1b,Tags:["delete"]}} 1
