@@ -4,6 +4,7 @@
     "leveling:ui/ui/load",
     "leveling:ui/exp/load",
     "rpg:crit/load",
-    "rpg:mob_spawning/set_variable"
+    "rpg:mob_spawning/set_variable",
+    "rpg:option/load"
   ]
 }
