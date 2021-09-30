@@ -1,19 +1,17 @@
 scoreboard objectives add option_class dummy
 
 scoreboard objectives add option_random dummy
-## common to uncommon (12%)
-scoreboard players set #16 option_random 12
-## uncommon to rare (7%)
-scoreboard players set #8 option_random 7
-## rare to epic (4%)
-scoreboard players set #25 option_random 25
-scoreboard players set #50 option_random 50
-scoreboard players set #75 option_random 75
-scoreboard players set #100 option_random 99
-## epic to legendary(2%)
+## common to uncommon (8%)
+scoreboard players set #8 option_random 8
+## uncommon to rare (2%)
+scoreboard players set #2 option_random 2
+## rare to epic (0.8%)
+## epic to legendary(0.4%)
 scoreboard players set #37 option_random 37
 scoreboard players set #73 option_random 73
-## legendary to mystic(1%)
+scoreboard players set #17 option_random 17
+scoreboard players set #71 option_random 71
+## legendary to mystic(0.2%)
 scoreboard players set #1 option_random 74
 ## common
 
