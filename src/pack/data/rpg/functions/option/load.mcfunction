@@ -1,20 +1,20 @@
 scoreboard objectives add option_class dummy
 
 scoreboard objectives add option_random dummy
-## common to uncommon
-scoreboard players set #16 option_random 16
-## uncommon to rare
-scoreboard players set #8 option_random 8
-## rare to epic
+## common to uncommon (12%)
+scoreboard players set #16 option_random 12
+## uncommon to rare (7%)
+scoreboard players set #8 option_random 7
+## rare to epic (4%)
 scoreboard players set #25 option_random 25
 scoreboard players set #50 option_random 50
 scoreboard players set #75 option_random 75
-scoreboard players set #100 option_random 50
-## epic to legendary
+scoreboard players set #100 option_random 99
+## epic to legendary(2%)
 scoreboard players set #37 option_random 37
 scoreboard players set #73 option_random 73
-## legendary to 
-scoreboard players set #1 option_random 1
+## legendary to mystic(1%)
+scoreboard players set #1 option_random 74
 ## common
 
 ## 플레이어의 현재 태그 값을 저장하는 스코어보드
@@ -82,3 +82,40 @@ scoreboard players add @a option_lfeet3 0
 scoreboard players add @a option_lmain1 0
 scoreboard players add @a option_lmain2 0
 scoreboard players add @a option_lmain3 0
+
+## 플레이어의 크확과 크뎀을 저장하는 변수
+
+scoreboard objectives add opt_crate dummy
+scoreboard objectives add opt_cdmg dummy
+
+scoreboard objectives add opt_hd1_crate dummy
+scoreboard objectives add opt_hd2_crate dummy
+scoreboard objectives add opt_hd3_crate dummy
+scoreboard objectives add opt_chst1_crate dummy
+scoreboard objectives add opt_chst2_crate dummy
+scoreboard objectives add opt_chst3_crate dummy
+scoreboard objectives add opt_lgs1_crate dummy
+scoreboard objectives add opt_lgs2_crate dummy
+scoreboard objectives add opt_lgs3_crate dummy
+scoreboard objectives add opt_ft1_crate dummy
+scoreboard objectives add opt_ft2_crate dummy
+scoreboard objectives add opt_ft3_crate dummy
+scoreboard objectives add opt_m1_crate dummy
+scoreboard objectives add opt_m2_crate dummy
+scoreboard objectives add opt_m3_crate dummy
+
+scoreboard objectives add opt_hd1_cdmg dummy
+scoreboard objectives add opt_hd2_cdmg dummy
+scoreboard objectives add opt_hd3_cdmg dummy
+scoreboard objectives add opt_chst1_cdmg dummy
+scoreboard objectives add opt_chst2_cdmg dummy
+scoreboard objectives add opt_chst3_cdmg dummy
+scoreboard objectives add opt_lgs1_cdmg dummy
+scoreboard objectives add opt_lgs2_cdmg dummy
+scoreboard objectives add opt_lgs3_cdmg dummy
+scoreboard objectives add opt_ft1_cdmg dummy
+scoreboard objectives add opt_ft2_cdmg dummy
+scoreboard objectives add opt_ft3_cdmg dummy
+scoreboard objectives add opt_m1_cdmg dummy
+scoreboard objectives add opt_m2_cdmg dummy
+scoreboard objectives add opt_m3_cdmg dummy
