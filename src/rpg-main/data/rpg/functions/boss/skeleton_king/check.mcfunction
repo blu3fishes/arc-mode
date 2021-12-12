@@ -1,0 +1,1 @@
+execute at @e[type=item,nbt={Item:{id:"minecraft:skeleton_skull",Count:1b}}] as @e[type=item,nbt={Item:{id:"minecraft:golden_helmet",Count:1b}},distance=..0.4] run function rpg:boss/skeleton_king/summon

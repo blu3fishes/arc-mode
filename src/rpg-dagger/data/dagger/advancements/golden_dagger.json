@@ -1,0 +1,14 @@
+{
+    "__comment": "Made with blu3fishes' Custom Item Generator With Recipes",
+    "criteria": {
+        "unlockRecipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "dagger:golden_dagger"
+            }
+        }
+    },
+    "rewards": {
+        "function": "dagger:give_items/golden_dagger"
+    }
+}

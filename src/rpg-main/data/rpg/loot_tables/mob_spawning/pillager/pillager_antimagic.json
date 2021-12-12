@@ -1,0 +1,35 @@
+{
+    "pools": [
+        {
+            "type":"minecraft:generic",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "rpg:mob_spawning/level"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "rpg:mob_spawning/adv"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "minecraft:entities/pillager"
+                }
+            ]
+        }
+    ]
+}

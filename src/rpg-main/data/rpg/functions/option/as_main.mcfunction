@@ -1,0 +1,1 @@
+execute at @s as @e[distance=..0.4,tag=!emerald,type=item,sort=nearest,limit=1] if predicate rpg:option/usable run function rpg:option/craft/main

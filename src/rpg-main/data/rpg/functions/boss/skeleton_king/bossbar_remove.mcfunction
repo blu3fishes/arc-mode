@@ -1,0 +1,1 @@
+bossbar set minecraft:skeleton_king visible false

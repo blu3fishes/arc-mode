@@ -1,0 +1,4 @@
+execute at @s anchored eyes run summon arrow ^-1.3 ^-0.1 ^1.5 {Tags:["ice","iceleft","arc_processed"],CustomPotionEffects:[{Id:27b,Amplifier:3b},{Id:2b,Amplifier:2b,Duration:60}],Color:720895}
+execute at @s anchored eyes run summon arrow ^1.3 ^-0.1 ^1.5 {Tags:["ice","iceright","arc_processed"],CustomPotionEffects:[{Id:27b,Amplifier:3b},{Id:2b,Amplifier:2b,Duration:60}],Color:720895}
+execute at @s run execute as @e[type=arrow,tag=iceleft,limit=1,distance=..4] run function arc_skills:custom_ranged/load/ice_left
+execute at @s run execute as @e[type=arrow,tag=iceright,limit=1,distance=..4] run function arc_skills:custom_ranged/load/ice_right

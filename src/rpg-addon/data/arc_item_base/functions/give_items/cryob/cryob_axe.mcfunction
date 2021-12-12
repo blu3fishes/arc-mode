@@ -1,0 +1,4 @@
+recipe take @s arc_item_base:cryob/cryob_axe
+advancement revoke @s only arc_item_base:cryob/cryob_axe
+clear @s minecraft:knowledge_book
+give @s netherite_axe{display:{Name:'{"text":"우는 흑요석의 도끼","color":"aqua","bold":false,"italic":false}',Lore:['{"text":"can feel souls of guardians.","color":"gray","bold":false,"italic":false}']},CustomModelData:700040,AttributeModifiers:[{AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.83,Operation:0,UUID:[I;-745379320,-1116846471,-1725804845,-691404884],Slot:"mainhand"},{AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:25,Operation:0,UUID:[I;-384798188,-1409855706,-1235567703,-1894335090],Slot:"mainhand"}]} 1

@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": {"min": 0, "max": 47},
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stone_button",
+          "functions":[
+            {
+              "function":"minecraft:set_count",
+              "count":0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

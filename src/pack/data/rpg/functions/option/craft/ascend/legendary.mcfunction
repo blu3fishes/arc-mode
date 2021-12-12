@@ -1,6 +1,0 @@
-execute at @s run particle minecraft:flame ~ ~ ~ 0.2 0.2 0.2 0.1 600
-execute at @s run playsound minecraft:entity.player.levelup master @a ~ ~ ~ 1 0.4 0
-execute at @s run playsound minecraft:entity.ender_dragon.ambient master @a ~ ~ ~ 1 1.2 0
-data modify entity @s Item.tag.display.Lore[0] set value '{"text":"✦✦✦✦✦✦ Mystic ▬▬▬","color":"dark_red","bold":false,"italic":false}'
-data modify entity @s Item.tag.class set value 6b
-scoreboard players set #random option_random 100
