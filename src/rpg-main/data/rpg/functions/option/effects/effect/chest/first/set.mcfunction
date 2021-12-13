@@ -51,8 +51,8 @@ execute as @s[scores={option_chest1=47}] run scoreboard players set @s opt_chst1
 execute as @s[scores={option_chest1=48}] run scoreboard players set @s opt_chst1_cdmg 12
 execute as @s[scores={option_chest1=49}] run attribute @s generic.attack_damage modifier add 3ed9cfbd-5c73-4a3f-882a-31ee2400c311 "option_chest1" 0.1 multiply
 execute as @s[scores={option_chest1=50}] run attribute @s generic.attack_damage modifier add 3ed9cfbd-5c73-4a3f-882a-31ee2400c311 "option_chest1" 0.11 multiply
-execute as @s[scores={option_chest1=51}] run attribute @s generic.attack_damage modifier add 3ed9cfbd-5c73-4a3f-882a-31ee2400c311 "option_chest1" 0.82 add
-execute as @s[scores={option_chest1=52}] run attribute @s generic.attack_damage modifier add 3ed9cfbd-5c73-4a3f-882a-31ee2400c311 "option_chest1" 0.88 add
+execute as @s[scores={option_chest1=51}] run attribute @s generic.attack_damage modifier add 3ed9cfbd-5c73-4a3f-882a-31ee2400c311 "option_chest1" 1.28 add
+execute as @s[scores={option_chest1=52}] run attribute @s generic.attack_damage modifier add 3ed9cfbd-5c73-4a3f-882a-31ee2400c311 "option_chest1" 1.56 add
 execute as @s[scores={option_chest1=53}] run attribute @s generic.max_health modifier add 3ed9cfbd-5c73-4a3f-882a-31ee2400c311 "option_chest1" 0.20 multiply
 execute as @s[scores={option_chest1=54}] run scoreboard players set @s opt_chst1_crate 5
 execute as @s[scores={option_chest1=55}] run scoreboard players set @s opt_chst1_crate 7
@@ -61,4 +61,4 @@ execute as @s[scores={option_chest1=57}] run scoreboard players set @s opt_chst1
 execute as @s[scores={option_chest1=58}] run scoreboard players set @s opt_chst1_cdmg 20
 execute as @s[scores={option_chest1=59}] run scoreboard players set @s opt_chst1_cdmg 24
 execute as @s[scores={option_chest1=60}] run attribute @s generic.attack_damage modifier add 3ed9cfbd-5c73-4a3f-882a-31ee2400c311 "option_chest1" 0.12 multiply
-execute as @s[scores={option_chest1=61}] run attribute @s generic.attack_damage modifier add 3ed9cfbd-5c73-4a3f-882a-31ee2400c311 "option_chest1" 0.94 add
+execute as @s[scores={option_chest1=61}] run attribute @s generic.attack_damage modifier add 3ed9cfbd-5c73-4a3f-882a-31ee2400c311 "option_chest1" 2.56 add

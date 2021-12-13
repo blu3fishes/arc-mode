@@ -51,8 +51,8 @@ execute as @s[scores={option_off2=47}] run scoreboard players set @s opt_o2_crat
 execute as @s[scores={option_off2=48}] run scoreboard players set @s opt_o2_cdmg 12
 execute as @s[scores={option_off2=49}] run attribute @s generic.attack_damage modifier add 103a7dd7-1561-4ba1-9579-4ea38b72429c "option_off2" 0.1 multiply
 execute as @s[scores={option_off2=50}] run attribute @s generic.attack_damage modifier add 103a7dd7-1561-4ba1-9579-4ea38b72429c "option_off2" 0.11 multiply
-execute as @s[scores={option_off2=51}] run attribute @s generic.attack_damage modifier add 103a7dd7-1561-4ba1-9579-4ea38b72429c "option_off2" 0.82 add
-execute as @s[scores={option_off2=52}] run attribute @s generic.attack_damage modifier add 103a7dd7-1561-4ba1-9579-4ea38b72429c "option_off2" 0.88 add
+execute as @s[scores={option_off2=51}] run attribute @s generic.attack_damage modifier add 103a7dd7-1561-4ba1-9579-4ea38b72429c "option_off2" 1.28 add
+execute as @s[scores={option_off2=52}] run attribute @s generic.attack_damage modifier add 103a7dd7-1561-4ba1-9579-4ea38b72429c "option_off2" 1.56 add
 execute as @s[scores={option_off2=53}] run attribute @s generic.max_health modifier add 103a7dd7-1561-4ba1-9579-4ea38b72429c "option_off2" 0.20 multiply
 execute as @s[scores={option_off2=54}] run scoreboard players set @s opt_o2_crate 5
 execute as @s[scores={option_off2=55}] run scoreboard players set @s opt_o2_crate 7
@@ -61,4 +61,4 @@ execute as @s[scores={option_off2=57}] run scoreboard players set @s opt_o2_cdmg
 execute as @s[scores={option_off2=58}] run scoreboard players set @s opt_o2_cdmg 20
 execute as @s[scores={option_off2=59}] run scoreboard players set @s opt_o2_cdmg 24
 execute as @s[scores={option_off2=60}] run attribute @s generic.attack_damage modifier add 103a7dd7-1561-4ba1-9579-4ea38b72429c "option_off2" 0.12 multiply
-execute as @s[scores={option_off2=61}] run attribute @s generic.attack_damage modifier add 103a7dd7-1561-4ba1-9579-4ea38b72429c "option_off2" 0.94 add
+execute as @s[scores={option_off2=61}] run attribute @s generic.attack_damage modifier add 103a7dd7-1561-4ba1-9579-4ea38b72429c "option_off2" 2.56 add

@@ -51,8 +51,8 @@ execute as @s[scores={option_main3=47}] run scoreboard players set @s opt_m3_cra
 execute as @s[scores={option_main3=48}] run scoreboard players set @s opt_m3_cdmg 12
 execute as @s[scores={option_main3=49}] run attribute @s generic.attack_damage modifier add d550c1e2-62a3-45ac-a3d7-c759c2ff9d08 "option_main3" 0.1 multiply
 execute as @s[scores={option_main3=50}] run attribute @s generic.attack_damage modifier add d550c1e2-62a3-45ac-a3d7-c759c2ff9d08 "option_main3" 0.11 multiply
-execute as @s[scores={option_main3=51}] run attribute @s generic.attack_damage modifier add d550c1e2-62a3-45ac-a3d7-c759c2ff9d08 "option_main3" 0.82 add
-execute as @s[scores={option_main3=52}] run attribute @s generic.attack_damage modifier add d550c1e2-62a3-45ac-a3d7-c759c2ff9d08 "option_main3" 0.88 add
+execute as @s[scores={option_main3=51}] run attribute @s generic.attack_damage modifier add d550c1e2-62a3-45ac-a3d7-c759c2ff9d08 "option_main3" 1.28 add
+execute as @s[scores={option_main3=52}] run attribute @s generic.attack_damage modifier add d550c1e2-62a3-45ac-a3d7-c759c2ff9d08 "option_main3" 1.56 add
 execute as @s[scores={option_main3=53}] run attribute @s generic.max_health modifier add d550c1e2-62a3-45ac-a3d7-c759c2ff9d08 "option_main3" 0.20 multiply
 execute as @s[scores={option_main3=54}] run scoreboard players set @s opt_m3_crate 5
 execute as @s[scores={option_main3=55}] run scoreboard players set @s opt_m3_crate 7
@@ -61,4 +61,4 @@ execute as @s[scores={option_main3=57}] run scoreboard players set @s opt_m3_cdm
 execute as @s[scores={option_main3=58}] run scoreboard players set @s opt_m3_cdmg 20
 execute as @s[scores={option_main3=59}] run scoreboard players set @s opt_m3_cdmg 24
 execute as @s[scores={option_main3=60}] run attribute @s generic.attack_damage modifier add d550c1e2-62a3-45ac-a3d7-c759c2ff9d08 "option_main3" 0.12 multiply
-execute as @s[scores={option_main3=61}] run attribute @s generic.attack_damage modifier add d550c1e2-62a3-45ac-a3d7-c759c2ff9d08 "option_main3" 0.94 add
+execute as @s[scores={option_main3=61}] run attribute @s generic.attack_damage modifier add d550c1e2-62a3-45ac-a3d7-c759c2ff9d08 "option_main3" 2.56 add

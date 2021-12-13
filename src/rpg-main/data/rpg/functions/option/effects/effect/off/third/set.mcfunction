@@ -51,8 +51,8 @@ execute as @s[scores={option_off3=47}] run scoreboard players set @s opt_o3_crat
 execute as @s[scores={option_off3=48}] run scoreboard players set @s opt_o3_cdmg 12
 execute as @s[scores={option_off3=49}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 0.1 multiply
 execute as @s[scores={option_off3=50}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 0.11 multiply
-execute as @s[scores={option_off3=51}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 0.82 add
-execute as @s[scores={option_off3=52}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 0.88 add
+execute as @s[scores={option_off3=51}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 1.28 add
+execute as @s[scores={option_off3=52}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 1.56 add
 execute as @s[scores={option_off3=53}] run attribute @s generic.max_health modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 0.20 multiply
 execute as @s[scores={option_off3=54}] run scoreboard players set @s opt_o3_crate 5
 execute as @s[scores={option_off3=55}] run scoreboard players set @s opt_o3_crate 7
@@ -61,4 +61,4 @@ execute as @s[scores={option_off3=57}] run scoreboard players set @s opt_o3_cdmg
 execute as @s[scores={option_off3=58}] run scoreboard players set @s opt_o3_cdmg 20
 execute as @s[scores={option_off3=59}] run scoreboard players set @s opt_o3_cdmg 24
 execute as @s[scores={option_off3=60}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 0.12 multiply
-execute as @s[scores={option_off3=61}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 0.94 add
+execute as @s[scores={option_off3=61}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 2.56 add

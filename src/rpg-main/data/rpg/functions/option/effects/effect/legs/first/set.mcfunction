@@ -51,8 +51,8 @@ execute as @s[scores={option_legs1=47}] run scoreboard players set @s opt_lgs1_c
 execute as @s[scores={option_legs1=48}] run scoreboard players set @s opt_lgs1_cdmg 12
 execute as @s[scores={option_legs1=49}] run attribute @s generic.attack_damage modifier add be0b8cbd-7841-49b9-9b92-1760890b3894 "option_legs1" 0.1 multiply
 execute as @s[scores={option_legs1=50}] run attribute @s generic.attack_damage modifier add be0b8cbd-7841-49b9-9b92-1760890b3894 "option_legs1" 0.11 multiply
-execute as @s[scores={option_legs1=51}] run attribute @s generic.attack_damage modifier add be0b8cbd-7841-49b9-9b92-1760890b3894 "option_legs1" 0.82 add
-execute as @s[scores={option_legs1=52}] run attribute @s generic.attack_damage modifier add be0b8cbd-7841-49b9-9b92-1760890b3894 "option_legs1" 0.88 add
+execute as @s[scores={option_legs1=51}] run attribute @s generic.attack_damage modifier add be0b8cbd-7841-49b9-9b92-1760890b3894 "option_legs1" 1.28 add
+execute as @s[scores={option_legs1=52}] run attribute @s generic.attack_damage modifier add be0b8cbd-7841-49b9-9b92-1760890b3894 "option_legs1" 1.56 add
 execute as @s[scores={option_legs1=53}] run attribute @s generic.max_health modifier add be0b8cbd-7841-49b9-9b92-1760890b3894 "option_legs1" 0.20 multiply
 execute as @s[scores={option_legs1=54}] run scoreboard players set @s opt_lgs1_crate 5
 execute as @s[scores={option_legs1=55}] run scoreboard players set @s opt_lgs1_crate 7
@@ -61,4 +61,4 @@ execute as @s[scores={option_legs1=57}] run scoreboard players set @s opt_lgs1_c
 execute as @s[scores={option_legs1=58}] run scoreboard players set @s opt_lgs1_cdmg 20
 execute as @s[scores={option_legs1=59}] run scoreboard players set @s opt_lgs1_cdmg 24
 execute as @s[scores={option_legs1=60}] run attribute @s generic.attack_damage modifier add be0b8cbd-7841-49b9-9b92-1760890b3894 "option_legs1" 0.12 multiply
-execute as @s[scores={option_legs1=61}] run attribute @s generic.attack_damage modifier add be0b8cbd-7841-49b9-9b92-1760890b3894 "option_legs1" 0.94 add
+execute as @s[scores={option_legs1=61}] run attribute @s generic.attack_damage modifier add be0b8cbd-7841-49b9-9b92-1760890b3894 "option_legs1" 2.56 add
