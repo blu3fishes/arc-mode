@@ -1,0 +1,11 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/carrot_on_a_stick"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":700048},"model": "item/custom/blade"},
+		{"predicate": {"custom_model_data":700049},"model": "item/custom/bucler"},
+		{"predicate": {"custom_model_data":700050},"model": "item/custom/quiver"}
+	]
+}

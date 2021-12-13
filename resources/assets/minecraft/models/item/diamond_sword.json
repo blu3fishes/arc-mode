@@ -1,0 +1,11 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/diamond_sword"
+	},
+	"overrides": [
+		{"predicate": {"custom_model_data":118001}, "model": "item/dagger/diamond_dagger"},
+		{"predicate": {"custom_model_data":700025},"model": "item/custom/ice/moonlight_sword"},
+		{"predicate": {"custom_model_data":700031},"model": "item/custom/diamond/diamond_sword"}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/golden_sword"
+	},
+	
+	"overrides": [
+		{"predicate": {"custom_model_data":118001}, "model": "item/dagger/golden_dagger"}
+	]
+}
