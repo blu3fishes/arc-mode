@@ -7,7 +7,10 @@ execute store result score .atkdmg arc.BowType run attribute @s generic.attack_d
 execute store result score .crate arc.BowType run scoreboard players get @s crit_rate
 execute store result score .cdmg arc.BowType run scoreboard players get @s crit_dmg
 
+## mob's default critical rate : 10
+execute as @s[type=!player] run scoreboard players set .crate arc.BowType 10
+
 scoreboard players operation .cdmg arc.BowType += #100 arc.BowType
 
 function rpg:crit/get_random/get_random
-execute if score .crate arc.BowType >= #random crit_rand at @s run playsound minecraft:entity.firework_rocket.blast master @s ~ ~ ~ 1 0.6
+execute if score .crate arc.BowType >= #random crit_rand at @s run playsound minecraft:entity.firework_rocket.blast master @a ~ ~ ~ 1 0.6
