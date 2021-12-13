@@ -1,2 +1,0 @@
-execute if score sdi sdi_d_pvpmode matches 0 run summon minecraft:armor_stand ~ ~ ~ {Tags:["sdi_d","sdi_d_init"],Invisible:1b,Invulnerable:1b,Small:1b,DisabledSlots:2039583}
-execute if score sdi sdi_d_pvpmode matches 1 run summon minecraft:armor_stand ~ ~.975 ~ {Tags:["sdi_d","sdi_d_init"],Invisible:1b,Invulnerable:1b,Small:1b,DisabledSlots:2039583,Marker:1b}

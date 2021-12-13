@@ -1,3 +1,0 @@
-kill @e[tag=sdi_i]
-tellraw @s [{"text":"--= ","color":"dark_gray"},{"text":"Simple Damage Indicator","color":"red"},{"text":" =--","color":"dark_gray"}]
-tellraw @s [{"text":"Indicators Killed! If any bug happened, please report on post in ","color":"gold"},{"text":"Planet Minecraft","underlined":true,"clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/data-pack/simply-damage-indicator/"}}]
