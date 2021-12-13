@@ -42,13 +42,13 @@ execute as @s[scores={option_off3=38}] run attribute @s generic.attack_damage mo
 execute as @s[scores={option_off3=39}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 0.48 add
 execute as @s[scores={option_off3=40}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 0.60 add
 execute as @s[scores={option_off3=41}] run scoreboard players set @s opt_o3_crate 3
-execute as @s[scores={option_off3=42}] run scoreboard players set @s opt_o3_cdmg 14
+execute as @s[scores={option_off3=42}] run scoreboard players set @s opt_o3_cdmg 9
 execute as @s[scores={option_off3=43}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 0.08 multiply
 execute as @s[scores={option_off3=44}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 0.09 multiply
 execute as @s[scores={option_off3=45}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 0.72 add
 execute as @s[scores={option_off3=46}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 0.76 add
 execute as @s[scores={option_off3=47}] run scoreboard players set @s opt_o3_crate 4
-execute as @s[scores={option_off3=48}] run scoreboard players set @s opt_o3_cdmg 20
+execute as @s[scores={option_off3=48}] run scoreboard players set @s opt_o3_cdmg 12
 execute as @s[scores={option_off3=49}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 0.1 multiply
 execute as @s[scores={option_off3=50}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 0.11 multiply
 execute as @s[scores={option_off3=51}] run attribute @s generic.attack_damage modifier add eceea1ae-c4eb-4e2b-8701-3b78b78c298a "option_off3" 0.82 add

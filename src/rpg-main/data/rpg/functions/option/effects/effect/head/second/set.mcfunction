@@ -42,13 +42,13 @@ execute as @s[scores={option_head2=38}] run attribute @s generic.attack_damage m
 execute as @s[scores={option_head2=39}] run attribute @s generic.attack_damage modifier add f914effd-25b9-438a-84a2-ede74f672425 "option_head2" 0.48 add
 execute as @s[scores={option_head2=40}] run attribute @s generic.attack_damage modifier add f914effd-25b9-438a-84a2-ede74f672425 "option_head2" 0.60 add
 execute as @s[scores={option_head2=41}] run scoreboard players set @s opt_hd2_crate 3
-execute as @s[scores={option_head2=42}] run scoreboard players set @s opt_hd2_cdmg 14
+execute as @s[scores={option_head2=42}] run scoreboard players set @s opt_hd2_cdmg 9
 execute as @s[scores={option_head2=43}] run attribute @s generic.attack_damage modifier add f914effd-25b9-438a-84a2-ede74f672425 "option_head2" 0.08 multiply
 execute as @s[scores={option_head2=44}] run attribute @s generic.attack_damage modifier add f914effd-25b9-438a-84a2-ede74f672425 "option_head2" 0.09 multiply
 execute as @s[scores={option_head2=45}] run attribute @s generic.attack_damage modifier add f914effd-25b9-438a-84a2-ede74f672425 "option_head2" 0.72 add
 execute as @s[scores={option_head2=46}] run attribute @s generic.attack_damage modifier add f914effd-25b9-438a-84a2-ede74f672425 "option_head2" 0.76 add
 execute as @s[scores={option_head2=47}] run scoreboard players set @s opt_hd2_crate 4
-execute as @s[scores={option_head2=48}] run scoreboard players set @s opt_hd2_cdmg 20
+execute as @s[scores={option_head2=48}] run scoreboard players set @s opt_hd2_cdmg 12
 execute as @s[scores={option_head2=49}] run attribute @s generic.attack_damage modifier add f914effd-25b9-438a-84a2-ede74f672425 "option_head2" 0.1 multiply
 execute as @s[scores={option_head2=50}] run attribute @s generic.attack_damage modifier add f914effd-25b9-438a-84a2-ede74f672425 "option_head2" 0.11 multiply
 execute as @s[scores={option_head2=51}] run attribute @s generic.attack_damage modifier add f914effd-25b9-438a-84a2-ede74f672425 "option_head2" 0.82 add

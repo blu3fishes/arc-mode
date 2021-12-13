@@ -42,13 +42,13 @@ execute as @s[scores={option_chest2=38}] run attribute @s generic.attack_damage 
 execute as @s[scores={option_chest2=39}] run attribute @s generic.attack_damage modifier add 88020d39-cc1d-4ea5-b748-93f059ea31a0 "option_chest2" 0.48 add
 execute as @s[scores={option_chest2=40}] run attribute @s generic.attack_damage modifier add 88020d39-cc1d-4ea5-b748-93f059ea31a0 "option_chest2" 0.60 add
 execute as @s[scores={option_chest2=41}] run scoreboard players set @s opt_chst2_crate 3
-execute as @s[scores={option_chest2=42}] run scoreboard players set @s opt_chst2_cdmg 14
+execute as @s[scores={option_chest2=42}] run scoreboard players set @s opt_chst2_cdmg 9
 execute as @s[scores={option_chest2=43}] run attribute @s generic.attack_damage modifier add 88020d39-cc1d-4ea5-b748-93f059ea31a0 "option_chest2" 0.08 multiply
 execute as @s[scores={option_chest2=44}] run attribute @s generic.attack_damage modifier add 88020d39-cc1d-4ea5-b748-93f059ea31a0 "option_chest2" 0.09 multiply
 execute as @s[scores={option_chest2=45}] run attribute @s generic.attack_damage modifier add 88020d39-cc1d-4ea5-b748-93f059ea31a0 "option_chest2" 0.72 add
 execute as @s[scores={option_chest2=46}] run attribute @s generic.attack_damage modifier add 88020d39-cc1d-4ea5-b748-93f059ea31a0 "option_chest2" 0.76 add
 execute as @s[scores={option_chest2=47}] run scoreboard players set @s opt_chst2_crate 4
-execute as @s[scores={option_chest2=48}] run scoreboard players set @s opt_chst2_cdmg 20
+execute as @s[scores={option_chest2=48}] run scoreboard players set @s opt_chst2_cdmg 12
 execute as @s[scores={option_chest2=49}] run attribute @s generic.attack_damage modifier add 88020d39-cc1d-4ea5-b748-93f059ea31a0 "option_chest2" 0.1 multiply
 execute as @s[scores={option_chest2=50}] run attribute @s generic.attack_damage modifier add 88020d39-cc1d-4ea5-b748-93f059ea31a0 "option_chest2" 0.11 multiply
 execute as @s[scores={option_chest2=51}] run attribute @s generic.attack_damage modifier add 88020d39-cc1d-4ea5-b748-93f059ea31a0 "option_chest2" 0.82 add
