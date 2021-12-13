@@ -7,6 +7,7 @@ execute as @a run scoreboard players operation @s ui_lhealth += @s ui_nabs
 execute as @a run scoreboard players operation @s ui_nhealth = @s ui_lhealth
 
 execute as @a store result score @s ui_armor run attribute @s minecraft:generic.armor get 100
+execute as @a store result score @s ui_armortough run attribute @s minecraft:generic.armor_toughness get 100
 
 execute as @a store result score @s ui_health run attribute @s minecraft:generic.max_health get 100
 

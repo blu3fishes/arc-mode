@@ -4,4 +4,4 @@ attribute @s generic.attack_speed modifier remove 0becf87e-718a-4ee0-a152-a4a31d
 attribute @s generic.max_health modifier remove 0becf87e-718a-4ee0-a152-a4a31da49890
 attribute @s generic.movement_speed modifier remove 0becf87e-718a-4ee0-a152-a4a31da49890
 
-scoreboard players operation @s option_lchest3 = @s option_chest3
+scoreboard players operation @s option_lfeet3 = @s option_feet3

@@ -9,6 +9,7 @@ scoreboard objectives add ui_health dummy
 scoreboard objectives add ui_lhealth dummy
 scoreboard objectives add ui_nhealth dummy
 scoreboard objectives add ui_armor dummy
+scoreboard objectives add ui_armortough dummy
 scoreboard objectives add ui_atk dummy
 scoreboard objectives add ui_nabs dummy
 

@@ -14,6 +14,9 @@ execute store result score @s option_feet3 run data get entity @s Inventory[{Slo
 execute store result score @s option_main1 run data get entity @s SelectedItem.tag.first
 execute store result score @s option_main2 run data get entity @s SelectedItem.tag.second
 execute store result score @s option_main3 run data get entity @s SelectedItem.tag.third
+execute store result score @s option_off1 run data get entity @s Inventory[{Slot:-106b}].tag.first
+execute store result score @s option_off2 run data get entity @s Inventory[{Slot:-106b}].tag.second
+execute store result score @s option_off3 run data get entity @s Inventory[{Slot:-106b}].tag.third
 
 ## 효과 부여
 
@@ -32,6 +35,9 @@ function rpg:option/effects/effect/feet/third/set
 function rpg:option/effects/effect/main/first/set
 function rpg:option/effects/effect/main/second/set
 function rpg:option/effects/effect/main/third/set
+function rpg:option/effects/effect/off/first/set
+function rpg:option/effects/effect/off/second/set
+function rpg:option/effects/effect/off/third/set
 
 ## rate, dmg 계산
 scoreboard players set @s opt_crate 0
@@ -50,6 +56,9 @@ scoreboard players operation @s opt_crate += @s opt_ft3_crate
 scoreboard players operation @s opt_crate += @s opt_m1_crate
 scoreboard players operation @s opt_crate += @s opt_m2_crate
 scoreboard players operation @s opt_crate += @s opt_m3_crate
+scoreboard players operation @s opt_crate += @s opt_o1_crate
+scoreboard players operation @s opt_crate += @s opt_o2_crate
+scoreboard players operation @s opt_crate += @s opt_o3_crate
 
 scoreboard players set @s opt_cdmg 0
 scoreboard players operation @s opt_cdmg += @s opt_hd1_cdmg
@@ -67,6 +76,9 @@ scoreboard players operation @s opt_cdmg += @s opt_ft3_cdmg
 scoreboard players operation @s opt_cdmg += @s opt_m1_cdmg
 scoreboard players operation @s opt_cdmg += @s opt_m2_cdmg
 scoreboard players operation @s opt_cdmg += @s opt_m3_cdmg
+scoreboard players operation @s opt_cdmg += @s opt_o1_cdmg
+scoreboard players operation @s opt_cdmg += @s opt_o2_cdmg
+scoreboard players operation @s opt_cdmg += @s opt_o3_cdmg
 
 ## reset 함수 실행
 execute unless score @s option_head1 = @s option_lhead1 run function rpg:option/effects/effect/head/first/reset
@@ -84,3 +96,6 @@ execute unless score @s option_feet3 = @s option_lfeet3 run function rpg:option/
 execute unless score @s option_main1 = @s option_lmain1 run function rpg:option/effects/effect/main/first/reset
 execute unless score @s option_main2 = @s option_lmain2 run function rpg:option/effects/effect/main/second/reset
 execute unless score @s option_main3 = @s option_lmain3 run function rpg:option/effects/effect/main/third/reset
+execute unless score @s option_off1 = @s option_loff1 run function rpg:option/effects/effect/off/first/reset
+execute unless score @s option_off2 = @s option_loff2 run function rpg:option/effects/effect/off/second/reset
+execute unless score @s option_off3 = @s option_loff3 run function rpg:option/effects/effect/off/third/reset

@@ -53,7 +53,7 @@ execute as @s[scores={option_feet2=49}] run attribute @s generic.attack_damage m
 execute as @s[scores={option_feet2=50}] run attribute @s generic.attack_damage modifier add 82825764-75ef-406f-9775-a3ea25b157dd "option_feet2" 0.11 multiply
 execute as @s[scores={option_feet2=51}] run attribute @s generic.attack_damage modifier add 82825764-75ef-406f-9775-a3ea25b157dd "option_feet2" 0.82 add
 execute as @s[scores={option_feet2=52}] run attribute @s generic.attack_damage modifier add 82825764-75ef-406f-9775-a3ea25b157dd "option_feet2" 0.88 add
-execute as @s[scores={option_feet2=53}] run attribute @s generic.max_health modifier add 82825764-75ef-406f-9775-a3ea25b157dd "option_feet2" 2 add
+execute as @s[scores={option_feet2=53}] run attribute @s generic.max_health modifier add 82825764-75ef-406f-9775-a3ea25b157dd "option_feet2" 0.20 multiply
 execute as @s[scores={option_feet2=54}] run scoreboard players set @s opt_ft2_crate 5
 execute as @s[scores={option_feet2=55}] run scoreboard players set @s opt_ft2_crate 7
 execute as @s[scores={option_feet2=56}] run scoreboard players set @s opt_ft2_crate 9

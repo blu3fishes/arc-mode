@@ -1,0 +1,10 @@
+execute as @a[tag=archer,scores={archer_skill=45..,carrotstick_used=1..}] run function rpgslayer_loop:archer/technical_shot
+execute as @a[scores={arc_skill_use=3}] run function rpgslayer_loop:archer/tech_shot
+execute as @a[scores={arc_skill_use=6}] run function rpgslayer_loop:archer/tech_shot
+execute as @a[scores={arc_skill_use=9}] run function rpgslayer_loop:archer/tech_shot
+execute as @a[scores={arc_skill_use=12}] run function rpgslayer_loop:archer/tech_shot
+execute as @a[scores={arc_skill_use=15}] run function rpgslayer_loop:archer/tech_shot
+execute as @a[scores={arc_skill_use=18}] run function rpgslayer_loop:archer/tech_shot
+execute as @a[scores={arc_skill_use=21}] run function rpgslayer_loop:archer/tech_shot
+execute as @a[scores={arc_skill_use=24}] run function rpgslayer_loop:archer/tech_shot
+scoreboard players remove @a[scores={arc_skill_use=1..}] arc_skill_use 1

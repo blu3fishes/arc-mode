@@ -51,7 +51,7 @@ execute if score #random option_random matches 49 run data modify entity @s Item
 execute if score #random option_random matches 50 run data modify entity @s Item.tag.display.Lore[1] set value '{"text":"공격력+11%","color":"gray","italic":"false"}'
 execute if score #random option_random matches 51 run data modify entity @s Item.tag.display.Lore[1] set value '{"text":"공격력+82","color":"gray","italic":"false"}'
 execute if score #random option_random matches 52 run data modify entity @s Item.tag.display.Lore[1] set value '{"text":"공격력+88","color":"gray","italic":"false"}'
-execute if score #random option_random matches 53 run data modify entity @s Item.tag.display.Lore[1] set value '{"text":"최대체력+2","color":"gray","italic":"false"}'
+execute if score #random option_random matches 53 run data modify entity @s Item.tag.display.Lore[1] set value '{"text":"최대체력+20%","color":"gray","italic":"false"}'
 execute if score #random option_random matches 54 run data modify entity @s Item.tag.display.Lore[1] set value '{"text":"치명타확률+5%","color":"gray","italic":"false"}'
 execute if score #random option_random matches 55 run data modify entity @s Item.tag.display.Lore[1] set value '{"text":"치명타확률+7%","color":"gray","italic":"false"}'
 execute if score #random option_random matches 56 run data modify entity @s Item.tag.display.Lore[1] set value '{"text":"치명타확률+9%","color":"gray","italic":"false"}'

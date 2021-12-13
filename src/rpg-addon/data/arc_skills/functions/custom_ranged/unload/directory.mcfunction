@@ -5,3 +5,4 @@ execute if score .type arc.BowType matches 2 run kill @s
 execute if score .type arc.BowType matches 3 run kill @s
 execute if score .type arc.BowType matches 4 at @s run summon lightning_bolt ~ ~ ~
 execute if score .type arc.BowType matches 4 run kill @s
+execute if score .type arc.BowType matches 5 run function rpgslayer_loop:archer/poison_land

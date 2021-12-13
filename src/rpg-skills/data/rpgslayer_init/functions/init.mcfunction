@@ -9,6 +9,7 @@ scoreboard objectives add linger_used minecraft.used:minecraft.lingering_potion
 scoreboard objectives add pearl_used minecraft.used:minecraft.ender_pearl
 scoreboard objectives add _XP_GAIN minecraft.custom:minecraft.player_kills
 
+scoreboard objectives add arc_skill_use dummy
 scoreboard objectives add using_curse dummy
 scoreboard objectives add tanker_ulti dummy
 scoreboard objectives add tanker_skill dummy

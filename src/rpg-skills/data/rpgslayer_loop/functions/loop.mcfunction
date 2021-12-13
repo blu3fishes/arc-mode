@@ -1,5 +1,5 @@
 function rpgslayer_loop:slayer_loop
-# function rpgslayer_loop:archer_loop
+function rpgslayer_loop:archer_loop
 function rpgslayer_loop:tanker_loop
 ## 얘네 넣을지는 미정
 # function rpgslayer_loop:nuker_loop

@@ -23,3 +23,4 @@ scoreboard objectives add arc.Ice dummy
 scoreboard objectives add arc.CryobScy dummy
 
 scoreboard players set #100 arc.BowType 100
+scoreboard players set #poison arc.BowType 5

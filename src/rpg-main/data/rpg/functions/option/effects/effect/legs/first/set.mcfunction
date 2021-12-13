@@ -53,7 +53,7 @@ execute as @s[scores={option_legs1=49}] run attribute @s generic.attack_damage m
 execute as @s[scores={option_legs1=50}] run attribute @s generic.attack_damage modifier add be0b8cbd-7841-49b9-9b92-1760890b3894 "option_legs1" 0.11 multiply
 execute as @s[scores={option_legs1=51}] run attribute @s generic.attack_damage modifier add be0b8cbd-7841-49b9-9b92-1760890b3894 "option_legs1" 0.82 add
 execute as @s[scores={option_legs1=52}] run attribute @s generic.attack_damage modifier add be0b8cbd-7841-49b9-9b92-1760890b3894 "option_legs1" 0.88 add
-execute as @s[scores={option_legs1=53}] run attribute @s generic.max_health modifier add be0b8cbd-7841-49b9-9b92-1760890b3894 "option_legs1" 2 add
+execute as @s[scores={option_legs1=53}] run attribute @s generic.max_health modifier add be0b8cbd-7841-49b9-9b92-1760890b3894 "option_legs1" 0.20 multiply
 execute as @s[scores={option_legs1=54}] run scoreboard players set @s opt_lgs1_crate 5
 execute as @s[scores={option_legs1=55}] run scoreboard players set @s opt_lgs1_crate 7
 execute as @s[scores={option_legs1=56}] run scoreboard players set @s opt_lgs1_crate 9

@@ -17,4 +17,6 @@ scoreboard players remove @a[scores={arc.Skeletons=1..}] arc.Skeletons 1
 ## custom effect 
 execute at @e[type=arrow,tag=ice] run particle dust 0.016 0.624 0.973 1 ~ ~ ~ 0 0 0 0.2 4 force
 execute at @e[type=arrow,tag=crit_arrow] run particle minecraft:instant_effect ~ ~ ~ 0 0 0 0.2 6 force
+execute at @e[type=arrow,tag=flame_effect] run particle minecraft:flame ~ ~ ~ 0 0 0 0.2 6 force
 kill @e[type=arrow,tag=crit_arrow,nbt={inGround:1b}]
+kill @e[type=arrow,tag=flame_effect,nbt={inGround:1b}]

@@ -53,7 +53,7 @@ execute as @s[scores={option_main3=49}] run attribute @s generic.attack_damage m
 execute as @s[scores={option_main3=50}] run attribute @s generic.attack_damage modifier add d550c1e2-62a3-45ac-a3d7-c759c2ff9d08 "option_main3" 0.11 multiply
 execute as @s[scores={option_main3=51}] run attribute @s generic.attack_damage modifier add d550c1e2-62a3-45ac-a3d7-c759c2ff9d08 "option_main3" 0.82 add
 execute as @s[scores={option_main3=52}] run attribute @s generic.attack_damage modifier add d550c1e2-62a3-45ac-a3d7-c759c2ff9d08 "option_main3" 0.88 add
-execute as @s[scores={option_main3=53}] run attribute @s generic.max_health modifier add d550c1e2-62a3-45ac-a3d7-c759c2ff9d08 "option_main3" 2 add
+execute as @s[scores={option_main3=53}] run attribute @s generic.max_health modifier add d550c1e2-62a3-45ac-a3d7-c759c2ff9d08 "option_main3" 0.20 multiply
 execute as @s[scores={option_main3=54}] run scoreboard players set @s opt_m3_crate 5
 execute as @s[scores={option_main3=55}] run scoreboard players set @s opt_m3_crate 7
 execute as @s[scores={option_main3=56}] run scoreboard players set @s opt_m3_crate 9

@@ -13,7 +13,8 @@ execute as @e if score @s arc.UUID0 = .search arc.UUID0 if score @s arc.UUID1 = 
 
 ## attack_damage의 25% 만큼 화살 데미지 증가.
 execute if score .crate arc.BowType >= #random crit_rand run function arc_skills:custom_ranged/do_crit
-
+## flame 화살의 경우 1.25배 추가보너스
 execute store result entity @s damage float 0.0000025 run scoreboard players get .atkdmg arc.BowType
+execute if entity @s[tag=flame] run function arc_skills:custom_ranged/arc_skill/dmg
 
 execute if score .type arc.BowType matches 1.. run function arc_skills:custom_ranged/load/directory

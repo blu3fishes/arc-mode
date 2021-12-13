@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#$#",
+		"#$#",
+		" # "
+    ],
+    "key": {
+        "$": {
+            "item": "minecraft:arrow"
+        },
+        "#": {
+            "item": "minecraft:leather"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book"
+    }
+}

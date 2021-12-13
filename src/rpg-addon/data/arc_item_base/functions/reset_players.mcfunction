@@ -102,3 +102,5 @@ recipe take @s arc_item_base:darkknight/darkknight_axe
 advancement revoke @s only arc_item_base:darkknight/darkknight_axe
 recipe take @s arc_item_base:darkknight/darkknight_scythe
 advancement revoke @s only arc_item_base:darkknight/darkknight_scythe
+recipe take @s arc_item_base:quiver
+advancement revoke @s only arc_item_base:quiver
