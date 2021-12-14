@@ -3,5 +3,6 @@ summon skeleton_horse ~ ~ ~ {Health:600f,Passengers:[{id:"minecraft:skeleton",Cu
 execute at @s run playsound entity.wither.spawn master @a ~ ~ ~ 1 1 0
 summon lightning_bolt ~ ~10 ~
 tellraw @a {"text":"[Boss] 몰락한 국가의 왕이 깨어났다!","color":"gray","bold":false,"italic":false}
+data modify entity @e[type=skeleton,limit=1,tag=skeleton_king,sort=nearest] Health set value 1200.0f
 kill @s
 kill @e[type=item,distance=..0.4,nbt={Item:{id:"minecraft:skeleton_skull",Count:1b}},limit=1]
