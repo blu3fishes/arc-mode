@@ -4,8 +4,9 @@
 execute as @a run function arc_skills:custom_ranged/user_process
 execute as @a run execute store result score @s arc.BowType run data get entity @s SelectedItem.tag.bow
 
-execute as @e[type=skeleton,tag=!arc_processed] run function arc_skills:custom_ranged/skel_process
-execute as @e[type=stray,tag=!arc_processed] run function arc_skills:custom_ranged/stray_process
+execute as @e[type=skeleton,tag=!arc_processed] run function arc_skills:custom_ranged/mob_process/skel_process
+execute as @e[type=stray,tag=!arc_processed] run function arc_skills:custom_ranged/mob_process/stray_process
+execute as @e[type=pillager,tag=!arc_processed] run function arc_skills:custom_ranged/mob_process/pillager_process
 execute as @e[type=arrow,tag=!arc_processed] run function arc_skills:custom_ranged/arrow_process
 # Bow Type = 1, 2 damage / Bow Type = 2, 4 damage
 # Bow Type = 3 : Ice Bow

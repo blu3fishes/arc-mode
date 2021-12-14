@@ -29,8 +29,8 @@
         },
         {
             "rolls": {
-                "min": 40,
-                "max": 100
+                "min": 12,
+                "max": 48
             },
             "bonus_rolls": {
                 "min": 0,
