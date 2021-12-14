@@ -5,6 +5,7 @@
 	},
 	
 	"overrides": [
-		{"predicate": {"custom_model_data":118001}, "model": "item/dagger/iron_dagger"}
+		{"predicate": {"custom_model_data":118001}, "model": "item/dagger/iron_dagger"},
+		{"predicate": {"custom_model_data":170001}, "model": "item/custom/darkknight/darkknight_sword"}
 	]
 }
